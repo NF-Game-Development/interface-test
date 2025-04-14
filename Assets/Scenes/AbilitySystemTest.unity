@@ -2548,7 +2548,7 @@ MonoBehaviour:
     PrefabModifications: []
     SerializationNodes: []
   _healthText: {fileID: 2031661964}
-  _health: {fileID: 0}
+  _health: {fileID: 5446518909005879107}
 --- !u!23 &2031661966
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -4360,7 +4360,7 @@ GameObject:
   - component: {fileID: 5446518909005879107}
   m_Layer: 0
   m_Name: PLAYERALLY_Archer
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
