@@ -28,6 +28,7 @@ public class PlayerController : MonoExt, IMovable, IRotatable, IAbilityCastable
         //Events
         OnSubscriptionSet();
         _abilityList = _classType.AbilityList;
+        _playerInput.SetAbilityDictionary(_abilityList.AbilityInputDictionary);
     }
     
     public override void Initialize()
@@ -92,6 +93,16 @@ public class PlayerController : MonoExt, IMovable, IRotatable, IAbilityCastable
     public void OnAbilityCast(AbilityExtendableEnum abilityEnum)
     {
         _abilityList.AbilityDictionary[abilityEnum].OnTriggerAbility(gameObject, _abilityParameterHandler);
+    }
+
+    public PlayerInputReader GetPlayerInput()
+    {
+        return _playerInput;
+    }
+
+    public AbilityList GetAbilityList()
+    {
+        return _abilityList;
     }
 
     public void SetCamera(Camera camera)

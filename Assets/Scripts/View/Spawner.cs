@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using Sirenix.OdinInspector;
+using UnityEngine.InputSystem;
 
 public class Spawner : MonoExt
 {
@@ -39,6 +40,7 @@ public class Spawner : MonoExt
             Cam.GetComponent<CameraController>().SetTransformTarget(player.transform);
             player.GetComponent<PlayerController>().SetCamera(Cam);
             Player = player;
+            
         }
         
     }

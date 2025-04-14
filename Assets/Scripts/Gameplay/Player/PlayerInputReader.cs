@@ -68,5 +68,15 @@ public class PlayerInputReader : SerializedScriptableObject, InputSystem_Actions
         if(context.performed)
             Ability.OnNext(AbilityDictionary[4]);
     }
+
+    public void SetAbilityDictionary(Dictionary<int, AbilityExtendableEnum> abilityDictionary)
+    {
+        AbilityDictionary = abilityDictionary;
+    }
+
+    public Dictionary<int, AbilityExtendableEnum> GetAbilityDictionary()
+    {
+        return AbilityDictionary;
+    }
 }
 

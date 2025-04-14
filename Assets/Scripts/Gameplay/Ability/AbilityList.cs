@@ -7,7 +7,7 @@ using UnityEngine;
 public class AbilityList : SerializedScriptableObject
 {
     [SerializeField][OdinSerialize] public Dictionary<AbilityExtendableEnum, Ability> AbilityDictionary = new Dictionary<AbilityExtendableEnum, Ability>();
-    [SerializeField][OdinSerialize] public Dictionary<int, Ability> AbilityInputDictionary = new Dictionary<int, Ability>();
+    [SerializeField][OdinSerialize] public Dictionary<int, AbilityExtendableEnum> AbilityInputDictionary = new Dictionary<int, AbilityExtendableEnum>();
 
     public void InitializeAbilities()
     {

@@ -35,6 +35,8 @@ public class CameraController : MonoExt
 
     private void LateUpdate()
     {
+        if(_transformTarget == null)
+            return;
         Vector3 targetPosition = _transformTarget.position + _cameraSettings.PositionOffset;
 
         // Smoothly move the camera towards the target position
