@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: '[CLASSTYPE] Tank'
   m_EditorClassIdentifier: 
   ID: class_tank
-  AbilityList: {fileID: 11400000, guid: 3c39be05980d0074db691ba77953e950, type: 2}
+  AbilityList: {fileID: 11400000, guid: f4afbf24331050d46aa78b058a1f3301, type: 2}
   AbilityParameterHandler: {fileID: 11400000, guid: 1067540d4eef0c14c89a4c43eac2e488, type: 2}

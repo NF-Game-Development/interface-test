@@ -10,8 +10,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 570199420d1c55f41ab421fda280f4b1, type: 3}
-  m_Name: '[CLASSTYPE] Archer'
+  m_Name: '[CLASSTYPE] AllRounder'
   m_EditorClassIdentifier: 
-  ID: class_archer
-  AbilityList: {fileID: 11400000, guid: bb20cedc9aaedbc41aa55598bb7dabe2, type: 2}
+  ID: class_allrounder
+  AbilityList: {fileID: 11400000, guid: 3c39be05980d0074db691ba77953e950, type: 2}
   AbilityParameterHandler: {fileID: 11400000, guid: 1067540d4eef0c14c89a4c43eac2e488, type: 2}

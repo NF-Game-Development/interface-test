@@ -8,6 +8,7 @@ public class PlayerController : MonoExt, IMovable, IRotatable, IAbilityCastable
     [TabGroup("References")] [SerializeField] private PlayerInputReader _playerInput;
     [TabGroup("References")] [SerializeField] private Rigidbody _rigidbody;
     [TabGroup("References")] [SerializeField] private Camera _camera;
+    [TabGroup("References")] [SerializeField] private ClassType _classType;
 
     [TabGroup("Ability")] [SerializeField] private AbilityList _abilityList;
     [TabGroup("Ability")] [SerializeField] private AbilityParameterHandler _abilityParameterHandler;
@@ -26,6 +27,7 @@ public class PlayerController : MonoExt, IMovable, IRotatable, IAbilityCastable
     {
         //Events
         OnSubscriptionSet();
+        _abilityList = _classType.AbilityList;
     }
     
     public override void Initialize()
@@ -53,6 +55,8 @@ public class PlayerController : MonoExt, IMovable, IRotatable, IAbilityCastable
     private void HandleMovement()
     {
         if (!_canPlayerMove)
+            return;
+        if (_abilityParameterHandler.IsAnAbilityExecuting)
             return;
         
         Vector3 normalizedDirection = Utility.CalculateCameraDirection(_camera, _movementInput);
@@ -88,5 +92,10 @@ public class PlayerController : MonoExt, IMovable, IRotatable, IAbilityCastable
     public void OnAbilityCast(AbilityExtendableEnum abilityEnum)
     {
         _abilityList.AbilityDictionary[abilityEnum].OnTriggerAbility(gameObject, _abilityParameterHandler);
+    }
+
+    public void SetCamera(Camera camera)
+    {
+        _camera = camera;
     }
 }

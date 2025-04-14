@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: '[CLASSTYPE] Healer'
   m_EditorClassIdentifier: 
   ID: class_healer
-  AbilityList: {fileID: 11400000, guid: 3c39be05980d0074db691ba77953e950, type: 2}
+  AbilityList: {fileID: 11400000, guid: c66462137901e9548921a85cf3463a93, type: 2}
   AbilityParameterHandler: {fileID: 11400000, guid: 1067540d4eef0c14c89a4c43eac2e488, type: 2}

@@ -68,6 +68,5 @@ public class PlayerInputReader : SerializedScriptableObject, InputSystem_Actions
         if(context.performed)
             Ability.OnNext(AbilityDictionary[4]);
     }
-
 }
 
