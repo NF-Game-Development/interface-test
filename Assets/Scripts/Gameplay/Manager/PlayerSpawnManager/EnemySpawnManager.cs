@@ -5,11 +5,11 @@ using UnityEngine.Serialization;
 
 public class EnemySpawnManger : MonoExt
 {
-    //[SerializeField] private EnemyUnit _enemyUnitPrefab;
     [SerializeField] private Transform _enemySpawnPoint;
+    [SerializeField] private Dictionary<ClassEnum, EnemyUnit> _enemyUnitPrefabs;
     
     [FormerlySerializedAs("_baseClasDictionary")] [SerializeField] private BaseClassDictionary baseClassDictionary;
-    [SerializeField] private Dictionary<ClassEnum, EnemyUnit> _enemyUnitPrefabs;
+    
     
     private void Awake()
     {
