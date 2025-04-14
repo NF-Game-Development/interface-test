@@ -1,0 +1,9 @@
+using System.Collections.Generic;
+using Sirenix.OdinInspector;
+using UnityEngine;
+
+[CreateAssetMenu(fileName = "ClassDictionary", menuName = "ScriptableObjects/UnitClass/ClassDictionary")]
+public class BaseClasDictionary : SerializedScriptableObject
+{
+    public Dictionary<ClassEnum, UnitClass> ClassDictionary = new Dictionary<ClassEnum, UnitClass>();
+}
