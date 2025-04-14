@@ -46,6 +46,7 @@ public class PlayerSpawnManager : MonoExt
         _playercontrollerRef.transform.position = _playerSpawnPoint.position;
         _playercontrollerRef.SetCamera(_mainCamera);
         _playercontrollerRef.InitializePlayer(_baseClasDictionary.ClassDictionary[classEnum]);
+        _playercontrollerRef.ChangePlayerModel();
         _playercontrollerRef.ChangeInputReaderAbilityDictionary(_classAbilityDictionary.AbilityOrderDictionary[classEnum]);
         
         _cameraController.SetCameraTarget(_playercontrollerRef.transform);

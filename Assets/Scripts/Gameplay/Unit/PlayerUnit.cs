@@ -1,7 +1,10 @@
+using System.Collections.Generic;
 using UnityEngine;
 
 public class PlayerUnit : BaseUnit
 {
+    [SerializeField] private Dictionary<UnitClass, GameObject> _playerModels = new Dictionary<UnitClass, GameObject>();
+    
     private void Awake()
     {
         //Initialize mono extension
@@ -21,5 +24,15 @@ public class PlayerUnit : BaseUnit
     public override void OnSubscriptionSet()
     {
         base.OnSubscriptionSet();
-    }    
+    }
+
+    public void ChnageModel()
+    {
+        foreach (var model in _playerModels)
+        {
+            model.Value.SetActive(false);
+        }
+        
+        _playerModels[UnitClass].SetActive(true);
+    }
 }

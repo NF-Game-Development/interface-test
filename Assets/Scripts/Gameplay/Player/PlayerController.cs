@@ -116,4 +116,9 @@ public class PlayerController : MonoExt, IMovable, IRotatable, IAbilityCastable
     {
         _camera = camera;
     }
+
+    public void ChangePlayerModel()
+    {
+        _player.ChnageModel();
+    }
 }
