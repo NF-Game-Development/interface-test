@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class ClassInitializer : MonoExt
 {
-    [SerializeField] private BaseClasDictionary _baseClassDictionary;
+    [SerializeField] private BaseClassDictionary _baseClassDictionary;
     private void Awake()
     {
         //Initialize mono extension

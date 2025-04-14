@@ -1,5 +1,6 @@
 using Sirenix.OdinInspector;
 using UnityEngine;
+using UnityEngine.Serialization;
 
 public class PlayerSpawnManager : MonoExt
 {
@@ -7,7 +8,7 @@ public class PlayerSpawnManager : MonoExt
     [SerializeField] Transform _playerSpawnPoint;
     
     [SerializeField] private ClassAbilityDictionary _classAbilityDictionary;
-    [SerializeField] private BaseClasDictionary _baseClasDictionary;
+    [FormerlySerializedAs("_baseClasDictionary")] [SerializeField] private BaseClassDictionary baseClassDictionary;
     
     [SerializeField] private Camera _mainCamera;
     
@@ -47,7 +48,7 @@ public class PlayerSpawnManager : MonoExt
     
         _playercontrollerRef.transform.position = _playerSpawnPoint.position;
         _playercontrollerRef.SetCamera(_mainCamera);
-        _playercontrollerRef.InitializePlayer(_baseClasDictionary.ClassDictionary[classEnum]);
+        _playercontrollerRef.InitializePlayer(baseClassDictionary.ClassDictionary[classEnum]);
         _playercontrollerRef.ChangePlayerModel();
         _playercontrollerRef.ChangeInputReaderAbilityDictionary(_classAbilityDictionary.AbilityOrderDictionary[classEnum]);
         

@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using UnityEngine;
 
 public class EnemyUnit : BaseUnit
@@ -21,5 +22,5 @@ public class EnemyUnit : BaseUnit
     public override void OnSubscriptionSet()
     {
         base.OnSubscriptionSet();
-    }    
+    }
 }
