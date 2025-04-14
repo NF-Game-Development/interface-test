@@ -1,0 +1,31 @@
+using UnityEngine;
+
+public class ClassInitializer : MonoExt
+{
+    [SerializeField] private BaseClasDictionary _baseClassDictionary;
+    private void Awake()
+    {
+        //Initialize mono extension
+        Initialize();
+    }
+    private void Start()
+    {
+        //Events
+        OnSubscriptionSet();
+    }
+
+    public void InitializeUnitClass(ClassEnum classEnum, BaseUnit baseUnit)
+    {
+        baseUnit.UnitClass = _baseClassDictionary.ClassDictionary[classEnum];
+    }
+    
+    public override void Initialize()
+    {
+        base.Initialize();
+    }
+    
+    public override void OnSubscriptionSet()
+    {
+        base.OnSubscriptionSet();
+    }    
+}
