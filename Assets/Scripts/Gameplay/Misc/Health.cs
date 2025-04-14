@@ -4,12 +4,16 @@ using UnityEngine;
 
 public class Health : MonoExt, IDamageable
 {
-    [SerializeField] private Stat MaxHealth;
+    //[SerializeField] private Stat MaxHealth;
 
-    public float MaxHP => MaxHealth.Value;
+    public float MaxHP;
     public float HP;
 
     private void Awake()
+    {
+    }
+
+    private void Start()
     {
         HP = MaxHP;
     }
