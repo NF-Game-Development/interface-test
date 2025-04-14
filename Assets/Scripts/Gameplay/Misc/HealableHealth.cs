@@ -12,5 +12,7 @@ public class HealableHealth : Health, IHealable
         {
             HP = MaxHP;
         }
+        
+        UpdateHpText((int)HP);
     }
 }
