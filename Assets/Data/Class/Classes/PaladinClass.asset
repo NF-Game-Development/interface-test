@@ -9,8 +9,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f26818538f80cba4395f5bf6ffc7227c, type: 3}
-  m_Name: PlayerInputReader
+  m_Script: {fileID: 11500000, guid: ce547c359ab18754895426940f3ce52d, type: 3}
+  m_Name: PaladinClass
   m_EditorClassIdentifier: 
   serializationData:
     SerializedFormat: 2
@@ -20,8 +20,6 @@ MonoBehaviour:
     Prefab: {fileID: 0}
     PrefabModificationsReferencedUnityObjects: []
     PrefabModifications: []
-    SerializationNodes:
-    - Name: _abilityDictionary
-      Entry: 6
-      Data: 
-  _abilityDictionary: {fileID: 0}
+    SerializationNodes: []
+  ClassAbilityList: {fileID: 11400000, guid: 3c39be05980d0074db691ba77953e950, type: 2}
+  ClassMaxHp: {fileID: 11400000, guid: 441d04f780e6c7e41b111776915d6828, type: 2}

@@ -40,4 +40,9 @@ public class CameraController : MonoExt
         // Smoothly move the camera towards the target position
         transform.position = Vector3.SmoothDamp(transform.position, targetPosition, ref velocity, _cameraSettings.SmoothSpeed);
     }
+
+    public void SetCameraTarget(Transform target)
+    {
+        _transformTarget = target;
+    }
 }

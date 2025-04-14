@@ -21,4 +21,10 @@ public class Health : MonoExt, IDamageable
         if (HP <= 0)
             Destroy(gameObject, 0.2f);
     }
+
+    public void SetMaxHealth(Stat newMaxHealth)
+    {
+        MaxHealth = newMaxHealth;
+        HP = MaxHP;
+    }
 }

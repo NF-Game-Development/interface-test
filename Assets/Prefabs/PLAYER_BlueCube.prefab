@@ -14,6 +14,8 @@ GameObject:
   - component: {fileID: 6241620065082842296}
   - component: {fileID: 8553594809335486719}
   - component: {fileID: 2355309230547412661}
+  - component: {fileID: 8500000254545838942}
+  - component: {fileID: 1060832343970793972}
   m_Layer: 0
   m_Name: PLAYER_BlueCube
   m_TagString: Player
@@ -49,11 +51,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5016fc6164a322644bc098f516a0e9f7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes: []
   _movementStats: {fileID: 11400000, guid: 19ffc313a2c26ef4889c015655615fb5, type: 2}
   _playerInput: {fileID: 11400000, guid: bccb5b502b38ed64fb694b53d16cc9c6, type: 2}
   _rigidbody: {fileID: 2355309230547412661}
   _camera: {fileID: 0}
-  _abilityList: {fileID: 11400000, guid: 3c39be05980d0074db691ba77953e950, type: 2}
+  _abilityParameterHandler: {fileID: 11400000, guid: 1067540d4eef0c14c89a4c43eac2e488, type: 2}
+  _player: {fileID: 1060832343970793972}
   _canPlayerMove: 1
   _canPlayerRotate: 1
 --- !u!33 &678273270418327487
@@ -157,6 +169,52 @@ Rigidbody:
   m_Interpolate: 1
   m_Constraints: 80
   m_CollisionDetection: 0
+--- !u!114 &8500000254545838942
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2901233407991900417}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b56f0358a186cd04eaad98e3a9068776, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes: []
+  MaxHealth: {fileID: 11400000, guid: 441d04f780e6c7e41b111776915d6828, type: 2}
+  HP: 0
+--- !u!114 &1060832343970793972
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2901233407991900417}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a5fd8fbccdced5f4fa3d24f58e543167, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes: []
+  UnitClass: {fileID: 0}
+  Health: {fileID: 8500000254545838942}
 --- !u!1 &7235891392908402173
 GameObject:
   m_ObjectHideFlags: 0

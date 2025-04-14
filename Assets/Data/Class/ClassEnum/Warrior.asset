@@ -9,8 +9,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f26818538f80cba4395f5bf6ffc7227c, type: 3}
-  m_Name: PlayerInputReader
+  m_Script: {fileID: 11500000, guid: a7f6084c961db794ba2b719f273d8a99, type: 3}
+  m_Name: Warrior
   m_EditorClassIdentifier: 
   serializationData:
     SerializedFormat: 2
@@ -20,8 +20,4 @@ MonoBehaviour:
     Prefab: {fileID: 0}
     PrefabModificationsReferencedUnityObjects: []
     PrefabModifications: []
-    SerializationNodes:
-    - Name: _abilityDictionary
-      Entry: 6
-      Data: 
-  _abilityDictionary: {fileID: 0}
+    SerializationNodes: []

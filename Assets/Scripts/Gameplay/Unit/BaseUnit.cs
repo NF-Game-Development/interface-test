@@ -3,6 +3,7 @@ using UnityEngine;
 public class BaseUnit : MonoExt
 {
     public UnitClass UnitClass;
+    [SerializeField] private Health Health;
     
     private void Awake()
     {
@@ -13,6 +14,12 @@ public class BaseUnit : MonoExt
     {
         //Events
         OnSubscriptionSet();
+    }
+
+    public void InitializeUnitClass(UnitClass newUnitClass)
+    {
+        UnitClass = newUnitClass;
+        Health.SetMaxHealth(UnitClass.ClassMaxHp);
     }
     
     public override void Initialize()

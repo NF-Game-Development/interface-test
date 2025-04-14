@@ -9,8 +9,7 @@ using UnityEngine.Rendering;
 [CreateAssetMenu(fileName = "PlayerInputReader", menuName = "ScriptableObjects/Player/InputReader")]
 public class PlayerInputReader : SerializedScriptableObject, InputSystem_Actions.IPlayerActions
 {
-    [SerializeField] [OdinSerialize] private Dictionary<int, AbilityExtendableEnum> AbilityDictionary = new Dictionary<int, AbilityExtendableEnum>();
-    
+    [SerializeField] [OdinSerialize] private AbilityDictionary _abilityDictionary;
     public Subject<Vector2> Movement {get; private set;}
     public Subject<AbilityExtendableEnum> Ability {get; private set;}
 
@@ -48,20 +47,23 @@ public class PlayerInputReader : SerializedScriptableObject, InputSystem_Actions
     public void OnAbility1(InputAction.CallbackContext context)
     {
         if(context.performed)
-            Ability.OnNext(AbilityDictionary[1]);
+            Ability.OnNext(_abilityDictionary.AbilityOrderDictionary[1]);
     }
 
     public void OnAbility2(InputAction.CallbackContext context)
     {
         if(context.performed)
-            Ability.OnNext(AbilityDictionary[2]);
+            Ability.OnNext(_abilityDictionary.AbilityOrderDictionary[2]);
     }
 
     public void OnAbility3(InputAction.CallbackContext context)
     {
         if(context.performed)
-            Ability.OnNext(AbilityDictionary[3]);
+            Ability.OnNext(_abilityDictionary.AbilityOrderDictionary[3]);
     }
 
+    public void ChangeAbilityDictionary(AbilityDictionary newDictionary)
+    {
+        _abilityDictionary = newDictionary;
+    }
 }
-

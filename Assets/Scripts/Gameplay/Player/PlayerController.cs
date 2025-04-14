@@ -9,9 +9,10 @@ public class PlayerController : MonoExt, IMovable, IRotatable, IAbilityCastable
     [TabGroup("References")] [SerializeField] private PlayerInputReader _playerInput;
     [TabGroup("References")] [SerializeField] private Rigidbody _rigidbody;
     [TabGroup("References")] [SerializeField] private Camera _camera;
-
-    [TabGroup("Ability")] [SerializeField] private AbilityList _abilityList;
+    
     [TabGroup("Ability")] [SerializeField] private AbilityParameterHandler _abilityParameterHandler;
+    
+    [TabGroup("Player")] [SerializeField] private PlayerUnit _player;
     
     [TabGroup("Debug")] [SerializeField] private bool _canPlayerMove = true;
     [TabGroup("Debug")] [SerializeField] private bool _canPlayerRotate = true;
@@ -35,7 +36,6 @@ public class PlayerController : MonoExt, IMovable, IRotatable, IAbilityCastable
     {
         base.Initialize();
         _playerInput.EnablePlayerActions();
-        _abilityList.InitializeAbilities();
         _abilityParameterHandler.Initialize();
     }
      
@@ -92,12 +92,28 @@ public class PlayerController : MonoExt, IMovable, IRotatable, IAbilityCastable
 
     public void OnAbilityCast(AbilityExtendableEnum abilityEnum)
     {
-        _abilityList.AbilityDictionary[abilityEnum].OnTriggerAbility(gameObject, _abilityParameterHandler);
+        _player.UnitClass.ClassAbilityList.AbilityDictionary[abilityEnum].OnTriggerAbility(gameObject, _abilityParameterHandler);
     }
 
     public void DisableMovement(bool canMove)
     {
         _canPlayerMove = canMove;
         _canPlayerRotate = canMove;
+    }
+
+    public void InitializePlayer(UnitClass unitClass)
+    {
+        _player.InitializeUnitClass(unitClass);
+        _player.UnitClass.ClassAbilityList.InitializeAbilities();
+    }
+
+    public void ChangeInputReaderAbilityDictionary(AbilityDictionary newDictionary)
+    {
+        _playerInput.ChangeAbilityDictionary(newDictionary);
+    }
+
+    public void SetCamera(Camera camera)
+    {
+        _camera = camera;
     }
 }
