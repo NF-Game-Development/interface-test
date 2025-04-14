@@ -11,22 +11,28 @@ public class AbilityParameterHandler : SerializedScriptableObject
     public Dictionary<AbilityParameterExtendableEnum, object> AbilityParameters = new Dictionary<AbilityParameterExtendableEnum, object>();
 
     public Subject<AbilityExtendableEnum> AbilityStarted;
+    public Subject<bool> AbilityCasted;
     public Subject<bool> AbilityStillExecuting;
+    public Subject<bool> AbilityEnded;
     public void Initialize()
     {
         IsAnAbilityExecuting = false;
         AbilityParameters = new Dictionary<AbilityParameterExtendableEnum, object>();
+        AbilityCasted = new Subject<bool>();
+        AbilityEnded = new Subject<bool>();
     }
 
     public void StartAbility(AbilityExtendableEnum abilityExtendableEnum)
     {
         IsAnAbilityExecuting = true;
+        AbilityCasted?.OnNext(!true);
         AbilityStarted?.OnNext(abilityExtendableEnum);
     }
     
     public void FinishAbility()
     {
         IsAnAbilityExecuting = false;
+        AbilityEnded?.OnNext(true);
         AbilityIsStillExecuting();
     }
 

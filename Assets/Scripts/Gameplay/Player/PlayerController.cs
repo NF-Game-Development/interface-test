@@ -1,4 +1,5 @@
 using System;
+using Cysharp.Threading.Tasks;
 using Sirenix.OdinInspector;
 using UnityEngine;
 
@@ -17,6 +18,8 @@ public class PlayerController : MonoExt, IMovable, IRotatable, IAbilityCastable
     
     
     private Vector2 _movementInput = Vector2.zero;
+    private IAbilityCastable _abilityCastableImplementation;
+
     private void Awake()
     {
         //Initialize mono extension
@@ -42,6 +45,8 @@ public class PlayerController : MonoExt, IMovable, IRotatable, IAbilityCastable
         //Event that handles player movement
         AddEvent(_playerInput.Movement,movementDirection => _movementInput = movementDirection);
         AddEvent(_playerInput.Ability, OnAbilityCast);
+        AddEvent(_abilityParameterHandler.AbilityCasted, DisableMovement);
+        AddEvent(_abilityParameterHandler.AbilityEnded, DisableMovement);
     }
 
     public void FixedUpdate()
@@ -88,5 +93,11 @@ public class PlayerController : MonoExt, IMovable, IRotatable, IAbilityCastable
     public void OnAbilityCast(AbilityExtendableEnum abilityEnum)
     {
         _abilityList.AbilityDictionary[abilityEnum].OnTriggerAbility(gameObject, _abilityParameterHandler);
+    }
+
+    public void DisableMovement(bool canMove)
+    {
+        _canPlayerMove = canMove;
+        _canPlayerRotate = canMove;
     }
 }
