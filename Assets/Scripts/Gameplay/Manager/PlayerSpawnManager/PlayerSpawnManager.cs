@@ -12,6 +12,8 @@ public class PlayerSpawnManager : MonoExt
     [SerializeField] private Camera _mainCamera;
     
     [SerializeField] private CameraController _cameraController;
+
+    private PlayerController _playercontrollerRef;
     private void Awake()
     {
         //Initialize mono extension
@@ -36,11 +38,16 @@ public class PlayerSpawnManager : MonoExt
     [Button]
     public void SpawnPlayer(ClassEnum classEnum)
     {
-        PlayerController player = Instantiate(_playerControllerPrefab, _playerSpawnPoint.position, Quaternion.identity);
-        player.SetCamera(_mainCamera);
-        player.InitializePlayer(_baseClasDictionary.ClassDictionary[classEnum]);
-        player.ChangeInputReaderAbilityDictionary(_classAbilityDictionary.AbilityOrderDictionary[classEnum]);
+        if (_playercontrollerRef == null)
+        {
+            _playercontrollerRef = Instantiate(_playerControllerPrefab, _playerSpawnPoint.position, Quaternion.identity);
+        }
+    
+        _playercontrollerRef.transform.position = _playerSpawnPoint.position;
+        _playercontrollerRef.SetCamera(_mainCamera);
+        _playercontrollerRef.InitializePlayer(_baseClasDictionary.ClassDictionary[classEnum]);
+        _playercontrollerRef.ChangeInputReaderAbilityDictionary(_classAbilityDictionary.AbilityOrderDictionary[classEnum]);
         
-        _cameraController.SetCameraTarget(player.transform);
+        _cameraController.SetCameraTarget(_playercontrollerRef.transform);
     }
 }
