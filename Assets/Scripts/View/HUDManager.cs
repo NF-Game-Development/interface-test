@@ -62,4 +62,9 @@ public class HUDManager : MonoExt
         }
         image.gameObject.SetActive(false);
     }
+
+    public void SetAbilityList(AbilityList abilityList)
+    {
+        _abilityList = abilityList;
+    }
 }

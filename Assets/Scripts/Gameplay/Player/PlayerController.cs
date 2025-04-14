@@ -121,4 +121,9 @@ public class PlayerController : MonoExt, IMovable, IRotatable, IAbilityCastable
     {
         _player.ChnageModel();
     }
+
+    public AbilityList GetAbilityList()
+    {
+        return _player.UnitClass.ClassAbilityList;
+    }
 }

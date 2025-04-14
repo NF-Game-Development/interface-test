@@ -12,6 +12,8 @@ public class PlayerSpawnManager : MonoExt
     [SerializeField] private Camera _mainCamera;
     
     [SerializeField] private CameraController _cameraController;
+    
+    [SerializeField] private HUDManager _hudManager;
 
     private PlayerController _playercontrollerRef;
     private void Awake()
@@ -48,6 +50,8 @@ public class PlayerSpawnManager : MonoExt
         _playercontrollerRef.InitializePlayer(_baseClasDictionary.ClassDictionary[classEnum]);
         _playercontrollerRef.ChangePlayerModel();
         _playercontrollerRef.ChangeInputReaderAbilityDictionary(_classAbilityDictionary.AbilityOrderDictionary[classEnum]);
+        
+        _hudManager.SetAbilityList(_playercontrollerRef.GetAbilityList());
         
         _cameraController.SetCameraTarget(_playercontrollerRef.transform);
     }
