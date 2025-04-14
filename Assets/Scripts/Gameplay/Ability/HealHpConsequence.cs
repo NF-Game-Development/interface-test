@@ -21,7 +21,7 @@ public class HealHpConsequence : Consequence
 
         foreach (GameObject target in targetList.ToList())
         {
-            if (!target.TryGetComponent<HealableHealth>(out var targetHealth))
+            if (!target.TryGetComponent<IHealable>(out var targetHealth))
             {
                 targetList.Remove(target);
                 continue;
