@@ -4,7 +4,7 @@ using UniRx;
 using UnityEngine;
 
 [CreateAssetMenu(fileName = "New Ability Parameter Handler", menuName = "ScriptableObjects/Utility/Ability Parameter")]
-public class AbilityParameterHandler : SerializedScriptableObject
+public class AbilityParameterHandler : SerializedScriptableObject, IActiveAbilityHandler
 {
     public bool IsAnAbilityExecuting = false;
 
@@ -29,7 +29,7 @@ public class AbilityParameterHandler : SerializedScriptableObject
         IsAnAbilityExecuting = false;
         AbilityIsStillExecuting();
     }
-
+    
     public void AbilityIsStillExecuting()
     {
         AbilityStillExecuting.OnNext(IsAnAbilityExecuting);

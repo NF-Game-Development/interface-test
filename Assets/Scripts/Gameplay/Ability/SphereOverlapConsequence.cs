@@ -6,7 +6,7 @@ using UnityEngine;
 using UnityEngine.Serialization;
 
 [CreateAssetMenu(fileName = "New Sphere Overlap Consequence", menuName = "ScriptableObjects/Ability/Sphere Overlap Consequence")]
-public class SphereOverlapConsequence : Consequence
+public class SphereOverlapConsequence : Consequence, IVisualizer
 {
     public Stat Radius;
     public Stat FrontOffset;
@@ -27,7 +27,7 @@ public class SphereOverlapConsequence : Consequence
         Quaternion boxRotation = Quaternion.LookRotation(centerTransform.forward);
         
         if(IsVisualized)
-            SpawnVisualizer(center, Radius.Value, boxRotation);
+            SpawnVisualizer(center, Vector3.zero, boxRotation, Radius.Value);
         
         Collider[] colliders = Physics.OverlapSphere(center, Radius.Value);
         List<GameObject> targets = new();
@@ -44,9 +44,10 @@ public class SphereOverlapConsequence : Consequence
         await ExecuteNextConsequence(abilityParameters);
     }
     
-    public void SpawnVisualizer( Vector3 center, float radius, Quaternion boxRotation)
+    public void SpawnVisualizer(Vector3 center, Vector3 halfExtents, Quaternion boxRotation, float radius)
     {
         SphereOverlapConsequenceVisualizer visualizer = Instantiate(VisualizerPrefab, center, boxRotation);
         visualizer.Initialize(center, radius, boxRotation);
+        
     }
 }

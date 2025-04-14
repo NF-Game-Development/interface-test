@@ -1,6 +1,17 @@
+using Cysharp.Threading.Tasks;
 using UnityEngine;
 
-public class IActiveAbilityHandler
+public interface IActiveAbilityHandler
 {
+    public void StartAbility(AbilityExtendableEnum abilityExtendableEnum)
+    {
+    }
     
+    public void FinishAbility()
+    {
+    }
+
+    public void AbilityIsStillExecuting()
+    {
+    }
 }

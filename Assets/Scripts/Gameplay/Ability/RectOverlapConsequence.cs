@@ -7,7 +7,7 @@ using UnityEngine;
 using UnityEngine.Serialization;
 
 [CreateAssetMenu(fileName = "New Rect Overlap Consequence", menuName = "ScriptableObjects/Ability/Rect Overlap Consequence")]
-public class RectOverlapConsequence : Consequence
+public class RectOverlapConsequence : Consequence, IVisualizer
 {
     public Stat Width;
     public Stat Depth;
@@ -33,7 +33,7 @@ public class RectOverlapConsequence : Consequence
         Quaternion boxRotation = Quaternion.LookRotation(centerTransform.transform.forward);
         
         if(IsVisualized)
-            SpawnVisualizer(center, halfExtents, boxRotation);
+            SpawnVisualizer(center, halfExtents, boxRotation,0f);
         
         Collider[] colliders = Physics.OverlapBox(center, halfExtents, boxRotation);
         List<GameObject> targets = new();
@@ -49,10 +49,9 @@ public class RectOverlapConsequence : Consequence
         abilityParameters.SetParameter(TargetListParameterKey, targets.ToList());
         await ExecuteNextConsequence(abilityParameters);
     }
-
-    public void SpawnVisualizer( Vector3 center, Vector3 halfExtents, Quaternion boxRotation)
+    
+    public void SpawnVisualizer(Vector3 center, Vector3 halfExtents, Quaternion boxRotation, float radius)
     {
         RectOverlapConsequenceVisualizer visualizer = Instantiate(VisualizerPrefab, center, boxRotation);
-        visualizer.Initialize(center, halfExtents, boxRotation);
-    }
+        visualizer.Initialize(center, halfExtents, boxRotation);    }
 }
