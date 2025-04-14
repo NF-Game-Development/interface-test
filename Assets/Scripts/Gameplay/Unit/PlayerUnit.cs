@@ -33,6 +33,12 @@ public class PlayerUnit : BaseUnit
             model.Value.SetActive(false);
         }
         
-        _playerModels[UnitClass].SetActive(true);
+        _playerModels[_unitClass].SetActive(true);
+    }
+
+
+    public UnitClass GetUnitClass()
+    {
+        return _unitClass;
     }
 }

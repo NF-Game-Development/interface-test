@@ -16,7 +16,7 @@ public class ClassInitializer : MonoExt
 
     public void InitializeUnitClass(ClassEnum classEnum, BaseUnit baseUnit)
     {
-        baseUnit.UnitClass = _baseClassDictionary.ClassDictionary[classEnum];
+        baseUnit.InitializeUnitClass(_baseClassDictionary.ClassDictionary[classEnum]);
     }
     
     public override void Initialize()

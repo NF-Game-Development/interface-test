@@ -92,7 +92,7 @@ public class PlayerController : MonoExt, IMovable, IRotatable, IAbilityCastable
 
     public void OnAbilityCast(AbilityExtendableEnum abilityEnum)
     {
-        _player.UnitClass.ClassAbilityList.AbilityDictionary[abilityEnum].OnTriggerAbility(gameObject, _abilityParameterHandler);
+        _player.GetUnitClass().ClassAbilityList.AbilityDictionary[abilityEnum].OnTriggerAbility(gameObject, _abilityParameterHandler);
     }
 
     public void DisableMovement(bool canMove)
@@ -104,7 +104,7 @@ public class PlayerController : MonoExt, IMovable, IRotatable, IAbilityCastable
     public void InitializePlayer(UnitClass unitClass)
     {
         _player.InitializeUnitClass(unitClass);
-        _player.UnitClass.ClassAbilityList.InitializeAbilities();
+        _player.GetUnitClass().ClassAbilityList.InitializeAbilities();
     }
 
     public void ChangeInputReaderAbilityDictionary(AbilityDictionary newDictionary)
@@ -124,6 +124,6 @@ public class PlayerController : MonoExt, IMovable, IRotatable, IAbilityCastable
 
     public AbilityList GetAbilityList()
     {
-        return _player.UnitClass.ClassAbilityList;
+        return _player.GetUnitClass().ClassAbilityList;
     }
 }

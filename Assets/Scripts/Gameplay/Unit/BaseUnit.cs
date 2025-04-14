@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class BaseUnit : MonoExt
 {
-    public UnitClass UnitClass;
+    protected UnitClass _unitClass;
     [SerializeField] private Health Health;
     
     private void Awake()
@@ -18,8 +18,8 @@ public class BaseUnit : MonoExt
 
     public void InitializeUnitClass(UnitClass newUnitClass)
     {
-        UnitClass = newUnitClass;
-        Health.SetMaxHealth(UnitClass.ClassMaxHp);
+        _unitClass = newUnitClass;
+        Health.SetMaxHealth(_unitClass.ClassMaxHp);
     }
     
     public override void Initialize()
