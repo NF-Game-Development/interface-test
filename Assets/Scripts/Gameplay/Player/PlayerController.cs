@@ -28,7 +28,6 @@ public class PlayerController : MonoExt, IMovable, IRotatable, IAbilityCastable
     {
         //Events
         OnSubscriptionSet();
-        _abilityList = _classType.AbilityList;
         _playerInput.SetAbilityDictionary(_abilityList.AbilityInputDictionary);
     }
     
@@ -36,6 +35,7 @@ public class PlayerController : MonoExt, IMovable, IRotatable, IAbilityCastable
     {
         base.Initialize();
         _playerInput.EnablePlayerActions();
+        _abilityList = _classType.AbilityList;
         _abilityList.InitializeAbilities();
         _abilityParameterHandler.Initialize();
     }

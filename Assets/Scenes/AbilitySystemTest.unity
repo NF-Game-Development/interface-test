@@ -2050,6 +2050,7 @@ MonoBehaviour:
   PlayerToSpawn: {fileID: 11400000, guid: f5ede4ebacb264047ab7386795361bf6, type: 2}
   Player: {fileID: 0}
   Enemy: {fileID: 0}
+  HudManager: {fileID: 901512792}
 --- !u!4 &860515776
 Transform:
   m_ObjectHideFlags: 0

@@ -42,6 +42,7 @@ public class HUDManager : MonoExt
         base.OnSubscriptionSet();
         AddEvent(_abilityParameterHandler.AbilityStarted, OnAbilityStarted);
         AddEvent(_abilityParameterHandler.AbilityStillExecuting, OnAbilityStillExecuting);
+        AddEvent(_spawner.OnPlayerChanged, _ => UpdateUI());
     }
 
     private void OnAbilityStillExecuting(bool isAbilityStillExecuting)
@@ -52,6 +53,13 @@ public class HUDManager : MonoExt
     private void OnAbilityStarted(AbilityExtendableEnum abilityEnum)
     {
         StartCooldownUI(abilityEnum).Forget();
+    }
+
+    public void UpdateUI()
+    {
+        _abilityList = _spawner.Player.GetComponent<PlayerController>().GetAbilityList();
+        //destroy ability images
+        //instantiate new ability images based on new ability list
     }
 
     private async UniTask StartCooldownUI(AbilityExtendableEnum abilityEnum)

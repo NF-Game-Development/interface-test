@@ -2,30 +2,33 @@ using System;
 using System.Collections.Generic;
 using UnityEngine;
 using Sirenix.OdinInspector;
+using UniRx;
 using UnityEngine.InputSystem;
 
 public class Spawner : MonoExt
 {
+    public Subject<Unit> OnPlayerChanged;
     public Camera Cam;
     public Transform PlayerSpawnPoint;
     public Transform EnemySpawnPoint;
-
+    
     public ClassType PlayerToSpawn;
-   // public EnemyType EnemyToSpawn;
-
     
     public Dictionary<ClassType, GameObject> PlayerClassDictionary;
     public Dictionary<EnemyType, GameObject> EnemyTypeDictionary;
-
     
     public GameObject Player;
     public GameObject Enemy;
+
+    private void Awake()
+    {
+        OnPlayerChanged = new Subject<Unit>();
+    }
 
     private void Start()
     {
         SpawnPlayer(PlayerToSpawn);
     }
-
 
     [Button]
     public void SpawnPlayer(ClassType PlayerToSpawn)
@@ -44,6 +47,7 @@ public class Spawner : MonoExt
             Cam.GetComponent<CameraController>().SetTransformTarget(player.transform);
             InitializePlayerOnSpawn(player);
         }
+        OnPlayerChanged.OnNext(Unit.Default);
     }
     
     [Button]
