@@ -1976,6 +1976,7 @@ GameObject:
   - component: {fileID: 2310347282819888010}
   - component: {fileID: 3125320570533253007}
   - component: {fileID: 3418225556183766156}
+  - component: {fileID: 3358249364235433861}
   m_Layer: 0
   m_Name: ENEMY_Archer
   m_TagString: Enemy
@@ -2098,7 +2099,10 @@ MonoBehaviour:
     Prefab: {fileID: 0}
     PrefabModificationsReferencedUnityObjects: []
     PrefabModifications: []
-    SerializationNodes: []
+    SerializationNodes:
+    - Name: onDestroyed
+      Entry: 6
+      Data: 
   MaxHP: 0
   HP: 0
 --- !u!114 &3418225556183766156
@@ -2124,6 +2128,28 @@ MonoBehaviour:
     SerializationNodes: []
   _enemyType: {fileID: 11400000, guid: f7dba06c1985e8940a56481b2eb26454, type: 2}
   _health: {fileID: 3125320570533253007}
+--- !u!95 &3358249364235433861
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6157417220121087209}
+  m_Enabled: 1
+  m_Avatar: {fileID: 9000000, guid: ab32b220bc70b8f47851a93a826460ce, type: 2}
+  m_Controller: {fileID: 9100000, guid: 4be74b5e7daf9dd41b8ec4c98b86d4eb, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &6246850881981113684
 GameObject:
   m_ObjectHideFlags: 0

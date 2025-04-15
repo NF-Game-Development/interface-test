@@ -2492,6 +2492,7 @@ GameObject:
   - component: {fileID: 2409038087220180209}
   - component: {fileID: 3546458062855901309}
   - component: {fileID: -3934725402128009813}
+  - component: {fileID: 9138457742756080628}
   m_Layer: 0
   m_Name: PLAYER_Healer
   m_TagString: Player
@@ -2628,6 +2629,7 @@ MonoBehaviour:
   _abilityParameterHandler: {fileID: 11400000, guid: 1067540d4eef0c14c89a4c43eac2e488, type: 2}
   _canPlayerMove: 1
   _canPlayerRotate: 1
+  _animator: {fileID: 9138457742756080628}
 --- !u!135 &-3934725402128009813
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -2649,6 +2651,28 @@ SphereCollider:
   serializedVersion: 3
   m_Radius: 0.00001
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!95 &9138457742756080628
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7872054062076048030}
+  m_Enabled: 1
+  m_Avatar: {fileID: 9000000, guid: ab32b220bc70b8f47851a93a826460ce, type: 2}
+  m_Controller: {fileID: 9100000, guid: 7f59c34b2d71cfb48b1984dff218533b, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &8096609961284770903
 GameObject:
   m_ObjectHideFlags: 0

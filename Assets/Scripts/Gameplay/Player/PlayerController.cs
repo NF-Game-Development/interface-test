@@ -18,6 +18,7 @@ public class PlayerController : MonoExt, IMovable, IRotatable, IAbilityCastable
     
     
     private Vector2 _movementInput = Vector2.zero;
+    public Animator _animator;
     private void Awake()
     {
         //Initialize mono extension
@@ -71,8 +72,8 @@ public class PlayerController : MonoExt, IMovable, IRotatable, IAbilityCastable
     public void Move(Vector3 movementDirection, MovementStats movementStats)
     {
         Vector3 velocity = movementDirection * movementStats.MovementSpeed;
+        _animator.SetFloat("Velocity", velocity.magnitude);
         velocity.y = _rigidbody.linearVelocity.y; // Maintain original vertical velocity (gravity)
-        
         _rigidbody.linearVelocity = velocity;
     }
     

@@ -2252,6 +2252,7 @@ GameObject:
   - component: {fileID: 5808719021990081108}
   - component: {fileID: 9145285334191231600}
   - component: {fileID: 8619389180983063359}
+  - component: {fileID: 7154829869162789409}
   m_Layer: 0
   m_Name: PLAYERALLY_Archer
   m_TagString: Player
@@ -2350,9 +2351,34 @@ MonoBehaviour:
     Prefab: {fileID: 0}
     PrefabModificationsReferencedUnityObjects: []
     PrefabModifications: []
-    SerializationNodes: []
+    SerializationNodes:
+    - Name: onDestroyed
+      Entry: 6
+      Data: 
   MaxHP: 100
   HP: 50
+--- !u!95 &7154829869162789409
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7468364260243150748}
+  m_Enabled: 1
+  m_Avatar: {fileID: 9000000, guid: ab32b220bc70b8f47851a93a826460ce, type: 2}
+  m_Controller: {fileID: 9100000, guid: 4be74b5e7daf9dd41b8ec4c98b86d4eb, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &7817597289074591812
 GameObject:
   m_ObjectHideFlags: 0
