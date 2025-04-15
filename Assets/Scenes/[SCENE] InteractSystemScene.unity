@@ -813,6 +813,9 @@ MonoBehaviour:
   _errorText: {fileID: 51160470}
   _abilityList: {fileID: 11400000, guid: 3c39be05980d0074db691ba77953e950, type: 2}
   _abilityParameterHandler: {fileID: 11400000, guid: 1067540d4eef0c14c89a4c43eac2e488, type: 2}
+  _spawner: {fileID: 0}
+  _classTypes: []
+  _enemyTypes: []
 --- !u!222 &159663129
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1392,7 +1395,6 @@ MonoBehaviour:
   PlayerSpawnPoint: {fileID: 915563389}
   EnemySpawnPoint: {fileID: 666836087}
   PlayerToSpawn: {fileID: 11400000, guid: f5ede4ebacb264047ab7386795361bf6, type: 2}
-  EnemyToSpawn: {fileID: 0}
   Player: {fileID: 0}
   Enemy: {fileID: 0}
 --- !u!4 &334256302

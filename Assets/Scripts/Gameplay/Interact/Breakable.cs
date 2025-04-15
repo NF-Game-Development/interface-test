@@ -1,7 +1,8 @@
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Serialization;
 using UniRx;
-public class Breakable : MonoExt, IDamageable
+public class Breakable : MonoExt, IDamageable, IDropHandler
 {
     [SerializeField] private Stat _maxHP;
     [SerializeField] private ItemDropList _itemDrops;
@@ -30,19 +31,24 @@ public class Breakable : MonoExt, IDamageable
         base.OnSubscriptionSet();
     }
 
-    private void DropItem()
+    public void DropItem()
     {
         if (_itemDrops.ItemDrops.Count == 0) return;
 
         float roll = Random.value;
         if (roll <= _dropChance.Value)
         {
-            int index = Random.Range(0, _itemDrops.ItemDrops.Count);
-            GameObject item = _itemDrops.ItemDrops[index];
+            GameObject selectedItem = GetRandomDrop(_itemDrops.ItemDrops);
 
-            Instantiate(item, transform.position, Quaternion.identity);
-
-            Debug.Log("Dropped item: " + item.name);
+            if (selectedItem != null)
+            {
+                Instantiate(selectedItem, transform.position, Quaternion.identity);
+                Debug.Log("Dropped item: " + selectedItem.name);
+            }
+            else
+            {
+                Debug.LogWarning("Gacha roll failed. No item matched.");
+            }
         }
         
         else
@@ -50,6 +56,30 @@ public class Breakable : MonoExt, IDamageable
             Debug.Log("No item dropped.");
         }
     }
+    
+    public GameObject GetRandomDrop(List<ItemDrop> drops)
+    {
+        float totalRate = 0f;
+        foreach (var drop in drops)
+        {
+            totalRate += drop.ItemDropRate;
+        }
+
+        float roll = Random.Range(0f, totalRate);
+        float cumulative = 0f;
+
+        foreach (var drop in drops)
+        {
+            cumulative += drop.ItemDropRate;
+            if (roll <= cumulative)
+            {
+                return drop.ItemPrefab;
+            }
+        }
+
+        return null;
+    }
+
 
     public void ApplyDamage(float damageValue)
     {

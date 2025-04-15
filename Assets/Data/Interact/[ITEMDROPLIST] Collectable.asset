@@ -13,6 +13,9 @@ MonoBehaviour:
   m_Name: '[ITEMDROPLIST] Collectable'
   m_EditorClassIdentifier: 
   ItemDrops:
-  - {fileID: 9042730585831424088, guid: 9092934a818bbf24686ccae196845697, type: 3}
-  - {fileID: 957025515154194731, guid: 5627b27c700ff8446832c455563ec752, type: 3}
-  - {fileID: 220329679513625538, guid: 7d1c89fe363c29b49be67bbcaebd327a, type: 3}
+  - ItemDropRate: 0.5
+    ItemPrefab: {fileID: 220329679513625538, guid: 7d1c89fe363c29b49be67bbcaebd327a, type: 3}
+  - ItemDropRate: 0.2
+    ItemPrefab: {fileID: 957025515154194731, guid: 5627b27c700ff8446832c455563ec752, type: 3}
+  - ItemDropRate: 0.3
+    ItemPrefab: {fileID: 9042730585831424088, guid: 9092934a818bbf24686ccae196845697, type: 3}

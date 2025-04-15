@@ -284,3 +284,5 @@ MonoBehaviour:
   _openPosition: {x: 0, y: 1, z: 0}
   _openRotation: {x: -90, y: 0, z: 0}
   _chestLid: {fileID: 5294299316976415323}
+  _itemDrops: {fileID: 11400000, guid: 5c1f82f3ae46b174f9e6af1aa2e6194f, type: 2}
+  _dropChance: {fileID: 11400000, guid: ee63fd7295525bc498b4ac58e83bd598, type: 2}
