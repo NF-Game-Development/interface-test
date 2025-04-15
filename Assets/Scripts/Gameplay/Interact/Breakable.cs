@@ -1,10 +1,12 @@
 using UnityEngine;
 using UnityEngine.Serialization;
-
-public class Breakable : MonoExt, IInteractable
+using UniRx;
+public class Breakable : MonoExt, IDamageable
 {
+    [SerializeField] private Stat _maxHP;
     [SerializeField] private ItemDropList _itemDrops;
-    [SerializeField] private float _dropChance;
+    [SerializeField] private Stat _dropChance;
+    [SerializeField] private float _hp;
 
     private void Awake()
     {
@@ -20,6 +22,7 @@ public class Breakable : MonoExt, IInteractable
     public override void Initialize()
     {
         base.Initialize();
+        _hp = _maxHP.Value;
     }
     
     public override void OnSubscriptionSet()
@@ -27,18 +30,12 @@ public class Breakable : MonoExt, IInteractable
         base.OnSubscriptionSet();
     }
 
-    public void Interact()
-    {
-        DropItem();
-        Destroy(this.gameObject);
-    }
-
     private void DropItem()
     {
         if (_itemDrops.ItemDrops.Count == 0) return;
 
         float roll = Random.value;
-        if (roll <= _dropChance)
+        if (roll <= _dropChance.Value)
         {
             int index = Random.Range(0, _itemDrops.ItemDrops.Count);
             GameObject item = _itemDrops.ItemDrops[index];
@@ -53,5 +50,15 @@ public class Breakable : MonoExt, IInteractable
             Debug.Log("No item dropped.");
         }
     }
-    
+
+    public void ApplyDamage(float damageValue)
+    {
+        _hp -= damageValue;
+
+        if (_hp <= 0)
+        {
+            DropItem();
+            Destroy(gameObject, 0.2f);
+        }
+    }
 }

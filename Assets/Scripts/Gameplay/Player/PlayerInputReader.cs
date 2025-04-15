@@ -48,25 +48,30 @@ public class PlayerInputReader : SerializedScriptableObject, InputSystem_Actions
     public void OnAbility1(InputAction.CallbackContext context)
     {
         if(context.performed)
-            Ability.OnNext(AbilityDictionary[1]);
+            if(AbilityDictionary[1] != null)
+                Ability.OnNext(AbilityDictionary[1]);
     }
 
     public void OnAbility2(InputAction.CallbackContext context)
     {
         if(context.performed)
-            Ability.OnNext(AbilityDictionary[2]);
+            if(AbilityDictionary[2] != null)
+              Ability.OnNext(AbilityDictionary[2]);
     }
 
     public void OnAbility3(InputAction.CallbackContext context)
     {
         if(context.performed)
-            Ability.OnNext(AbilityDictionary[3]);
+            if(AbilityDictionary[3] != null)
+                Ability.OnNext(AbilityDictionary[3]);
     }
     
     public void OnAbility4(InputAction.CallbackContext context)
     {
+        
         if(context.performed)
-            Ability.OnNext(AbilityDictionary[4]);
+            if(AbilityDictionary[4] != null)
+             Ability.OnNext(AbilityDictionary[4]);
     }
 
     public void SetAbilityDictionary(Dictionary<int, AbilityExtendableEnum> abilityDictionary)

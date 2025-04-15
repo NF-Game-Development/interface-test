@@ -281,4 +281,5 @@ MonoBehaviour:
     PrefabModificationsReferencedUnityObjects: []
     PrefabModifications: []
     SerializationNodes: []
+  _openRotation: {x: 0, y: -90, z: 0}
   _door: {fileID: 1497975214498115248}

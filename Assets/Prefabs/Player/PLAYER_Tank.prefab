@@ -2396,6 +2396,7 @@ GameObject:
   - component: {fileID: -3793443335877884938}
   - component: {fileID: 415611057494381279}
   - component: {fileID: 659481268704443235}
+  - component: {fileID: 3775405707354031698}
   m_Layer: 0
   m_Name: PLAYER_Tank
   m_TagString: Player
@@ -2479,7 +2480,7 @@ MonoBehaviour:
     m_Bits: 64
   _topDownCamera: {fileID: 0}
   _collectRadius: {fileID: 11400000, guid: dc07428f6232001408d5190165c397fc, type: 2}
-  _collider: {fileID: 0}
+  _collider: {fileID: 3775405707354031698}
   _collectedObjects: []
 --- !u!65 &415611057494381279
 BoxCollider:
@@ -2532,6 +2533,27 @@ MonoBehaviour:
   _abilityParameterHandler: {fileID: 11400000, guid: 1067540d4eef0c14c89a4c43eac2e488, type: 2}
   _canPlayerMove: 1
   _canPlayerRotate: 1
+--- !u!135 &3775405707354031698
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7923065778505292610}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Radius: 0.00001
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &7954696857734657106
 GameObject:
   m_ObjectHideFlags: 0

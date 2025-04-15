@@ -9,8 +9,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d534e4b91cb24005b243f55f5cd8da8a, type: 3}
-  m_Name: '[CONSEQUENCE] Heal_RectOverlap'
+  m_Script: {fileID: 11500000, guid: b1be5d1c058248ef923f070eec7a343d, type: 3}
+  m_Name: '[CONSEQUENCE] Breakable_SphereOverlap'
   m_EditorClassIdentifier: 
   serializationData:
     SerializedFormat: 2
@@ -21,14 +21,12 @@ MonoBehaviour:
     PrefabModificationsReferencedUnityObjects: []
     PrefabModifications: []
     SerializationNodes: []
-  NextConsequence: {fileID: 11400000, guid: 4e3034cdf0e730241bae79fc98c9f359, type: 2}
-  Width: {fileID: 11400000, guid: 375832764de46fd45bd14319f27aa089, type: 2}
-  Depth: {fileID: 11400000, guid: 44d0257c74433c64ab31708c1abe97eb, type: 2}
-  Height: {fileID: 11400000, guid: e13316518738a9448aeb3ef6289125f3, type: 2}
-  FrontOffset: {fileID: 11400000, guid: 2fc668d5f18c83243bab0ab02acca2a6, type: 2}
+  NextConsequence: {fileID: 11400000, guid: c9497004301d9624ca1fb450febf5ff4, type: 2}
+  Radius: {fileID: 11400000, guid: 529e3daaf73ab714288b10f5ba31a674, type: 2}
+  FrontOffset: {fileID: 11400000, guid: 6ea04bc3825949d4f8411cbdfdaf1e41, type: 2}
   CenterParameterKey: {fileID: 11400000, guid: 83f84282e1a12074c904e48c25dc1ce3, type: 2}
   TargetListParameterKey: {fileID: 11400000, guid: 88f2047015708074c8205207f50bbb9d, type: 2}
   TargetTags:
-  - {fileID: 11400000, guid: 087bdd2240517da429090e28b8c28804, type: 2}
+  - {fileID: 11400000, guid: f4e5429ddddf6c34b9d2f5bfaf3fe549, type: 2}
   IsVisualized: 1
-  VisualizerPrefab: {fileID: 3258453889424858441, guid: 6021b8da3e18d8e42ac0e7373cf86006, type: 3}
+  VisualizerPrefab: {fileID: 2535171875596444428, guid: 43a2dfde242049e4ea179a5585c3c598, type: 3}

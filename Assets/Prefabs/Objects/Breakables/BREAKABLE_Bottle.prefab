@@ -12,9 +12,11 @@ GameObject:
   - component: {fileID: 1258707712418983274}
   - component: {fileID: 4830684841557094937}
   - component: {fileID: 6744184009042427195}
-  m_Layer: 0
+  - component: {fileID: 5793796805045465201}
+  - component: {fileID: 850998059271089984}
+  m_Layer: 6
   m_Name: BREAKABLE_Bottle
-  m_TagString: Untagged
+  m_TagString: Breakable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -27,7 +29,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5654296368311856957}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.00000008146034, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 8.57, y: 0, z: -2.12}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -108,3 +110,54 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.36841005, y: 0.8857132, z: 0.3684101}
   m_Center: {x: 0.000000007450581, y: 0.44285798, z: 0.00000027567148}
+--- !u!114 &5793796805045465201
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5654296368311856957}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7845a46a29fd37c41b01b1267cad245c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes: []
+  _maxHP: {fileID: 11400000, guid: 92641f0751c91544888545685cddaac9, type: 2}
+  _itemDrops: {fileID: 11400000, guid: 0894bc1e4ecb15e46b2aae13e779d160, type: 2}
+  _dropChance: {fileID: 11400000, guid: f0f56fea8c9809d40aa45a776b49f4f5, type: 2}
+  _hp: 0
+--- !u!114 &850998059271089984
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5654296368311856957}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c793501c353b41268d8f54f41a652bca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes:
+    - Name: onDestroyed
+      Entry: 6
+      Data: 
+  MaxHP: 0
+  HP: 0

@@ -12,9 +12,10 @@ GameObject:
   - component: {fileID: 1663612972264533938}
   - component: {fileID: 5639589156165381066}
   - component: {fileID: 678757419802636902}
-  m_Layer: 0
+  - component: {fileID: 8020470862195729615}
+  m_Layer: 6
   m_Name: BREAKABLE_SmallCrate
-  m_TagString: Untagged
+  m_TagString: Breakable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -27,7 +28,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7153644899345976212}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.00000008146034, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 8.805112, y: 0, z: -8.231962}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -108,3 +109,28 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 1.0000001, z: 1.0000002}
   m_Center: {x: 0, y: 0.50000006, z: -0.00000008940697}
+--- !u!114 &8020470862195729615
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7153644899345976212}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7845a46a29fd37c41b01b1267cad245c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes: []
+  _maxHP: {fileID: 11400000, guid: 92641f0751c91544888545685cddaac9, type: 2}
+  _itemDrops: {fileID: 11400000, guid: 5c1f82f3ae46b174f9e6af1aa2e6194f, type: 2}
+  _dropChance: {fileID: 11400000, guid: c21c718c35463f9458a17a0920e2d8de, type: 2}
+  _hp: 0

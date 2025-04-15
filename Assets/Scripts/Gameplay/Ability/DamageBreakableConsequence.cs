@@ -3,8 +3,8 @@ using System.Linq;
 using Cysharp.Threading.Tasks;
 using UnityEngine;
 
-[CreateAssetMenu(fileName = "New Deal Damage Consequence", menuName = "ScriptableObjects/Ability/Deal Damage Consequence")]
-public class DealDamageConsequence : Consequence
+[CreateAssetMenu(fileName = "New Damage Breakable Consequence", menuName = "ScriptableObjects/Ability/Damage Breakable Consequence")]
+public class DamageBreakableConsequence : Consequence
 {
     public Stat Damage;
     
@@ -12,7 +12,6 @@ public class DealDamageConsequence : Consequence
     
     public override async UniTask ExecuteConsequence(AbilityParameterHandler abilityParameters)
     {
-
         List<GameObject> targetList = abilityParameters.GetParameter<List<GameObject>>(EnemyListParameterKey);
         if (targetList.Count <= 0)
         {
@@ -22,7 +21,7 @@ public class DealDamageConsequence : Consequence
 
         foreach (GameObject target in targetList.ToList())
         {
-            if (!target.TryGetComponent<Health>(out var targetHealth))
+            if (!target.TryGetComponent<Breakable>(out var targetHealth))
             {
                 targetList.Remove(target);
                 continue;

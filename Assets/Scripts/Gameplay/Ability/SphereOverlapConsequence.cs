@@ -13,7 +13,7 @@ public class SphereOverlapConsequence : Consequence, IVisualizer
     
     public AbilityParameterExtendableEnum CenterParameterKey;
     public AbilityParameterExtendableEnum TargetListParameterKey;
-    public AbilityParameterExtendableEnum TargetTag;
+    public List<AbilityParameterExtendableEnum> TargetTags;
     
     public bool IsVisualized = false;
     [ShowIf("IsVisualized")]
@@ -34,8 +34,11 @@ public class SphereOverlapConsequence : Consequence, IVisualizer
         
         foreach (Collider collider in colliders)
         {
-            if (!collider.CompareTag(TargetTag.name))
-                continue;
+            foreach (AbilityParameterExtendableEnum tag in TargetTags)
+            {
+                if (!collider.CompareTag(tag.name))
+                    continue;
+            }
             
             targets.Add(collider.gameObject);
         }
