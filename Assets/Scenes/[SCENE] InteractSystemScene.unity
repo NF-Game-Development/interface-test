@@ -267,6 +267,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: COLLECTABLE_Coin (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 307296922644835636, guid: 7d1c89fe363c29b49be67bbcaebd327a, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 686583607691623063, guid: 7d1c89fe363c29b49be67bbcaebd327a, type: 3}
       propertyPath: m_LocalPosition.x
       value: 5.153
@@ -308,9 +312,13 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4512595920045502917, guid: 7d1c89fe363c29b49be67bbcaebd327a, type: 3}
+      propertyPath: _pickupDistance
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4512595920045502917, guid: 7d1c89fe363c29b49be67bbcaebd327a, type: 3}
       propertyPath: serializationData.Prefab
       value: 
-      objectReference: {fileID: 4512595920045502917, guid: 7d1c89fe363c29b49be67bbcaebd327a, type: 3}
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3467,13 +3475,9 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6476892216709950686, guid: 84b18f8b1d24df648be7a13e769bb7c2, type: 3}
-      propertyPath: _openRotation.y
-      value: -90
-      objectReference: {fileID: 0}
-    - target: {fileID: 6476892216709950686, guid: 84b18f8b1d24df648be7a13e769bb7c2, type: 3}
       propertyPath: serializationData.Prefab
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 6476892216709950686, guid: 84b18f8b1d24df648be7a13e769bb7c2, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3528,9 +3532,13 @@ PrefabInstance:
     m_TransformParent: {fileID: 508637074}
     m_Modifications:
     - target: {fileID: 2602126922074217685, guid: 9092934a818bbf24686ccae196845697, type: 3}
+      propertyPath: _pickupDistance
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2602126922074217685, guid: 9092934a818bbf24686ccae196845697, type: 3}
       propertyPath: serializationData.Prefab
       value: 
-      objectReference: {fileID: 2602126922074217685, guid: 9092934a818bbf24686ccae196845697, type: 3}
+      objectReference: {fileID: 0}
     - target: {fileID: 2861083551534730619, guid: 9092934a818bbf24686ccae196845697, type: 3}
       propertyPath: m_LocalPosition.x
       value: 2.1220286
@@ -3570,6 +3578,10 @@ PrefabInstance:
     - target: {fileID: 2861083551534730619, guid: 9092934a818bbf24686ccae196845697, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5451564764218932854, guid: 9092934a818bbf24686ccae196845697, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 9042730585831424088, guid: 9092934a818bbf24686ccae196845697, type: 3}
       propertyPath: m_Name
@@ -3633,25 +3645,9 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8037777301376413626, guid: 869eb404a4c690c469a7f8814633277d, type: 3}
-      propertyPath: _openRotation.w
-      value: 0.70710677
-      objectReference: {fileID: 0}
-    - target: {fileID: 8037777301376413626, guid: 869eb404a4c690c469a7f8814633277d, type: 3}
-      propertyPath: _openRotation.x
-      value: -90
-      objectReference: {fileID: 0}
-    - target: {fileID: 8037777301376413626, guid: 869eb404a4c690c469a7f8814633277d, type: 3}
-      propertyPath: _openRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8037777301376413626, guid: 869eb404a4c690c469a7f8814633277d, type: 3}
-      propertyPath: _openRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8037777301376413626, guid: 869eb404a4c690c469a7f8814633277d, type: 3}
       propertyPath: serializationData.Prefab
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 8037777301376413626, guid: 869eb404a4c690c469a7f8814633277d, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3665,22 +3661,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 508637074}
     m_Modifications:
-    - target: {fileID: 742358979700237460, guid: 40a350334ae4c934c83590236367938e, type: 3}
-      propertyPath: serializationData.Prefab
-      value: 
-      objectReference: {fileID: 742358979700237460, guid: 40a350334ae4c934c83590236367938e, type: 3}
     - target: {fileID: 4352332411390499798, guid: 40a350334ae4c934c83590236367938e, type: 3}
       propertyPath: m_Name
       value: BREAKABLE_LargeBottle
       objectReference: {fileID: 0}
-    - target: {fileID: 4352332411390499798, guid: 40a350334ae4c934c83590236367938e, type: 3}
-      propertyPath: m_TagString
-      value: Breakable
-      objectReference: {fileID: 0}
-    - target: {fileID: 7134602106185988395, guid: 40a350334ae4c934c83590236367938e, type: 3}
-      propertyPath: _dropChance
-      value: 
-      objectReference: {fileID: 11400000, guid: f0f56fea8c9809d40aa45a776b49f4f5, type: 2}
     - target: {fileID: 7134602106185988395, guid: 40a350334ae4c934c83590236367938e, type: 3}
       propertyPath: serializationData.Prefab
       value: 
@@ -3725,8 +3709,7 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 742358979700237460, guid: 40a350334ae4c934c83590236367938e, type: 3}
+    m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -3742,6 +3725,10 @@ PrefabInstance:
     - target: {fileID: 220329679513625538, guid: 7d1c89fe363c29b49be67bbcaebd327a, type: 3}
       propertyPath: m_Name
       value: COLLECTABLE_Coin
+      objectReference: {fileID: 0}
+    - target: {fileID: 307296922644835636, guid: 7d1c89fe363c29b49be67bbcaebd327a, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 686583607691623063, guid: 7d1c89fe363c29b49be67bbcaebd327a, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3784,17 +3771,13 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4512595920045502917, guid: 7d1c89fe363c29b49be67bbcaebd327a, type: 3}
-      propertyPath: _key
-      value: currency_coin
+      propertyPath: _pickupDistance
+      value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 4512595920045502917, guid: 7d1c89fe363c29b49be67bbcaebd327a, type: 3}
-      propertyPath: _itemDropEnum
-      value: 
-      objectReference: {fileID: 11400000, guid: 0ebe9575549742b4db791cea5359efe0, type: 2}
     - target: {fileID: 4512595920045502917, guid: 7d1c89fe363c29b49be67bbcaebd327a, type: 3}
       propertyPath: serializationData.Prefab
       value: 
-      objectReference: {fileID: 4512595920045502917, guid: 7d1c89fe363c29b49be67bbcaebd327a, type: 3}
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3811,10 +3794,6 @@ PrefabInstance:
     - target: {fileID: 1684867441569475373, guid: 856b305fab072cd4d9e9b182d6eb9168, type: 3}
       propertyPath: m_Name
       value: BREAKABLE_Barrel
-      objectReference: {fileID: 0}
-    - target: {fileID: 1684867441569475373, guid: 856b305fab072cd4d9e9b182d6eb9168, type: 3}
-      propertyPath: m_TagString
-      value: Breakable
       objectReference: {fileID: 0}
     - target: {fileID: 2784539548429425757, guid: 856b305fab072cd4d9e9b182d6eb9168, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3857,19 +3836,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4344486320899221926, guid: 856b305fab072cd4d9e9b182d6eb9168, type: 3}
-      propertyPath: _dropChance
-      value: 
-      objectReference: {fileID: 11400000, guid: c21c718c35463f9458a17a0920e2d8de, type: 2}
-    - target: {fileID: 4344486320899221926, guid: 856b305fab072cd4d9e9b182d6eb9168, type: 3}
       propertyPath: serializationData.Prefab
       value: 
       objectReference: {fileID: 4344486320899221926, guid: 856b305fab072cd4d9e9b182d6eb9168, type: 3}
-    - target: {fileID: 5825527620879813750, guid: 856b305fab072cd4d9e9b182d6eb9168, type: 3}
-      propertyPath: serializationData.Prefab
-      value: 
-      objectReference: {fileID: 5825527620879813750, guid: 856b305fab072cd4d9e9b182d6eb9168, type: 3}
-    m_RemovedComponents:
-    - {fileID: 5825527620879813750, guid: 856b305fab072cd4d9e9b182d6eb9168, type: 3}
+    m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -3882,10 +3852,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 508637074}
     m_Modifications:
-    - target: {fileID: 1433900250113989103, guid: 15d04e70bdf4df34589418e0b4457ccf, type: 3}
-      propertyPath: _dropChance
-      value: 
-      objectReference: {fileID: 11400000, guid: c21c718c35463f9458a17a0920e2d8de, type: 2}
     - target: {fileID: 1433900250113989103, guid: 15d04e70bdf4df34589418e0b4457ccf, type: 3}
       propertyPath: serializationData.Prefab
       value: 
@@ -3930,20 +3896,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5770047509553591738, guid: 15d04e70bdf4df34589418e0b4457ccf, type: 3}
-      propertyPath: serializationData.Prefab
-      value: 
-      objectReference: {fileID: 5770047509553591738, guid: 15d04e70bdf4df34589418e0b4457ccf, type: 3}
     - target: {fileID: 8772000102613917941, guid: 15d04e70bdf4df34589418e0b4457ccf, type: 3}
       propertyPath: m_Name
       value: BREAKABLE_LargeCrate
       objectReference: {fileID: 0}
-    - target: {fileID: 8772000102613917941, guid: 15d04e70bdf4df34589418e0b4457ccf, type: 3}
-      propertyPath: m_TagString
-      value: Breakable
-      objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 5770047509553591738, guid: 15d04e70bdf4df34589418e0b4457ccf, type: 3}
+    m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -4000,28 +3957,15 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5404919932341902709, guid: 1f3d512e24851b440a3f95afdfa2ea5c, type: 3}
-      propertyPath: serializationData.Prefab
-      value: 
-      objectReference: {fileID: 5404919932341902709, guid: 1f3d512e24851b440a3f95afdfa2ea5c, type: 3}
     - target: {fileID: 5654296368311856957, guid: 1f3d512e24851b440a3f95afdfa2ea5c, type: 3}
       propertyPath: m_Name
       value: BREAKABLE_Bottle
       objectReference: {fileID: 0}
-    - target: {fileID: 5654296368311856957, guid: 1f3d512e24851b440a3f95afdfa2ea5c, type: 3}
-      propertyPath: m_TagString
-      value: Breakable
-      objectReference: {fileID: 0}
-    - target: {fileID: 5793796805045465201, guid: 1f3d512e24851b440a3f95afdfa2ea5c, type: 3}
-      propertyPath: _dropChance
-      value: 
-      objectReference: {fileID: 11400000, guid: f0f56fea8c9809d40aa45a776b49f4f5, type: 2}
     - target: {fileID: 5793796805045465201, guid: 1f3d512e24851b440a3f95afdfa2ea5c, type: 3}
       propertyPath: serializationData.Prefab
       value: 
       objectReference: {fileID: 5793796805045465201, guid: 1f3d512e24851b440a3f95afdfa2ea5c, type: 3}
-    m_RemovedComponents:
-    - {fileID: 5404919932341902709, guid: 1f3d512e24851b440a3f95afdfa2ea5c, type: 3}
+    m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -4034,10 +3978,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 508637074}
     m_Modifications:
-    - target: {fileID: 609347232799216118, guid: 8523e482665841b4c9eebb82afb49330, type: 3}
-      propertyPath: _dropChance
-      value: 
-      objectReference: {fileID: 11400000, guid: c21c718c35463f9458a17a0920e2d8de, type: 2}
     - target: {fileID: 609347232799216118, guid: 8523e482665841b4c9eebb82afb49330, type: 3}
       propertyPath: serializationData.Prefab
       value: 
@@ -4086,16 +4026,7 @@ PrefabInstance:
       propertyPath: m_Name
       value: BREAKABLE_DecoratedBarrel
       objectReference: {fileID: 0}
-    - target: {fileID: 6628677631466905719, guid: 8523e482665841b4c9eebb82afb49330, type: 3}
-      propertyPath: m_TagString
-      value: Breakable
-      objectReference: {fileID: 0}
-    - target: {fileID: 7397926859023912284, guid: 8523e482665841b4c9eebb82afb49330, type: 3}
-      propertyPath: serializationData.Prefab
-      value: 
-      objectReference: {fileID: 7397926859023912284, guid: 8523e482665841b4c9eebb82afb49330, type: 3}
-    m_RemovedComponents:
-    - {fileID: 7397926859023912284, guid: 8523e482665841b4c9eebb82afb49330, type: 3}
+    m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -4108,10 +4039,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 508637074}
     m_Modifications:
-    - target: {fileID: 3424496222997639089, guid: 44d2d013e6ba0174ab9fa4c994d6a14b, type: 3}
-      propertyPath: serializationData.Prefab
-      value: 
-      objectReference: {fileID: 3424496222997639089, guid: 44d2d013e6ba0174ab9fa4c994d6a14b, type: 3}
     - target: {fileID: 5301600836941775517, guid: 44d2d013e6ba0174ab9fa4c994d6a14b, type: 3}
       propertyPath: m_LocalPosition.x
       value: 8.805112
@@ -4156,20 +4083,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: BREAKABLE_SmallCrate
       objectReference: {fileID: 0}
-    - target: {fileID: 7153644899345976212, guid: 44d2d013e6ba0174ab9fa4c994d6a14b, type: 3}
-      propertyPath: m_TagString
-      value: Breakable
-      objectReference: {fileID: 0}
-    - target: {fileID: 8020470862195729615, guid: 44d2d013e6ba0174ab9fa4c994d6a14b, type: 3}
-      propertyPath: _dropChance
-      value: 
-      objectReference: {fileID: 11400000, guid: c21c718c35463f9458a17a0920e2d8de, type: 2}
     - target: {fileID: 8020470862195729615, guid: 44d2d013e6ba0174ab9fa4c994d6a14b, type: 3}
       propertyPath: serializationData.Prefab
       value: 
       objectReference: {fileID: 8020470862195729615, guid: 44d2d013e6ba0174ab9fa4c994d6a14b, type: 3}
-    m_RemovedComponents:
-    - {fileID: 3424496222997639089, guid: 44d2d013e6ba0174ab9fa4c994d6a14b, type: 3}
+    m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -4187,9 +4105,17 @@ PrefabInstance:
       value: COLLECTABLE_CoinStack
       objectReference: {fileID: 0}
     - target: {fileID: 5710929726997241309, guid: 5627b27c700ff8446832c455563ec752, type: 3}
+      propertyPath: _pickupDistance
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5710929726997241309, guid: 5627b27c700ff8446832c455563ec752, type: 3}
       propertyPath: serializationData.Prefab
       value: 
-      objectReference: {fileID: 5710929726997241309, guid: 5627b27c700ff8446832c455563ec752, type: 3}
+      objectReference: {fileID: 0}
+    - target: {fileID: 6856438690591498398, guid: 5627b27c700ff8446832c455563ec752, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8009903773132022516, guid: 5627b27c700ff8446832c455563ec752, type: 3}
       propertyPath: m_LocalPosition.x
       value: 5.223485

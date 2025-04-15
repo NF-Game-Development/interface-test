@@ -57,6 +57,7 @@ public class PlayerInteraction : MonoExt
         if (collectable != null)
         {
             collectable.SetPlayerInteraction(this);
+            collectable.Collect();
         }
     }
 
