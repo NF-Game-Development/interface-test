@@ -2043,12 +2043,12 @@ MonoBehaviour:
     PrefabModificationsReferencedUnityObjects: []
     PrefabModifications: []
     SerializationNodes: []
-  _interactRange: 10
+  _interactRange: {fileID: 11400000, guid: 7551a9c52e0fda240bd5dcbf57ab5672, type: 2}
   _interactableLayer:
     serializedVersion: 2
     m_Bits: 64
   _topDownCamera: {fileID: 0}
-  _collectRadius: 3
+  _collectRadius: {fileID: 11400000, guid: dc07428f6232001408d5190165c397fc, type: 2}
   _collider: {fileID: 7353217545576769030}
   _collectedObjects: []
 --- !u!65 &3622642706924618437
