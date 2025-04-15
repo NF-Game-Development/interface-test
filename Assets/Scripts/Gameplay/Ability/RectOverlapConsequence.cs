@@ -40,12 +40,10 @@ public class RectOverlapConsequence : Consequence, IVisualizer
         
         foreach (Collider collider in colliders)
         {
-            foreach (AbilityParameterExtendableEnum tag in TargetTags)
-            {
-                if (!collider.CompareTag(tag.name))
-                    continue;
-            }
-            
+            //refactored to work with list of tags
+            bool hasMatchingTag = TargetTags.Any(tag => collider.CompareTag(tag.name));
+            if (!hasMatchingTag) continue;
+
             targets.Add(collider.gameObject);
         }
         
