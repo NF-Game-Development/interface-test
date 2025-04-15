@@ -34,8 +34,7 @@ public class Spawner : MonoExt
         {
             GameObject player = Instantiate(PlayerClassDictionary[PlayerToSpawn], PlayerSpawnPoint.position, PlayerSpawnPoint.rotation);
             Cam.GetComponent<CameraController>().SetTransformTarget(player.transform);
-            player.GetComponent<PlayerController>().SetCamera(Cam);
-            Player = player;
+            InitializePlayerOnSpawn(player);
         }
 
         if (Player != null)
@@ -43,11 +42,8 @@ public class Spawner : MonoExt
             Destroy(Player);
             GameObject player = Instantiate(PlayerClassDictionary[PlayerToSpawn], PlayerSpawnPoint.position, PlayerSpawnPoint.rotation);
             Cam.GetComponent<CameraController>().SetTransformTarget(player.transform);
-            player.GetComponent<PlayerController>().SetCamera(Cam);
-            Player = player;
-            
+            InitializePlayerOnSpawn(player);
         }
-        
     }
     
     [Button]
@@ -66,5 +62,12 @@ public class Spawner : MonoExt
             Enemy = enemy;
         }
         
+    }
+
+    private void InitializePlayerOnSpawn(GameObject player)
+    {
+        player.GetComponent<PlayerController>().SetCamera(Cam);
+        player.GetComponent<PlayerInteraction>().topDownCamera = Cam;
+        Player = player;
     }
 }

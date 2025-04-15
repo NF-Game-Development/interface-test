@@ -2488,6 +2488,7 @@ GameObject:
   m_Component:
   - component: {fileID: 949602517121043078}
   - component: {fileID: 5927178826637437737}
+  - component: {fileID: 2923204175251731390}
   - component: {fileID: 2409038087220180209}
   - component: {fileID: 3546458062855901309}
   m_Layer: 0
@@ -2546,6 +2547,32 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 112
   m_CollisionDetection: 0
+--- !u!114 &2923204175251731390
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7872054062076048030}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e8442b27b3c9e149906379cd1345dd6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes: []
+  interactRange: 10
+  interactableLayer:
+    serializedVersion: 2
+    m_Bits: 64
+  topDownCamera: {fileID: 0}
 --- !u!65 &2409038087220180209
 BoxCollider:
   m_ObjectHideFlags: 0
