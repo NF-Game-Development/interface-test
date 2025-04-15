@@ -255,6 +255,72 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1508693}
   m_CullTransparentMesh: 1
+--- !u!1001 &42036341
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 508637074}
+    m_Modifications:
+    - target: {fileID: 220329679513625538, guid: 7d1c89fe363c29b49be67bbcaebd327a, type: 3}
+      propertyPath: m_Name
+      value: COLLECTABLE_Coin (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 686583607691623063, guid: 7d1c89fe363c29b49be67bbcaebd327a, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 5.153
+      objectReference: {fileID: 0}
+    - target: {fileID: 686583607691623063, guid: 7d1c89fe363c29b49be67bbcaebd327a, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.06250274
+      objectReference: {fileID: 0}
+    - target: {fileID: 686583607691623063, guid: 7d1c89fe363c29b49be67bbcaebd327a, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -1.633
+      objectReference: {fileID: 0}
+    - target: {fileID: 686583607691623063, guid: 7d1c89fe363c29b49be67bbcaebd327a, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 686583607691623063, guid: 7d1c89fe363c29b49be67bbcaebd327a, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.00000008146034
+      objectReference: {fileID: 0}
+    - target: {fileID: 686583607691623063, guid: 7d1c89fe363c29b49be67bbcaebd327a, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 686583607691623063, guid: 7d1c89fe363c29b49be67bbcaebd327a, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 686583607691623063, guid: 7d1c89fe363c29b49be67bbcaebd327a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 686583607691623063, guid: 7d1c89fe363c29b49be67bbcaebd327a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 686583607691623063, guid: 7d1c89fe363c29b49be67bbcaebd327a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4512595920045502917, guid: 7d1c89fe363c29b49be67bbcaebd327a, type: 3}
+      propertyPath: serializationData.Prefab
+      value: 
+      objectReference: {fileID: 4512595920045502917, guid: 7d1c89fe363c29b49be67bbcaebd327a, type: 3}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7d1c89fe363c29b49be67bbcaebd327a, type: 3}
+--- !u!4 &42036342 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 686583607691623063, guid: 7d1c89fe363c29b49be67bbcaebd327a, type: 3}
+  m_PrefabInstance: {fileID: 42036341}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &51160470
 GameObject:
   m_ObjectHideFlags: 0
@@ -985,6 +1051,7 @@ Transform:
   - {fileID: 543450653359934941}
   - {fileID: 1588827820}
   - {fileID: 6427348188750665836}
+  - {fileID: 42036342}
   - {fileID: 45130400633723877}
   - {fileID: 131711977902712839}
   m_Father: {fileID: 0}
@@ -1978,7 +2045,7 @@ MonoBehaviour:
     PrefabModificationsReferencedUnityObjects: []
     PrefabModifications: []
     SerializationNodes: []
-  _itemDrops: {fileID: 11400000, guid: 0894bc1e4ecb15e46b2aae13e779d160, type: 2}
+  _itemDrops: {fileID: 11400000, guid: 5c1f82f3ae46b174f9e6af1aa2e6194f, type: 2}
   _dropChance: 0.5
 --- !u!1 &1414495193
 GameObject:
@@ -2232,7 +2299,7 @@ MonoBehaviour:
     PrefabModifications: []
     SerializationNodes: []
   _itemDrops: {fileID: 11400000, guid: 0894bc1e4ecb15e46b2aae13e779d160, type: 2}
-  _dropChance: 0.5
+  _dropChance: 0.7
 --- !u!1 &1851199955
 GameObject:
   m_ObjectHideFlags: 0
@@ -2395,7 +2462,7 @@ MonoBehaviour:
     PrefabModificationsReferencedUnityObjects: []
     PrefabModifications: []
     SerializationNodes: []
-  _itemDrops: {fileID: 11400000, guid: 0894bc1e4ecb15e46b2aae13e779d160, type: 2}
+  _itemDrops: {fileID: 11400000, guid: 5c1f82f3ae46b174f9e6af1aa2e6194f, type: 2}
   _dropChance: 0.5
 --- !u!1 &1925287677
 GameObject:
@@ -3092,6 +3159,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 508637074}
     m_Modifications:
+    - target: {fileID: 2602126922074217685, guid: 9092934a818bbf24686ccae196845697, type: 3}
+      propertyPath: serializationData.Prefab
+      value: 
+      objectReference: {fileID: 2602126922074217685, guid: 9092934a818bbf24686ccae196845697, type: 3}
     - target: {fileID: 2861083551534730619, guid: 9092934a818bbf24686ccae196845697, type: 3}
       propertyPath: m_LocalPosition.x
       value: 2.1220286
@@ -3132,17 +3203,9 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5451564764218932854, guid: 9092934a818bbf24686ccae196845697, type: 3}
-      propertyPath: m_IncludeLayers.m_Bits
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 9042730585831424088, guid: 9092934a818bbf24686ccae196845697, type: 3}
       propertyPath: m_Name
       value: COLLECTABLE_Food
-      objectReference: {fileID: 0}
-    - target: {fileID: 9042730585831424088, guid: 9092934a818bbf24686ccae196845697, type: 3}
-      propertyPath: m_Layer
-      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3345,7 +3408,7 @@ MonoBehaviour:
     PrefabModificationsReferencedUnityObjects: []
     PrefabModifications: []
     SerializationNodes: []
-  _itemDrops: {fileID: 11400000, guid: 0894bc1e4ecb15e46b2aae13e779d160, type: 2}
+  _itemDrops: {fileID: 11400000, guid: 5c1f82f3ae46b174f9e6af1aa2e6194f, type: 2}
   _dropChance: 0.5
 --- !u!114 &3469287837089007261
 MonoBehaviour:
@@ -3369,7 +3432,7 @@ MonoBehaviour:
     PrefabModifications: []
     SerializationNodes: []
   _itemDrops: {fileID: 11400000, guid: 0894bc1e4ecb15e46b2aae13e779d160, type: 2}
-  _dropChance: 0.5
+  _dropChance: 0.7
 --- !u!114 &3469287837276701306
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3391,7 +3454,7 @@ MonoBehaviour:
     PrefabModificationsReferencedUnityObjects: []
     PrefabModifications: []
     SerializationNodes: []
-  _itemDrops: {fileID: 11400000, guid: 0894bc1e4ecb15e46b2aae13e779d160, type: 2}
+  _itemDrops: {fileID: 11400000, guid: 5c1f82f3ae46b174f9e6af1aa2e6194f, type: 2}
   _dropChance: 0.5
 --- !u!114 &3469287837450556026
 MonoBehaviour:
@@ -3414,7 +3477,7 @@ MonoBehaviour:
     PrefabModificationsReferencedUnityObjects: []
     PrefabModifications: []
     SerializationNodes: []
-  _itemDrops: {fileID: 11400000, guid: 0894bc1e4ecb15e46b2aae13e779d160, type: 2}
+  _itemDrops: {fileID: 11400000, guid: 5c1f82f3ae46b174f9e6af1aa2e6194f, type: 2}
   _dropChance: 0.5
 --- !u!114 &3469287837690821884
 MonoBehaviour:
@@ -3437,7 +3500,7 @@ MonoBehaviour:
     PrefabModificationsReferencedUnityObjects: []
     PrefabModifications: []
     SerializationNodes: []
-  _itemDrops: {fileID: 11400000, guid: 0894bc1e4ecb15e46b2aae13e779d160, type: 2}
+  _itemDrops: {fileID: 11400000, guid: 5c1f82f3ae46b174f9e6af1aa2e6194f, type: 2}
   _dropChance: 0.5
 --- !u!114 &3469287838167908876
 MonoBehaviour:
@@ -3461,7 +3524,7 @@ MonoBehaviour:
     PrefabModifications: []
     SerializationNodes: []
   _itemDrops: {fileID: 11400000, guid: 0894bc1e4ecb15e46b2aae13e779d160, type: 2}
-  _dropChance: 0.5
+  _dropChance: 0.7
 --- !u!1001 &3635636429275919572
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3473,14 +3536,6 @@ PrefabInstance:
     - target: {fileID: 220329679513625538, guid: 7d1c89fe363c29b49be67bbcaebd327a, type: 3}
       propertyPath: m_Name
       value: COLLECTABLE_Coin
-      objectReference: {fileID: 0}
-    - target: {fileID: 220329679513625538, guid: 7d1c89fe363c29b49be67bbcaebd327a, type: 3}
-      propertyPath: m_Layer
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 307296922644835636, guid: 7d1c89fe363c29b49be67bbcaebd327a, type: 3}
-      propertyPath: m_IncludeLayers.m_Bits
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 686583607691623063, guid: 7d1c89fe363c29b49be67bbcaebd327a, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3522,6 +3577,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4512595920045502917, guid: 7d1c89fe363c29b49be67bbcaebd327a, type: 3}
+      propertyPath: _key
+      value: currency_coin
+      objectReference: {fileID: 0}
+    - target: {fileID: 4512595920045502917, guid: 7d1c89fe363c29b49be67bbcaebd327a, type: 3}
+      propertyPath: _itemDropEnum
+      value: 
+      objectReference: {fileID: 11400000, guid: 0ebe9575549742b4db791cea5359efe0, type: 2}
+    - target: {fileID: 4512595920045502917, guid: 7d1c89fe363c29b49be67bbcaebd327a, type: 3}
+      propertyPath: serializationData.Prefab
+      value: 
+      objectReference: {fileID: 4512595920045502917, guid: 7d1c89fe363c29b49be67bbcaebd327a, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3879,14 +3946,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: COLLECTABLE_CoinStack
       objectReference: {fileID: 0}
-    - target: {fileID: 957025515154194731, guid: 5627b27c700ff8446832c455563ec752, type: 3}
-      propertyPath: m_Layer
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 6856438690591498398, guid: 5627b27c700ff8446832c455563ec752, type: 3}
-      propertyPath: m_IncludeLayers.m_Bits
-      value: 0
-      objectReference: {fileID: 0}
+    - target: {fileID: 5710929726997241309, guid: 5627b27c700ff8446832c455563ec752, type: 3}
+      propertyPath: serializationData.Prefab
+      value: 
+      objectReference: {fileID: 5710929726997241309, guid: 5627b27c700ff8446832c455563ec752, type: 3}
     - target: {fileID: 8009903773132022516, guid: 5627b27c700ff8446832c455563ec752, type: 3}
       propertyPath: m_LocalPosition.x
       value: 5.223485

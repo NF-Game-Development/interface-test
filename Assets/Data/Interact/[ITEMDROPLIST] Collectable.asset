@@ -10,10 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 063c6fb933205c24da6fa003b2b4d507, type: 3}
-  m_Name: ItemDrops
+  m_Name: '[ITEMDROPLIST] Collectable'
   m_EditorClassIdentifier: 
   ItemDrops:
-  - {fileID: 919132149155446097, guid: 28f8c6f44367bd74d831a445e7843aa1, type: 3}
-  - {fileID: 919132149155446097, guid: 58598c95ae483644a9c1bf763f6719eb, type: 3}
-  - {fileID: 919132149155446097, guid: 165380055cb0e194490eb70a949ba74b, type: 3}
-  - {fileID: 919132149155446097, guid: d979f8141795530438fcb69a7731cedc, type: 3}
+  - {fileID: 9042730585831424088, guid: 9092934a818bbf24686ccae196845697, type: 3}
+  - {fileID: 957025515154194731, guid: 5627b27c700ff8446832c455563ec752, type: 3}
+  - {fileID: 220329679513625538, guid: 7d1c89fe363c29b49be67bbcaebd327a, type: 3}

@@ -12,7 +12,8 @@ GameObject:
   - component: {fileID: 4057237713152080972}
   - component: {fileID: 425898959209619184}
   - component: {fileID: 307296922644835636}
-  m_Layer: 0
+  - component: {fileID: 4512595920045502917}
+  m_Layer: 6
   m_Name: COLLECTABLE_Coin
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -27,7 +28,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 220329679513625538}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.00000008146034, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 5.4832034, y: 0.06250274, z: -2.3936603}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -108,3 +109,26 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.36001164, y: 0.12500599, z: 0.36001167}
   m_Center: {x: -0.000009767711, y: -0.0000007711351, z: -0.000021725893}
+--- !u!114 &4512595920045502917
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 220329679513625538}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a8a8a90b532320e4e86994d0080a8bb1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes: []
+  _playerInteraction: {fileID: 0}
+  _itemDropEnum: {fileID: 11400000, guid: 0ebe9575549742b4db791cea5359efe0, type: 2}

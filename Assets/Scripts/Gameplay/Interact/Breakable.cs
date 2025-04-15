@@ -1,8 +1,9 @@
 using UnityEngine;
+using UnityEngine.Serialization;
 
 public class Breakable : MonoExt, IInteractable
 {
-    [SerializeField] private Drops _itemDrops;
+    [SerializeField] private ItemDropList _itemDrops;
     [SerializeField] private float _dropChance;
 
     private void Awake()
