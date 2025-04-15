@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using UnityEngine;
 using Sirenix.OdinInspector;
@@ -20,8 +21,12 @@ public class Spawner : MonoExt
     public GameObject Player;
     public GameObject Enemy;
 
-    
-    
+    private void Start()
+    {
+        SpawnPlayer();
+    }
+
+
     [Button]
     public void SpawnPlayer()
     {
