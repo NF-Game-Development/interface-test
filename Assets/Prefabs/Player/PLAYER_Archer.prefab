@@ -2042,11 +2042,11 @@ MonoBehaviour:
     PrefabModificationsReferencedUnityObjects: []
     PrefabModifications: []
     SerializationNodes: []
-  interactRange: 10
-  interactableLayer:
+  _interactRange: 10
+  _interactableLayer:
     serializedVersion: 2
     m_Bits: 64
-  topDownCamera: {fileID: 0}
+  _topDownCamera: {fileID: 0}
 --- !u!65 &3622642706924618437
 BoxCollider:
   m_ObjectHideFlags: 0

@@ -67,7 +67,7 @@ public class Spawner : MonoExt
     private void InitializePlayerOnSpawn(GameObject player)
     {
         player.GetComponent<PlayerController>().SetCamera(Cam);
-        player.GetComponent<PlayerInteraction>().topDownCamera = Cam;
+        player.GetComponent<PlayerInteraction>().SetCamera(Cam);
         Player = player;
     }
 }

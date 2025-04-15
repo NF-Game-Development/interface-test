@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 5621990631510990828}
   - component: {fileID: 5703325838976699233}
   - component: {fileID: 7671601428587217991}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: default
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -97,7 +97,7 @@ GameObject:
   - component: {fileID: 2256923807763418883}
   - component: {fileID: 8853222110649229425}
   - component: {fileID: 6961608826018362640}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: default
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -181,7 +181,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3364905189476781890}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: chest_gold_lid
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -196,8 +196,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5294299316976415323}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0, y: 0, z: 0}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -214,7 +214,8 @@ GameObject:
   m_Component:
   - component: {fileID: 5840046048598314402}
   - component: {fileID: 2652229849778257896}
-  m_Layer: 0
+  - component: {fileID: 8037777301376413626}
+  m_Layer: 6
   m_Name: INTERACTABLE_Chest
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -229,7 +230,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5414228259424774049}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0.99984777, z: -0, w: -0.017452264}
+  m_LocalRotation: {x: -0, y: -0.99984777, z: 0, w: -0.017452264}
   m_LocalPosition: {x: -3.3874273, y: 0, z: 5.864435}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -259,3 +260,27 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1.7030212, y: 1.2974262, z: 1.4692783}
   m_Center: {x: -0.0065014064, y: 0.6596062, z: 0.003099084}
+--- !u!114 &8037777301376413626
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5414228259424774049}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1bb98fb2db4363b4185815dfa2a8b9e0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes: []
+  _chestLid: {fileID: 5294299316976415323}
+  _openPosition: {x: 0, y: 1, z: 0}
+  _openRotation: {x: 0.70710677, y: 0.00000006181724, z: 0.00000006181724, w: -0.70710677}
