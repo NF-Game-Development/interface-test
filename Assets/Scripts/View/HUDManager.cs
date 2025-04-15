@@ -12,6 +12,13 @@ public class HUDManager : MonoExt
     [TabGroup("UI")] [SerializeField] private GameObject _errorText;
     [TabGroup("References")] [SerializeField] private AbilityList _abilityList;
     [TabGroup("References")] [SerializeField] private AbilityParameterHandler _abilityParameterHandler;
+    [TabGroup("References")] [SerializeField] private Spawner _spawner;
+
+    
+    [TabGroup("References")] [SerializeField] private List<ClassType> _classTypes;
+    [TabGroup("References")] [SerializeField] private List<EnemyType> _enemyTypes;
+
+
     private void Awake()
     {
         //Initialize mono extension
@@ -61,5 +68,35 @@ public class HUDManager : MonoExt
             await UniTask.Yield(PlayerLoopTiming.Update);
         }
         image.gameObject.SetActive(false);
+    }
+
+    public void SpawnPlayerArcher()
+    {
+        _spawner.SpawnPlayer(_classTypes[0]);
+    }
+    
+    public void SpawnPlayerHealer()
+    {
+        _spawner.SpawnPlayer(_classTypes[1]);
+    }
+    
+    public void SpawnPlayerTank()
+    {
+        _spawner.SpawnPlayer(_classTypes[2]);
+    }
+    
+    public void SpawnEnemyArcher()
+    {
+        _spawner.SpawnEnemy(_enemyTypes[0]);
+    }
+    
+    public void SpawnEnemyHealer()
+    {
+        _spawner.SpawnEnemy(_enemyTypes[1]);
+    }
+    
+    public void SpawnEnemyTank()
+    {
+        _spawner.SpawnEnemy(_enemyTypes[2]);
     }
 }

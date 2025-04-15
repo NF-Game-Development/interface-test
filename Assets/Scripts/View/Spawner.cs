@@ -11,7 +11,7 @@ public class Spawner : MonoExt
     public Transform EnemySpawnPoint;
 
     public ClassType PlayerToSpawn;
-    public EnemyType EnemyToSpawn;
+   // public EnemyType EnemyToSpawn;
 
     
     public Dictionary<ClassType, GameObject> PlayerClassDictionary;
@@ -23,12 +23,12 @@ public class Spawner : MonoExt
 
     private void Start()
     {
-        SpawnPlayer();
+        SpawnPlayer(PlayerToSpawn);
     }
 
 
     [Button]
-    public void SpawnPlayer()
+    public void SpawnPlayer(ClassType PlayerToSpawn)
     {
         if (Player == null)
         {
@@ -47,7 +47,7 @@ public class Spawner : MonoExt
     }
     
     [Button]
-    public void SpawnEnemy()
+    public void SpawnEnemy(EnemyType EnemyToSpawn)
     {
         if (Enemy == null)
         {

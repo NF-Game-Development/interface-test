@@ -5,17 +5,8 @@ using UnityEngine;
 
 public class Health : MonoExt, IDamageable, IHealable
 {
-    //[SerializeField] private Stat MaxHealth;
-    
-    public Subject<Unit> onDestroyed;
-
     public float MaxHP;
     public float HP;
-
-    private void Awake()
-    {
-        onDestroyed = new Subject<Unit>();
-    }
 
     private void Start()
     {
@@ -28,7 +19,6 @@ public class Health : MonoExt, IDamageable, IHealable
 
         if (HP <= 0)
         {
-            onDestroyed.OnNext(Unit.Default);
             Destroy(gameObject, 0.2f);
         }
     }
