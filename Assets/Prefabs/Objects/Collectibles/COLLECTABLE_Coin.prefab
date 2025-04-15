@@ -132,5 +132,5 @@ MonoBehaviour:
     SerializationNodes: []
   _playerInteraction: {fileID: 0}
   _itemDropEnum: {fileID: 11400000, guid: 0ebe9575549742b4db791cea5359efe0, type: 2}
-  _moveSpeed: 5
-  _pickupDistance: 1
+  _moveSpeed: {fileID: 11400000, guid: f802635a9317d4543be6e5473ac429a8, type: 2}
+  _pickupDistance: {fileID: 11400000, guid: 946b929aeb31c294ba64f93be664279e, type: 2}

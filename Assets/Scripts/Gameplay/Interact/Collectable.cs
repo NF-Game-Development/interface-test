@@ -6,8 +6,8 @@ public class Collectable : MonoExt
     [SerializeField] private PlayerInteraction _playerInteraction;
     [SerializeField] private ItemDropExtendableEnum _itemDropEnum;
     
-    [SerializeField] private float _moveSpeed = 5f;
-    [SerializeField] private float _pickupDistance = 0.5f;
+    [SerializeField] private Stat _moveSpeed;
+    [SerializeField] private Stat _pickupDistance;
     private bool _isBeingCollected = false;
 
     private void Awake()
@@ -53,9 +53,9 @@ public class Collectable : MonoExt
         _isBeingCollected = true;
         Transform target = _playerInteraction.transform;
 
-        while (Vector3.Distance(transform.position, target.position) > _pickupDistance)
+        while (Vector3.Distance(transform.position, target.position) > _pickupDistance.Value)
         {
-            transform.position = Vector3.Lerp(transform.position, target.position, Time.deltaTime * _moveSpeed);
+            transform.position = Vector3.Lerp(transform.position, target.position, Time.deltaTime * _moveSpeed.Value);
             yield return null;
         }
 

@@ -267,10 +267,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: COLLECTABLE_Coin (1)
       objectReference: {fileID: 0}
-    - target: {fileID: 307296922644835636, guid: 7d1c89fe363c29b49be67bbcaebd327a, type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 686583607691623063, guid: 7d1c89fe363c29b49be67bbcaebd327a, type: 3}
       propertyPath: m_LocalPosition.x
       value: 5.153
@@ -312,13 +308,9 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4512595920045502917, guid: 7d1c89fe363c29b49be67bbcaebd327a, type: 3}
-      propertyPath: _pickupDistance
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4512595920045502917, guid: 7d1c89fe363c29b49be67bbcaebd327a, type: 3}
       propertyPath: serializationData.Prefab
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 4512595920045502917, guid: 7d1c89fe363c29b49be67bbcaebd327a, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3532,13 +3524,9 @@ PrefabInstance:
     m_TransformParent: {fileID: 508637074}
     m_Modifications:
     - target: {fileID: 2602126922074217685, guid: 9092934a818bbf24686ccae196845697, type: 3}
-      propertyPath: _pickupDistance
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2602126922074217685, guid: 9092934a818bbf24686ccae196845697, type: 3}
       propertyPath: serializationData.Prefab
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 2602126922074217685, guid: 9092934a818bbf24686ccae196845697, type: 3}
     - target: {fileID: 2861083551534730619, guid: 9092934a818bbf24686ccae196845697, type: 3}
       propertyPath: m_LocalPosition.x
       value: 2.1220286
@@ -3578,10 +3566,6 @@ PrefabInstance:
     - target: {fileID: 2861083551534730619, guid: 9092934a818bbf24686ccae196845697, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5451564764218932854, guid: 9092934a818bbf24686ccae196845697, type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 9042730585831424088, guid: 9092934a818bbf24686ccae196845697, type: 3}
       propertyPath: m_Name
@@ -3726,10 +3710,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: COLLECTABLE_Coin
       objectReference: {fileID: 0}
-    - target: {fileID: 307296922644835636, guid: 7d1c89fe363c29b49be67bbcaebd327a, type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 686583607691623063, guid: 7d1c89fe363c29b49be67bbcaebd327a, type: 3}
       propertyPath: m_LocalPosition.x
       value: 5.4832034
@@ -3771,13 +3751,9 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4512595920045502917, guid: 7d1c89fe363c29b49be67bbcaebd327a, type: 3}
-      propertyPath: _pickupDistance
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4512595920045502917, guid: 7d1c89fe363c29b49be67bbcaebd327a, type: 3}
       propertyPath: serializationData.Prefab
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 4512595920045502917, guid: 7d1c89fe363c29b49be67bbcaebd327a, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4105,17 +4081,9 @@ PrefabInstance:
       value: COLLECTABLE_CoinStack
       objectReference: {fileID: 0}
     - target: {fileID: 5710929726997241309, guid: 5627b27c700ff8446832c455563ec752, type: 3}
-      propertyPath: _pickupDistance
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5710929726997241309, guid: 5627b27c700ff8446832c455563ec752, type: 3}
       propertyPath: serializationData.Prefab
       value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 6856438690591498398, guid: 5627b27c700ff8446832c455563ec752, type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 5710929726997241309, guid: 5627b27c700ff8446832c455563ec752, type: 3}
     - target: {fileID: 8009903773132022516, guid: 5627b27c700ff8446832c455563ec752, type: 3}
       propertyPath: m_LocalPosition.x
       value: 5.223485
