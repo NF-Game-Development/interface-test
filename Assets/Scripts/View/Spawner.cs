@@ -9,12 +9,12 @@ public class Spawner : MonoExt
     public Transform PlayerSpawnPoint;
     public Transform EnemySpawnPoint;
 
-    public string PlayerToSpawn;
-    public string EnemyToSpawn;
+    public ClassType PlayerToSpawn;
+    public EnemyType EnemyToSpawn;
 
     
-    public Dictionary<string, GameObject> PlayerClassDictionary;
-    public Dictionary<string, GameObject> EnemyTypeDictionary;
+    public Dictionary<ClassType, GameObject> PlayerClassDictionary;
+    public Dictionary<EnemyType, GameObject> EnemyTypeDictionary;
 
     
     public GameObject Player;
