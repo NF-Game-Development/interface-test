@@ -5,6 +5,7 @@ using UnityEngine.Serialization;
 public class Coin : MonoExt, ICollectable
 {
     [SerializeField] private int _coinAmountGain;
+    
     private void Awake()
     {
         //Initialize mono extension

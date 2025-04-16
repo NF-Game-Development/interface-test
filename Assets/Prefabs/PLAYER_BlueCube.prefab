@@ -259,7 +259,10 @@ MonoBehaviour:
     Prefab: {fileID: 0}
     PrefabModificationsReferencedUnityObjects: []
     PrefabModifications: []
-    SerializationNodes: []
+    SerializationNodes:
+    - Name: _currentInteractable
+      Entry: 6
+      Data: 
   _movementStats: {fileID: 11400000, guid: 19ffc313a2c26ef4889c015655615fb5, type: 2}
   _playerInput: {fileID: 11400000, guid: bccb5b502b38ed64fb694b53d16cc9c6, type: 2}
   _rigidbody: {fileID: 2355309230547412661}
@@ -268,6 +271,10 @@ MonoBehaviour:
   _player: {fileID: 1060832343970793972}
   _canPlayerMove: 1
   _canPlayerRotate: 1
+  _interactableLayerMask:
+    serializedVersion: 2
+    m_Bits: 64
+  _interactDistance: {fileID: 11400000, guid: eca818a414f2ab347aea9608fc1079a8, type: 2}
 --- !u!33 &678273270418327487
 MeshFilter:
   m_ObjectHideFlags: 0

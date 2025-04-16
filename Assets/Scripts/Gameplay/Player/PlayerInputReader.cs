@@ -13,6 +13,8 @@ public class PlayerInputReader : SerializedScriptableObject, InputSystem_Actions
     public Subject<Vector2> Movement {get; private set;}
     public Subject<AbilityExtendableEnum> Ability {get; private set;}
 
+    public Subject<Unit> Interact;
+
     private InputSystem_Actions _inputActions;
 
     private void OnEnable()
@@ -30,6 +32,7 @@ public class PlayerInputReader : SerializedScriptableObject, InputSystem_Actions
         
         Movement = new Subject<Vector2>();
         Ability = new Subject<AbilityExtendableEnum>();
+        Interact = new Subject<Unit>();
     }
 
     public void EnablePlayerActions()
@@ -60,6 +63,12 @@ public class PlayerInputReader : SerializedScriptableObject, InputSystem_Actions
     {
         if(context.performed)
             Ability.OnNext(_abilityDictionary.AbilityOrderDictionary[3]);
+    }
+
+    public void OnInteract(InputAction.CallbackContext context)
+    {
+        if(context.performed)
+            Interact.OnNext(Unit.Default);
     }
 
     public void ChangeAbilityDictionary(AbilityDictionary newDictionary)

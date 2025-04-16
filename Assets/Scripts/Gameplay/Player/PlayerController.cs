@@ -16,6 +16,13 @@ public class PlayerController : MonoExt, IMovable, IRotatable, IAbilityCastable
     
     [TabGroup("Debug")] [SerializeField] private bool _canPlayerMove = true;
     [TabGroup("Debug")] [SerializeField] private bool _canPlayerRotate = true;
+
+    [TabGroup("b", "Interactables")] 
+    [SerializeField] private LayerMask _interactableLayerMask;
+    [TabGroup("b", "Interactables")] 
+    [SerializeField] private Stat _interactDistance;
+    [TabGroup("b", "Interactables")] 
+    [SerializeField] private IInteractable _currentInteractable;
     
     
     private Vector2 _movementInput = Vector2.zero;
@@ -47,11 +54,13 @@ public class PlayerController : MonoExt, IMovable, IRotatable, IAbilityCastable
         AddEvent(_playerInput.Ability, OnAbilityCast);
         AddEvent(_abilityParameterHandler.AbilityCasted, DisableMovement);
         AddEvent(_abilityParameterHandler.AbilityEnded, DisableMovement);
+        AddEvent(_playerInput.Interact, _ => OnInteract());
     }
 
     public void FixedUpdate()
     {
         HandleMovement();
+        RayCastCheckForInteractables();
     }
 
     //Handles movement and rotation
@@ -125,5 +134,25 @@ public class PlayerController : MonoExt, IMovable, IRotatable, IAbilityCastable
     public AbilityList GetAbilityList()
     {
         return _player.GetUnitClass().ClassAbilityList;
+    }
+
+    private void RayCastCheckForInteractables()
+    {
+        RaycastHit hitData;
+        Debug.DrawRay(transform.position, transform.forward * _interactDistance.Value, Color.green);
+        if (Physics.Raycast(transform.position, transform.forward, out hitData, _interactDistance.Value, 
+                _interactableLayerMask))
+        {
+            Debug.Log("Hit success");
+            if (hitData.transform.gameObject.TryGetComponent<IInteractable>(out IInteractable interactable))
+            {
+                _currentInteractable = interactable;
+            }
+        }
+    }
+
+    private void OnInteract()
+    {
+        _currentInteractable.Interact();
     }
 }
