@@ -2,5 +2,5 @@ using UnityEngine;
 
 public interface ICollectable
 {
-    public void Collect(PlayerUnit playerUnit);
+    public void Collect(PlayerItemCollectedStats playerItemCollectedStats);
 }

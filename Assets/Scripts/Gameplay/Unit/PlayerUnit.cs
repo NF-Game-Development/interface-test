@@ -1,9 +1,11 @@
+using System;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class PlayerUnit : BaseUnit
 {
     [SerializeField] private Dictionary<UnitClass, GameObject> _playerModels = new Dictionary<UnitClass, GameObject>();
+    [SerializeField] PlayerItemCollectedStats _playerItemCollectedStats;
     
     private void Awake()
     {
@@ -35,10 +37,17 @@ public class PlayerUnit : BaseUnit
         
         _playerModels[_unitClass].SetActive(true);
     }
-
-
+    
     public UnitClass GetUnitClass()
     {
         return _unitClass;
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.TryGetComponent<ICollectable>(out ICollectable collectable))
+        {
+            collectable.Collect(_playerItemCollectedStats);
+        }
     }
 }

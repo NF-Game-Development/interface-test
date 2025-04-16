@@ -462,8 +462,8 @@ MonoBehaviour:
     - Name: 
       Entry: 8
       Data: 
-  UnitClass: {fileID: 0}
   Health: {fileID: 8500000254545838942}
+  _playerItemCollectedStats: {fileID: 11400000, guid: e06ce27b5c6cf7749ad7deb82d59e856, type: 2}
 --- !u!1 &5666056745008873080
 GameObject:
   m_ObjectHideFlags: 0
