@@ -28,6 +28,5 @@ MonoBehaviour:
   TargetListParameterKey: {fileID: 11400000, guid: 88f2047015708074c8205207f50bbb9d, type: 2}
   TargetTags:
   - {fileID: 11400000, guid: cd5d9d2cadcf4c84d80147d1da6c3dec, type: 2}
-  - {fileID: 11400000, guid: f4e5429ddddf6c34b9d2f5bfaf3fe549, type: 2}
   IsVisualized: 1
   VisualizerPrefab: {fileID: 2535171875596444428, guid: 43a2dfde242049e4ea179a5585c3c598, type: 3}

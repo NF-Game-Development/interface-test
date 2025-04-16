@@ -21,6 +21,7 @@ public class Health : MonoExt, IDamageable, IHealable
 
         if (HP <= 0)
         {
+            HP = 0;
             OnDeath.OnNext(Unit.Default);
             Destroy(gameObject, DestroyOffset);
         }

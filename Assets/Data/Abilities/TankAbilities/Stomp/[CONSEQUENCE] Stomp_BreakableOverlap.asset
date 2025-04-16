@@ -9,8 +9,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b1be5d1c058248ef923f070eec7a343d, type: 3}
-  m_Name: '[CONSEQUENCE] PreciseShot_SphereOverlap'
+  m_Script: {fileID: 11500000, guid: d534e4b91cb24005b243f55f5cd8da8a, type: 3}
+  m_Name: '[CONSEQUENCE] Stomp_BreakableOverlap'
   m_EditorClassIdentifier: 
   serializationData:
     SerializedFormat: 2
@@ -21,12 +21,14 @@ MonoBehaviour:
     PrefabModificationsReferencedUnityObjects: []
     PrefabModifications: []
     SerializationNodes: []
-  NextConsequence: {fileID: 11400000, guid: 7611aab5013966b4386b28aebce4fa26, type: 2}
-  Radius: {fileID: 11400000, guid: a29b2107f9c4d9a4db74e5a32b170aac, type: 2}
-  FrontOffset: {fileID: 11400000, guid: deffe84562caa4f468a727dd282e2c40, type: 2}
+  NextConsequence: {fileID: 11400000, guid: 873f1ed77320dd740b6fc54ffc9fad6d, type: 2}
+  Width: {fileID: 11400000, guid: 84052a446586f5b49823d4e96b28f767, type: 2}
+  Depth: {fileID: 11400000, guid: 318ed77e5c43c024fa56481521159e84, type: 2}
+  Height: {fileID: 11400000, guid: dabc0b7d1f51d4c4f90ae68df843e20b, type: 2}
+  FrontOffset: {fileID: 11400000, guid: 68c4ae58762254e4e96947e6d81c95b1, type: 2}
   CenterParameterKey: {fileID: 11400000, guid: 83f84282e1a12074c904e48c25dc1ce3, type: 2}
   TargetListParameterKey: {fileID: 11400000, guid: 88f2047015708074c8205207f50bbb9d, type: 2}
   TargetTags:
-  - {fileID: 11400000, guid: cd5d9d2cadcf4c84d80147d1da6c3dec, type: 2}
+  - {fileID: 11400000, guid: f4e5429ddddf6c34b9d2f5bfaf3fe549, type: 2}
   IsVisualized: 1
-  VisualizerPrefab: {fileID: 2535171875596444428, guid: 43a2dfde242049e4ea179a5585c3c598, type: 3}
+  VisualizerPrefab: {fileID: 3258453889424858441, guid: 6021b8da3e18d8e42ac0e7373cf86006, type: 3}

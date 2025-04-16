@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b1be5d1c058248ef923f070eec7a343d, type: 3}
-  m_Name: '[CONSEQUENCE] PreciseShot_SphereOverlap'
+  m_Name: '[CONSEQUENCE] Necrosis_BreakableOverlap'
   m_EditorClassIdentifier: 
   serializationData:
     SerializedFormat: 2
@@ -21,12 +21,12 @@ MonoBehaviour:
     PrefabModificationsReferencedUnityObjects: []
     PrefabModifications: []
     SerializationNodes: []
-  NextConsequence: {fileID: 11400000, guid: 7611aab5013966b4386b28aebce4fa26, type: 2}
-  Radius: {fileID: 11400000, guid: a29b2107f9c4d9a4db74e5a32b170aac, type: 2}
-  FrontOffset: {fileID: 11400000, guid: deffe84562caa4f468a727dd282e2c40, type: 2}
+  NextConsequence: {fileID: 11400000, guid: ea29f1760131a9c4bb5c735bfc0b1c73, type: 2}
+  Radius: {fileID: 11400000, guid: 6230b54b4b599b84b8a1f362ad068fca, type: 2}
+  FrontOffset: {fileID: 11400000, guid: 90236ebc6a3b59b429bf4ece623d1e9d, type: 2}
   CenterParameterKey: {fileID: 11400000, guid: 83f84282e1a12074c904e48c25dc1ce3, type: 2}
   TargetListParameterKey: {fileID: 11400000, guid: 88f2047015708074c8205207f50bbb9d, type: 2}
   TargetTags:
-  - {fileID: 11400000, guid: cd5d9d2cadcf4c84d80147d1da6c3dec, type: 2}
+  - {fileID: 11400000, guid: f4e5429ddddf6c34b9d2f5bfaf3fe549, type: 2}
   IsVisualized: 1
   VisualizerPrefab: {fileID: 2535171875596444428, guid: 43a2dfde242049e4ea179a5585c3c598, type: 3}
