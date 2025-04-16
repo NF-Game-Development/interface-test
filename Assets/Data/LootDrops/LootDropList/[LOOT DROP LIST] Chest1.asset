@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d16d1b5649a767e499ccc2c18195dced, type: 3}
+  m_Name: '[LOOT DROP LIST] Chest1'
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes: []
+  LootDropPrefabs:
+  - {fileID: 2035148955207872700, guid: 6abb28481117af846b44e17d2f89cc28, type: 3}
+  - {fileID: 1786026759736039723, guid: a44b0693f8d35b14d981232221e8dbf4, type: 3}
+  - {fileID: 7674593981371017295, guid: a039a9af45f4f6f4782e5f5f009c203f, type: 3}
+  - {fileID: 1765009827431161786, guid: 9d157b7bee81baf41a9512f32790df1d, type: 3}

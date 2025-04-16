@@ -5,6 +5,7 @@ using UnityEngine;
 public class BaseCollectable : MonoExt, ICollectable
 {
     [SerializeField] private Rigidbody _rigidbody;
+    [SerializeField] private Collider _collider;
     
     [SerializeField] private bool _isAbleToMove = false;
     private void Awake()
@@ -48,12 +49,16 @@ public class BaseCollectable : MonoExt, ICollectable
 
     public void OnSpawnItemJumpUp()
     {
-        _rigidbody.AddForce(Vector3.up * 4, ForceMode.Impulse);
+        _collider.isTrigger = true;
+        float randomForce = Random.Range(5f, 7f);
+        _rigidbody.AddForce(Vector3.up * randomForce, ForceMode.Impulse);
         StartCoroutine(CO_DelayBeforeObjectMove());
     }
     
     private IEnumerator CO_DelayBeforeObjectMove()
     {
+        yield return new WaitForSeconds(0.4f);
+        _collider.isTrigger = false;
         yield return new WaitForSeconds(2f);
         _isAbleToMove = true;
     }

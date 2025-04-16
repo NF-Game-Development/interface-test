@@ -10,6 +10,7 @@ public class Door : MonoExt, IInteractable
     [SerializeField] private bool _isInteractable = true;
     [SerializeField] private GameObject _door;
     [SerializeField] private float _openDoorFinalRotation;
+    [SerializeField] private float _closeDoorFinalRotation;
     [SerializeField] private float _openDoorTime;
     
     
@@ -44,7 +45,7 @@ public class Door : MonoExt, IInteractable
         {
             rotationAlpha = remainingTime / _openDoorTime;
             await UniTask.Yield(PlayerLoopTiming.Update);
-            currentRotation = Mathf.SmoothStep(0f, _openDoorFinalRotation, rotationAlpha);
+            currentRotation = Mathf.SmoothStep(_closeDoorFinalRotation, _openDoorFinalRotation, rotationAlpha);
             _door.transform.localRotation = Quaternion.Euler(0, currentRotation, 0);
             remainingTime += Time.deltaTime;
         } 
@@ -62,7 +63,7 @@ public class Door : MonoExt, IInteractable
         {
             rotationAlpha = remainingTime / _openDoorTime;
             await UniTask.Yield(PlayerLoopTiming.Update);
-            currentRotation = Mathf.SmoothStep(_openDoorFinalRotation, 0f , rotationAlpha);
+            currentRotation = Mathf.SmoothStep(_openDoorFinalRotation, _closeDoorFinalRotation , rotationAlpha);
             _door.transform.localRotation = Quaternion.Euler(0, currentRotation, 0);
             remainingTime += Time.deltaTime;
         }

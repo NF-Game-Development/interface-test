@@ -50,7 +50,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 0f9b55e2d4e5d7846b671bd79ac022dd, type: 3}
       propertyPath: m_Name
-      value: shield_round
+      value: '[LOOT ARMOR] ShieldRound'
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -93,6 +93,7 @@ MonoBehaviour:
     PrefabModifications: []
     SerializationNodes: []
   _rigidbody: {fileID: 8859556228077241889}
+  _collider: {fileID: 8491101517944313650}
   _isAbleToMove: 0
   _armorItemEnum: {fileID: 11400000, guid: 047c355f58d50604887b390852a14735, type: 2}
 --- !u!54 &8859556228077241889
@@ -104,7 +105,7 @@ Rigidbody:
   m_GameObject: {fileID: 3292414335642274341}
   serializedVersion: 4
   m_Mass: 1
-  m_Drag: 0
+  m_Drag: 0.5
   m_AngularDrag: 0.05
   m_CenterOfMass: {x: 0, y: 0, z: 0}
   m_InertiaTensor: {x: 1, y: 1, z: 1}

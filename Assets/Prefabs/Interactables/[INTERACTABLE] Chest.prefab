@@ -85,7 +85,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 61604f66bc58e6b4d92ce79d8ea868e5, type: 3}
       propertyPath: m_Name
-      value: Chest_Interactable
+      value: '[INTERACTABLE] Chest'
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 61604f66bc58e6b4d92ce79d8ea868e5, type: 3}
       propertyPath: m_Layer
@@ -183,6 +183,7 @@ MonoBehaviour:
   _openChestFinalRotation: -120
   _chestLid: {fileID: 2584574140226883166}
   _lootSpawnTransform: {fileID: 8333763780131549670}
+  _lootDropAmountRange: {fileID: 11400000, guid: 8fe0f08febe910841b585403ec1e3a57, type: 2}
 --- !u!4 &7679533511967369842 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 61604f66bc58e6b4d92ce79d8ea868e5, type: 3}

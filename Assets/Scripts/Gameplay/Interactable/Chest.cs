@@ -9,6 +9,7 @@ public class Chest : MonoExt, IInteractable
     [SerializeField] private float _openChestFinalRotation = -120;
     [SerializeField] private GameObject _chestLid;
     [SerializeField] private Transform _lootSpawnTransform;
+    [SerializeField] private LootDropAmountRange _lootDropAmountRange;
     
     private void Awake()
     {
@@ -50,18 +51,14 @@ public class Chest : MonoExt, IInteractable
 
     private void ChestLootDrop()
     {
-        int amountOfLoot = 3; //change to scriptable
+        int amountOfLoot = Random.Range(_lootDropAmountRange.MinAmountLootDrop, _lootDropAmountRange.MaxAmountLootDrop);
         int indexOfLootToSpawn;
         for (int index = 0; index < amountOfLoot; index++)
         {
             indexOfLootToSpawn = Random.Range(0, _lootDropPrefabs.LootDropPrefabs.Count);
-            GameObject newLoot = Instantiate(_lootDropPrefabs.LootDropPrefabs[indexOfLootToSpawn], 
+            BaseCollectable newLoot = Instantiate(_lootDropPrefabs.LootDropPrefabs[indexOfLootToSpawn], 
                 _lootSpawnTransform.position, Quaternion.identity);
-
-            if (newLoot.TryGetComponent<ICollectable>(out ICollectable collectable))
-            {
-                collectable.OnSpawnItemJumpUp();
-            }
+                newLoot.OnSpawnItemJumpUp();
         }
     }
 

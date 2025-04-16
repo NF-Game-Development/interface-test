@@ -50,7 +50,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 81f211d96ff7847459bd915114febfba, type: 3}
       propertyPath: m_Name
-      value: Coin_Collectible
+      value: '[LOOT CURRENCY] Coin'
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -92,8 +92,10 @@ MonoBehaviour:
     PrefabModificationsReferencedUnityObjects: []
     PrefabModifications: []
     SerializationNodes: []
-  _coinAmountGain: 5
   _rigidbody: {fileID: 6384933478412271251}
+  _collider: {fileID: 181707466481923315}
+  _isAbleToMove: 0
+  _coinAmountGain: 5
 --- !u!65 &181707466481923315
 BoxCollider:
   m_ObjectHideFlags: 0
