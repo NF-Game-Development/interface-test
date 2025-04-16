@@ -27,3 +27,4 @@ MonoBehaviour:
   Behaviour: {fileID: 11400000, guid: 0c82d98cbc2743548a9280b666b31111, type: 2}
   CenterTransformParameter: {fileID: 11400000, guid: 83f84282e1a12074c904e48c25dc1ce3, type: 2}
   Icon: {fileID: 21300000, guid: feb8709f10385a94095b55fe8d0f625c, type: 3}
+  AnimationName: HealArea

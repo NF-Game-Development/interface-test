@@ -27,3 +27,4 @@ MonoBehaviour:
   Behaviour: {fileID: 11400000, guid: b5550012ae191d141bba5903cfd11b62, type: 2}
   CenterTransformParameter: {fileID: 11400000, guid: 83f84282e1a12074c904e48c25dc1ce3, type: 2}
   Icon: {fileID: 21300000, guid: 530bcabb1501d8148a19a77465ecac03, type: 3}
+  AnimationName: PreciseShot

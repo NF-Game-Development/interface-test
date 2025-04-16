@@ -1,4 +1,6 @@
 using System;
+using NF.Main.Core;
+using NF.Main.Core.PlayerStateMachine;
 using Sirenix.OdinInspector;
 using UnityEngine;
 
@@ -10,20 +12,23 @@ public class PlayerController : MonoExt, IMovable, IRotatable, IAbilityCastable
     [TabGroup("References")] [SerializeField] private Camera _camera;
     [TabGroup("References")] [SerializeField] private ClassType _classType;
     [TabGroup("References")] [SerializeField] private GameObject _centerTransform;
+    [TabGroup("References")] [SerializeField] private StateMachine _stateMachine;
+    [TabGroup("References")] public PlayerState PlayerState;
 
     [TabGroup("Ability")] [SerializeField] private AbilityList _abilityList;
     [TabGroup("Ability")] [SerializeField] private AbilityParameterHandler _abilityParameterHandler;
     
     [TabGroup("Debug")] [SerializeField] private bool _canPlayerMove = true;
     [TabGroup("Debug")] [SerializeField] private bool _canPlayerRotate = true;
-    
-    
+   
+    private Ability _pendingAbility;
     private Vector2 _movementInput = Vector2.zero;
     public Animator _animator;
     private void Awake()
     {
         //Initialize mono extension
         Initialize();
+        SetupStateMachine();
     }
     private void Start()
     {
@@ -31,7 +36,12 @@ public class PlayerController : MonoExt, IMovable, IRotatable, IAbilityCastable
         OnSubscriptionSet();
         _playerInput.SetAbilityDictionary(_abilityList.AbilityInputDictionary);
     }
-    
+
+    private void Update()
+    {
+        _stateMachine.Update();
+    }
+
     public override void Initialize()
     {
         base.Initialize();
@@ -95,7 +105,31 @@ public class PlayerController : MonoExt, IMovable, IRotatable, IAbilityCastable
     public void OnAbilityCast(AbilityExtendableEnum abilityEnum)
     {
         _abilityList.AbilityDictionary[abilityEnum].OnTriggerAbility(_centerTransform, _abilityParameterHandler);
+        _pendingAbility = _abilityList.AbilityDictionary[abilityEnum];
+        PlayerState = PlayerState.UsingAbility;
+
     }
+    
+    private void SetupStateMachine()
+    {
+        _stateMachine = new StateMachine();
+
+        var idleState = new PlayerIdleState(this, _animator);
+        var abilityState = new PlayerAbilityState(this, _animator);
+
+        // Transitions
+        Any(idleState, new FuncPredicate(ReturnToIdleState));
+        Any(abilityState, new FuncPredicate(IsUsingAbility));
+
+        _stateMachine.SetState(idleState);
+    }
+
+    private void At(IState from, IState to, IPredicate condition) => _stateMachine.AddTransition(from, to, condition);
+    private void Any(IState to, IPredicate condition) => _stateMachine.AddAnyTransition(to, condition);
+
+    private bool ReturnToIdleState() => PlayerState == PlayerState.Idle;
+    private bool IsUsingAbility() => PlayerState == PlayerState.UsingAbility;
+    public Ability GetPendingAbility() => _pendingAbility;
 
     public PlayerInputReader GetPlayerInput()
     {
@@ -110,5 +144,15 @@ public class PlayerController : MonoExt, IMovable, IRotatable, IAbilityCastable
     public void SetCamera(Camera camera)
     {
         _camera = camera;
+    }
+
+    public GameObject GetCenterTransform()
+    {
+        return _centerTransform;
+    }
+
+    public AbilityParameterHandler GetAbilityParameterHandler()
+    {
+        return _abilityParameterHandler;
     }
 }

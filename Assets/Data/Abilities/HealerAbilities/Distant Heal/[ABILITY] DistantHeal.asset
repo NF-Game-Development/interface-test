@@ -27,3 +27,4 @@ MonoBehaviour:
   Behaviour: {fileID: 11400000, guid: 39be01cc9c42a1e42b0c3f5a21264b1a, type: 2}
   CenterTransformParameter: {fileID: 11400000, guid: 83f84282e1a12074c904e48c25dc1ce3, type: 2}
   Icon: {fileID: 21300000, guid: 0ad2337320c1b5841ba3ceb24de6e91a, type: 3}
+  AnimationName: DistantHeal
