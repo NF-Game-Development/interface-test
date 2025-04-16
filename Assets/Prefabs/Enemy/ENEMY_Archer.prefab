@@ -2034,7 +2034,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 112
   m_CollisionDetection: 0
 --- !u!65 &3007802219081786368
 BoxCollider:
@@ -2099,10 +2099,7 @@ MonoBehaviour:
     Prefab: {fileID: 0}
     PrefabModificationsReferencedUnityObjects: []
     PrefabModifications: []
-    SerializationNodes:
-    - Name: onDestroyed
-      Entry: 6
-      Data: 
+    SerializationNodes: []
   MaxHP: 0
   HP: 0
 --- !u!114 &3418225556183766156
@@ -2128,6 +2125,8 @@ MonoBehaviour:
     SerializationNodes: []
   _enemyType: {fileID: 11400000, guid: f7dba06c1985e8940a56481b2eb26454, type: 2}
   _health: {fileID: 3125320570533253007}
+  EnemyState: 0
+  _animator: {fileID: 3358249364235433861}
 --- !u!95 &3358249364235433861
 Animator:
   serializedVersion: 7

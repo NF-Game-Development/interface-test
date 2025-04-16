@@ -2685,10 +2685,7 @@ MonoBehaviour:
     Prefab: {fileID: 0}
     PrefabModificationsReferencedUnityObjects: []
     PrefabModifications: []
-    SerializationNodes:
-    - Name: onDestroyed
-      Entry: 6
-      Data: 
+    SerializationNodes: []
   MaxHP: 0
   HP: 0
 --- !u!114 &6977836316203799995
@@ -2714,6 +2711,8 @@ MonoBehaviour:
     SerializationNodes: []
   _enemyType: {fileID: 11400000, guid: 584b09bde1e25ec4cb0ab5926f62e04f, type: 2}
   _health: {fileID: 2285104610459338331}
+  EnemyState: 0
+  _animator: {fileID: 4925343415199673501}
 --- !u!95 &4925343415199673501
 Animator:
   serializedVersion: 7

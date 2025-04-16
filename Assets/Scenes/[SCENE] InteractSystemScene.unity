@@ -3303,14 +3303,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: ENEMY_Archer
       objectReference: {fileID: 0}
-    - target: {fileID: 6803601600299530043, guid: 2bc1a186b17693544aed7672cd7216fd, type: 3}
-      propertyPath: m_UseGravity
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6803601600299530043, guid: 2bc1a186b17693544aed7672cd7216fd, type: 3}
-      propertyPath: m_Constraints
-      value: 112
-      objectReference: {fileID: 0}
     - target: {fileID: 7093893539630752508, guid: 2bc1a186b17693544aed7672cd7216fd, type: 3}
       propertyPath: serializationData.Prefab
       value: 

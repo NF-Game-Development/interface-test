@@ -5,7 +5,9 @@ using UnityEngine;
 
 public class Health : MonoExt, IDamageable, IHealable
 {
+    public Subject<Unit> OnDeath { get; } = new Subject<Unit>();
     public float MaxHP;
+    public float DestroyOffset;
     public float HP;
 
     private void Start()
@@ -19,7 +21,8 @@ public class Health : MonoExt, IDamageable, IHealable
 
         if (HP <= 0)
         {
-            Destroy(gameObject, 0.2f);
+            OnDeath.OnNext(Unit.Default);
+            Destroy(gameObject, DestroyOffset);
         }
     }
 
