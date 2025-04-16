@@ -60,7 +60,7 @@ public class PlayerController : MonoExt, IMovable, IRotatable, IAbilityCastable
     public void FixedUpdate()
     {
         HandleMovement();
-        RayCastCheckForInteractables();
+        //RayCastCheckForInteractables();
     }
 
     //Handles movement and rotation
@@ -143,7 +143,6 @@ public class PlayerController : MonoExt, IMovable, IRotatable, IAbilityCastable
         if (Physics.Raycast(transform.position, transform.forward, out hitData, _interactDistance.Value, 
                 _interactableLayerMask))
         {
-            Debug.Log("Hit success");
             if (hitData.transform.gameObject.TryGetComponent<IInteractable>(out IInteractable interactable))
             {
                 _currentInteractable = interactable;
@@ -157,6 +156,7 @@ public class PlayerController : MonoExt, IMovable, IRotatable, IAbilityCastable
 
     private void OnInteract()
     {
+        RayCastCheckForInteractables();
         _currentInteractable.Interact();
     }
 }

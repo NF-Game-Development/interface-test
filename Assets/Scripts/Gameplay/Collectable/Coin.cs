@@ -5,7 +5,8 @@ using UnityEngine.Serialization;
 public class Coin : MonoExt, ICollectable
 {
     [SerializeField] private int _coinAmountGain;
-    
+    [SerializeField] private Rigidbody _rigidbody;
+
     private void Awake()
     {
         //Initialize mono extension
@@ -35,6 +36,11 @@ public class Coin : MonoExt, ICollectable
 
     public void MoveTowardsPlayer(Transform target)
     {
-        transform.position = Vector3.MoveTowards(this.transform.position, target.position, 1f * Time.deltaTime);
+        //transform.position = Vector3.MoveTowards(this.transform.position, target.position, 1f * Time.deltaTime);
+    }
+
+    public void OnSpawnItemJumpUp()
+    {
+        _rigidbody.AddForce(Vector3.up * 10, ForceMode.Impulse);
     }
 }

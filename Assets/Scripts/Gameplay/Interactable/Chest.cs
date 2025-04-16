@@ -54,7 +54,13 @@ public class Chest : MonoExt, IInteractable
         for (int index = 0; index < amountOfLoot; index++)
         {
             indexOfLootToSpawn = Random.Range(0, _lootDropPrefabs.LootDropPrefabs.Count);
-            Instantiate(_lootDropPrefabs.LootDropPrefabs[indexOfLootToSpawn], transform.position, Quaternion.identity);
+            GameObject newLoot = Instantiate(_lootDropPrefabs.LootDropPrefabs[indexOfLootToSpawn], 
+                _chestLid.transform.position, Quaternion.identity);
+
+            if (newLoot.TryGetComponent<ICollectable>(out ICollectable collectable))
+            {
+                collectable.OnSpawnItemJumpUp();
+            }
         }
     }
 

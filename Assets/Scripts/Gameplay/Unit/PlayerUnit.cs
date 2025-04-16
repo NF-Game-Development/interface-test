@@ -49,9 +49,17 @@ public class PlayerUnit : BaseUnit
         return _unitClass;
     }
 
-    private void OnTriggerEnter(Collider other)
+    // private void OnTriggerEnter(Collider other)
+    // {
+    //     if (other.TryGetComponent<ICollectable>(out ICollectable collectable))
+    //     {
+    //         collectable.Collect(_playerItemCollectedStats);
+    //     }
+    // }
+
+    private void OnCollisionEnter(Collision other)
     {
-        if (other.TryGetComponent<ICollectable>(out ICollectable collectable))
+        if (other.collider.TryGetComponent<ICollectable>(out ICollectable collectable))
         {
             collectable.Collect(_playerItemCollectedStats);
         }
