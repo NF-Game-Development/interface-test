@@ -8,8 +8,14 @@ using UnityEngine.UI;
 
 public class HUDManager : MonoExt
 {
+    [TabGroup("UI")] [SerializeField][OdinSerialize] public Dictionary<AbilityExtendableEnum, Image> AbilityImageDictionary = new Dictionary<AbilityExtendableEnum, Image>();
     [TabGroup("UI")] [SerializeField][OdinSerialize] public Dictionary<AbilityExtendableEnum, Image> CooldownImageDictionary = new Dictionary<AbilityExtendableEnum, Image>();
+    
     [TabGroup("UI")] [SerializeField] private GameObject _errorText;
+    
+    [TabGroup("UI")] [SerializeField] private GameObject abilityImagePrefab;
+    [TabGroup("UI")] [SerializeField] private Transform abilityPanelParent;
+    
     [TabGroup("References")] [SerializeField] private AbilityList _abilityList;
     [TabGroup("References")] [SerializeField] private AbilityParameterHandler _abilityParameterHandler;
     [TabGroup("References")] [SerializeField] private Spawner _spawner;
@@ -28,6 +34,7 @@ public class HUDManager : MonoExt
     {
         //Events
         OnSubscriptionSet();
+        UpdateUI();
     }
     
     public override void Initialize()
@@ -58,8 +65,36 @@ public class HUDManager : MonoExt
     public void UpdateUI()
     {
         _abilityList = _spawner.Player.GetComponent<PlayerController>().GetAbilityList();
-        //destroy ability images
-        //instantiate new ability images based on new ability list
+        // Clear previous icons
+        foreach (Transform child in abilityPanelParent)
+        {
+            Destroy(child.gameObject);
+        }
+
+        AbilityImageDictionary.Clear();
+        CooldownImageDictionary.Clear();
+
+        // Spawn ability icons
+        foreach (var pair in _abilityList.AbilityDictionary)
+        {
+            AbilityExtendableEnum abilityEnum = pair.Key;
+            Ability ability = pair.Value;
+
+            GameObject iconGO = Instantiate(abilityImagePrefab, abilityPanelParent);
+            AbilityIconUI iconUI = iconGO.GetComponent<AbilityIconUI>();
+
+            if (iconUI != null)
+            {
+                iconUI.SetAbility(ability.Icon, ability.ID); // Set icon sprite from ability
+
+                AbilityImageDictionary[abilityEnum] = iconUI.GetComponent<Image>(); // Optional: store main icon
+                CooldownImageDictionary[abilityEnum] = iconUI.GetCooldownOverlay(); // Store overlay
+            }
+            else
+            {
+                Debug.LogWarning($"Missing AbilityIconUI on prefab.");
+            }
+        }
     }
 
     private async UniTask StartCooldownUI(AbilityExtendableEnum abilityEnum)

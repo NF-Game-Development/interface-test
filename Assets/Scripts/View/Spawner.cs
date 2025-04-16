@@ -36,7 +36,6 @@ public class Spawner : MonoExt
         if (Player == null)
         {
             GameObject player = Instantiate(PlayerClassDictionary[PlayerToSpawn], PlayerSpawnPoint.position, PlayerSpawnPoint.rotation);
-            Cam.GetComponent<CameraController>().SetTransformTarget(player.transform);
             InitializePlayerOnSpawn(player);
         }
 
@@ -44,9 +43,10 @@ public class Spawner : MonoExt
         {
             Destroy(Player);
             GameObject player = Instantiate(PlayerClassDictionary[PlayerToSpawn], PlayerSpawnPoint.position, PlayerSpawnPoint.rotation);
-            Cam.GetComponent<CameraController>().SetTransformTarget(player.transform);
             InitializePlayerOnSpawn(player);
         }
+        
+        Cam.GetComponent<CameraController>().SetTransformTarget(Player.transform);
         OnPlayerChanged.OnNext(Unit.Default);
     }
     

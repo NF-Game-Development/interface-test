@@ -11,7 +11,7 @@ public class Ability : BaseAbility, IActivateable, ICooldown
     public Stat Cooldown;
     public AbilityBehaviour Behaviour;
     public AbilityParameterExtendableEnum CenterTransformParameter;
-    
+    public Sprite Icon;
     private bool _isOnCooldown = false;
     private float _remainingTime = 0f;
     public async UniTask OnTriggerAbility(GameObject obj, AbilityParameterHandler abilityParameters)

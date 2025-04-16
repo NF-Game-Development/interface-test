@@ -26,3 +26,4 @@ MonoBehaviour:
   Cooldown: {fileID: 11400000, guid: c935333e87ad10347b633b05e19f2794, type: 2}
   Behaviour: {fileID: 11400000, guid: e781550e3e4cd4d41b6132086a7c1340, type: 2}
   CenterTransformParameter: {fileID: 11400000, guid: 83f84282e1a12074c904e48c25dc1ce3, type: 2}
+  Icon: {fileID: 21300000, guid: 677a7815552aff84291d0b949d4feb28, type: 3}
