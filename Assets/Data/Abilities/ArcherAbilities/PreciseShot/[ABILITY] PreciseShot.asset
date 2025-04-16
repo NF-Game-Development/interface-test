@@ -21,7 +21,7 @@ MonoBehaviour:
     PrefabModificationsReferencedUnityObjects: []
     PrefabModifications: []
     SerializationNodes: []
-  ID: Precise_Shot
+  ID: Precise Shot
   AbilityEnum: {fileID: 11400000, guid: ddd708d69b335a54da76d9e1056fecf3, type: 2}
   Cooldown: {fileID: 11400000, guid: 43e0715cd4c66774e8662a8ff565c2f9, type: 2}
   Behaviour: {fileID: 11400000, guid: b5550012ae191d141bba5903cfd11b62, type: 2}

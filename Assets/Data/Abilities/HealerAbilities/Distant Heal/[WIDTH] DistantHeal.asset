@@ -9,8 +9,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b32388f9cd4edb44295d15e76c32c7c6, type: 3}
-  m_Name: '[CONSEQUENCE] HealConsequence'
+  m_Script: {fileID: 11500000, guid: 446733e39978472996a4fc2ed448209e, type: 3}
+  m_Name: '[WIDTH] DistantHeal'
   m_EditorClassIdentifier: 
   serializationData:
     SerializedFormat: 2
@@ -21,6 +21,4 @@ MonoBehaviour:
     PrefabModificationsReferencedUnityObjects: []
     PrefabModifications: []
     SerializationNodes: []
-  NextConsequence: {fileID: 0}
-  HealValue: {fileID: 11400000, guid: b6b549bd10bb2e249aed4cecc8a321ed, type: 2}
-  AllyHealParameterKey: {fileID: 11400000, guid: 88f2047015708074c8205207f50bbb9d, type: 2}
+  Value: 2

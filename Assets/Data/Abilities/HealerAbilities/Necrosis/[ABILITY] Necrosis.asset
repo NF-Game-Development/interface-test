@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ea52a66fa7250524f895536c5291a4e5, type: 3}
-  m_Name: '[ABILITY] ExplodingShot'
+  m_Name: '[ABILITY] Necrosis'
   m_EditorClassIdentifier: 
   serializationData:
     SerializedFormat: 2
@@ -21,9 +21,9 @@ MonoBehaviour:
     PrefabModificationsReferencedUnityObjects: []
     PrefabModifications: []
     SerializationNodes: []
-  ID: Exploding Shot
-  AbilityEnum: {fileID: 11400000, guid: b0fa4e55791d74e468df1b2a11af94ab, type: 2}
-  Cooldown: {fileID: 11400000, guid: 326bdb2550be8374da55c1f6be7b5aed, type: 2}
-  Behaviour: {fileID: 11400000, guid: 66164e7539072f048a72eff02c782784, type: 2}
+  ID: Necrosis
+  AbilityEnum: {fileID: 11400000, guid: 93155d70b6056f645afeb3a1c79dafaf, type: 2}
+  Cooldown: {fileID: 11400000, guid: c62de98999ff73a42adb9b7e99f4c4cf, type: 2}
+  Behaviour: {fileID: 11400000, guid: 71296f16c399dcb43aa91dd0b7bead84, type: 2}
   CenterTransformParameter: {fileID: 11400000, guid: 83f84282e1a12074c904e48c25dc1ce3, type: 2}
-  Icon: {fileID: 21300000, guid: dd3885098198d104888439be4c590aba, type: 3}
+  Icon: {fileID: 21300000, guid: eac3e2cd2f3070a4cb2521c534e1964f, type: 3}

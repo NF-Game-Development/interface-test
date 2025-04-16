@@ -9,6 +9,7 @@ public class PlayerController : MonoExt, IMovable, IRotatable, IAbilityCastable
     [TabGroup("References")] [SerializeField] private Rigidbody _rigidbody;
     [TabGroup("References")] [SerializeField] private Camera _camera;
     [TabGroup("References")] [SerializeField] private ClassType _classType;
+    [TabGroup("References")] [SerializeField] private GameObject _centerTransform;
 
     [TabGroup("Ability")] [SerializeField] private AbilityList _abilityList;
     [TabGroup("Ability")] [SerializeField] private AbilityParameterHandler _abilityParameterHandler;
@@ -93,7 +94,7 @@ public class PlayerController : MonoExt, IMovable, IRotatable, IAbilityCastable
 
     public void OnAbilityCast(AbilityExtendableEnum abilityEnum)
     {
-        _abilityList.AbilityDictionary[abilityEnum].OnTriggerAbility(gameObject, _abilityParameterHandler);
+        _abilityList.AbilityDictionary[abilityEnum].OnTriggerAbility(_centerTransform, _abilityParameterHandler);
     }
 
     public PlayerInputReader GetPlayerInput()

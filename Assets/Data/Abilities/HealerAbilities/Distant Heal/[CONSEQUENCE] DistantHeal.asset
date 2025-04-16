@@ -9,8 +9,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ea52a66fa7250524f895536c5291a4e5, type: 3}
-  m_Name: '[ABILITY] ExplodingShot'
+  m_Script: {fileID: 11500000, guid: b32388f9cd4edb44295d15e76c32c7c6, type: 3}
+  m_Name: '[CONSEQUENCE] DistantHeal'
   m_EditorClassIdentifier: 
   serializationData:
     SerializedFormat: 2
@@ -21,9 +21,6 @@ MonoBehaviour:
     PrefabModificationsReferencedUnityObjects: []
     PrefabModifications: []
     SerializationNodes: []
-  ID: Exploding Shot
-  AbilityEnum: {fileID: 11400000, guid: b0fa4e55791d74e468df1b2a11af94ab, type: 2}
-  Cooldown: {fileID: 11400000, guid: 326bdb2550be8374da55c1f6be7b5aed, type: 2}
-  Behaviour: {fileID: 11400000, guid: 66164e7539072f048a72eff02c782784, type: 2}
-  CenterTransformParameter: {fileID: 11400000, guid: 83f84282e1a12074c904e48c25dc1ce3, type: 2}
-  Icon: {fileID: 21300000, guid: dd3885098198d104888439be4c590aba, type: 3}
+  NextConsequence: {fileID: 0}
+  HealValue: {fileID: 11400000, guid: b6b549bd10bb2e249aed4cecc8a321ed, type: 2}
+  AllyHealParameterKey: {fileID: 11400000, guid: 88f2047015708074c8205207f50bbb9d, type: 2}
