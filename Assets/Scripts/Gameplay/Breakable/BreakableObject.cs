@@ -7,7 +7,7 @@ public class BreakableObject : MonoExt, IBreakable
     [SerializeField] private bool _isDropLoot = true;
     [SerializeField] private GameObject _breakableObject;
     [SerializeField] private GameObject _breakEffect; // if there is time
-    [SerializeField] private List<GameObject> _dropLootPrefabs; //Change Into scriptable object
+    [SerializeField] private LootDropList _dropLootPrefabs; //Change Into scriptable object
     private void Awake()
     {
         //Initialize mono extension
@@ -34,9 +34,9 @@ public class BreakableObject : MonoExt, IBreakable
         if(_isDropLoot == false)
             return;
         
-        int indexOfLootToSpawn = Random.Range(0, _dropLootPrefabs.Count);
+        int indexOfLootToSpawn = Random.Range(0, _dropLootPrefabs.LootDropPrefabs.Count);
         
-        Instantiate(_dropLootPrefabs[indexOfLootToSpawn], this.transform.position, Quaternion.identity);
+        Instantiate(_dropLootPrefabs.LootDropPrefabs[indexOfLootToSpawn], this.transform.position, Quaternion.identity);
     }
 
     private void BreakObject()
