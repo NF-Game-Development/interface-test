@@ -23,6 +23,7 @@ namespace NF.Main.Core.PlayerStateMachine
     {
         Idle,
         UsingAbility,
+        Moving,
     }
 }
 

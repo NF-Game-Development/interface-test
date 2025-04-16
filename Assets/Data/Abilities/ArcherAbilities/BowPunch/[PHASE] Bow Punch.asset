@@ -41,7 +41,7 @@ MonoBehaviour:
       Data: 
     - Name: $k
       Entry: 4
-      Data: 0.6
+      Data: 0.2
     - Name: $v
       Entry: 7
       Data: 2|System.Collections.Generic.List`1[[Consequence, Assembly-CSharp]],

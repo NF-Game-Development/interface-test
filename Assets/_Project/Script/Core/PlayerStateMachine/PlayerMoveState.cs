@@ -1,9 +1,9 @@
 using NF.Main.Core.PlayerStateMachine;
 using UnityEngine;
 
-public class PlayerAbilityState : PlayerBaseState
+public class PlayerMoveState : PlayerBaseState
 {
-    public PlayerAbilityState(PlayerController playerController, Animator animator)
+    public PlayerMoveState(PlayerController playerController, Animator animator)
         : base(playerController, animator) {}
 
     public override async void OnEnter()
@@ -11,19 +11,14 @@ public class PlayerAbilityState : PlayerBaseState
         base.OnEnter();
         Debug.Log("Entering Ability State");
 
-        var ability = _playerController.GetPendingAbility();
+        _animator.CrossFade("Run", 0f);
 
-        if (!string.IsNullOrEmpty(ability.ID))
-        {
-            _animator.CrossFade(ability.ID, 0f);
-        }
     }
 
     public override void Update()
     {
         base.Update();
-        
-        if (!_playerController.GetAbilityParameterHandler().IsAnAbilityExecuting)
+        if (_playerController.GetMovementInput().sqrMagnitude < 0.1f)
         {
             _playerController.PlayerState = PlayerState.Idle;
         }

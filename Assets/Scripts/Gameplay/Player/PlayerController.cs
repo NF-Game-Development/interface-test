@@ -71,6 +71,10 @@ public class PlayerController : MonoExt, IMovable, IRotatable, IAbilityCastable
             return;
         if (_abilityParameterHandler.IsAnAbilityExecuting)
             return;
+        if (_movementInput.sqrMagnitude > 0.1f)
+        {
+            PlayerState = PlayerState.Moving;  // Transition to ability state when running
+        }
         
         Vector3 normalizedDirection = Utility.CalculateCameraDirection(_camera, _movementInput);
         
@@ -116,10 +120,12 @@ public class PlayerController : MonoExt, IMovable, IRotatable, IAbilityCastable
 
         var idleState = new PlayerIdleState(this, _animator);
         var abilityState = new PlayerAbilityState(this, _animator);
+        var moveState = new PlayerMoveState(this, _animator);
 
         // Transitions
         Any(idleState, new FuncPredicate(ReturnToIdleState));
         Any(abilityState, new FuncPredicate(IsUsingAbility));
+        Any(moveState, new FuncPredicate(IsMoving));
 
         _stateMachine.SetState(idleState);
     }
@@ -130,7 +136,9 @@ public class PlayerController : MonoExt, IMovable, IRotatable, IAbilityCastable
     private bool ReturnToIdleState() => PlayerState == PlayerState.Idle;
     private bool IsUsingAbility() => PlayerState == PlayerState.UsingAbility;
     public Ability GetPendingAbility() => _pendingAbility;
-
+    public Vector2 GetMovementInput() => _movementInput;
+    private bool IsMoving() => _movementInput.sqrMagnitude > 0.1f;
+    
     public PlayerInputReader GetPlayerInput()
     {
         return _playerInput;
