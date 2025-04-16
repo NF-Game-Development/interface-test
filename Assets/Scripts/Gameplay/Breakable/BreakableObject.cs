@@ -34,9 +34,19 @@ public class BreakableObject : MonoExt, IBreakable
         if(_isDropLoot == false)
             return;
         
-        int indexOfLootToSpawn = Random.Range(0, _dropLootPrefabs.LootDropPrefabs.Count);
-        
-        Instantiate(_dropLootPrefabs.LootDropPrefabs[indexOfLootToSpawn], this.transform.position, Quaternion.identity);
+        int amountOfLoot = Random.Range(1, 3); //change to scriptable
+        int indexOfLootToSpawn;
+        for (int index = 0; index < amountOfLoot; index++)
+        {
+            indexOfLootToSpawn = Random.Range(0, _dropLootPrefabs.LootDropPrefabs.Count);
+            GameObject newLoot = Instantiate(_dropLootPrefabs.LootDropPrefabs[indexOfLootToSpawn], this.transform.position, 
+                Quaternion.identity);
+
+            if (newLoot.TryGetComponent<ICollectable>(out ICollectable collectable))
+            {
+                collectable.OnSpawnItemJumpUp();
+            }
+        }
     }
 
     private void BreakObject()

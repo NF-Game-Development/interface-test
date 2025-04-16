@@ -1,0 +1,125 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &7615306650929992376
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: d182c915d564cf545b5570e7b95766eb, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -2.15
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: d182c915d564cf545b5570e7b95766eb, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: d182c915d564cf545b5570e7b95766eb, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 6.24
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: d182c915d564cf545b5570e7b95766eb, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.9983018
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: d182c915d564cf545b5570e7b95766eb, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: d182c915d564cf545b5570e7b95766eb, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.05825406
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: d182c915d564cf545b5570e7b95766eb, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: d182c915d564cf545b5570e7b95766eb, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: d182c915d564cf545b5570e7b95766eb, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: d182c915d564cf545b5570e7b95766eb, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: d182c915d564cf545b5570e7b95766eb, type: 3}
+      propertyPath: m_Name
+      value: Door_A_Decorated
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: d182c915d564cf545b5570e7b95766eb, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: d182c915d564cf545b5570e7b95766eb, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: d182c915d564cf545b5570e7b95766eb, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 6446405401161362106}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: d182c915d564cf545b5570e7b95766eb, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2684092171890319605}
+  m_SourcePrefab: {fileID: 100100000, guid: d182c915d564cf545b5570e7b95766eb, type: 3}
+--- !u!1 &7308894542799253481 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: d182c915d564cf545b5570e7b95766eb, type: 3}
+  m_PrefabInstance: {fileID: 7615306650929992376}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &6446405401161362106
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7308894542799253481}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: decf78ad72a052042aed9dac90fa7e7d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes: []
+  _isOpen: 0
+  _isInteractable: 1
+  _door: {fileID: 7308894542799253481}
+  _openDoorFinalRotation: -90
+  _openDoorTime: 1
+--- !u!65 &2684092171890319605
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7308894542799253481}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.6000005, y: 2.8000002, z: 0.6268618}
+  m_Center: {x: -0.7999999, y: 1.4000001, z: 0.04039994}

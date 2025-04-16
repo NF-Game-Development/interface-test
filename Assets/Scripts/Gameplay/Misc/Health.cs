@@ -24,9 +24,14 @@ public class Health : MonoExt, IDamageable
         HP -= damageValue;
 
         if (HP <= 0)
-            Destroy(gameObject, 0.2f);
+            OnDeath();
         
         UpdateHpText((int)HP);
+    }
+
+    public virtual void OnDeath()
+    {
+        Destroy(gameObject, 0.2f);
     }
 
     public void SetMaxHealth(Stat newMaxHealth)
