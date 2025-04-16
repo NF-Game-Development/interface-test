@@ -149,6 +149,10 @@ public class PlayerController : MonoExt, IMovable, IRotatable, IAbilityCastable
                 _currentInteractable = interactable;
             }
         }
+        else
+        {
+            _currentInteractable = null;
+        }
     }
 
     private void OnInteract()
