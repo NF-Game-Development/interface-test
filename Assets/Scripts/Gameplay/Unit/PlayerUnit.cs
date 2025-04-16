@@ -5,7 +5,8 @@ using UnityEngine;
 public class PlayerUnit : BaseUnit
 {
     [SerializeField] private Dictionary<UnitClass, GameObject> _playerModels = new Dictionary<UnitClass, GameObject>();
-    [SerializeField] PlayerItemCollectedStats _playerItemCollectedStats;
+    [SerializeField] private PlayerItemCollectedStats _playerItemCollectedStats;
+    [SerializeField] private Stat _collectableAttractionRadius;
     
     private void Awake()
     {
@@ -26,6 +27,11 @@ public class PlayerUnit : BaseUnit
     public override void OnSubscriptionSet()
     {
         base.OnSubscriptionSet();
+    }
+
+    private void FixedUpdate()
+    {
+        AttractCollectables();
     }
 
     public void ChnageModel()
@@ -49,5 +55,25 @@ public class PlayerUnit : BaseUnit
         {
             collectable.Collect(_playerItemCollectedStats);
         }
+    }
+
+    private void AttractCollectables()
+    {
+        Collider[] colliders = Physics.OverlapSphere(transform.position, _collectableAttractionRadius.Value);
+        
+        foreach (Collider collider in colliders)
+        {
+            if (collider.gameObject.TryGetComponent<ICollectable>(out ICollectable collectable))
+            {
+                collectable.MoveTowardsPlayer(this.transform);
+            }
+        }
+    }
+    
+    private void OnDrawGizmosSelected()
+    {
+        // Draw a yellow sphere at the transform's position
+        Gizmos.color = Color.yellow;
+        Gizmos.DrawWireSphere(transform.position, _collectableAttractionRadius.Value);
     }
 }

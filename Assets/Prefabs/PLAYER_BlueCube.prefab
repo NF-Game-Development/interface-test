@@ -464,6 +464,7 @@ MonoBehaviour:
       Data: 
   Health: {fileID: 8500000254545838942}
   _playerItemCollectedStats: {fileID: 11400000, guid: e06ce27b5c6cf7749ad7deb82d59e856, type: 2}
+  _collectableAttractionRadius: {fileID: 11400000, guid: 1a9cc4512a8d0344e88f9940343b4ddc, type: 2}
 --- !u!1 &5666056745008873080
 GameObject:
   m_ObjectHideFlags: 0

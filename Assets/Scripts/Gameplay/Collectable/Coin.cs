@@ -1,9 +1,10 @@
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Serialization;
 
 public class Coin : MonoExt, ICollectable
 {
-    [FormerlySerializedAs("coinAmountGain")] [SerializeField] private int _coinAmountGain;
+    [SerializeField] private int _coinAmountGain;
     private void Awake()
     {
         //Initialize mono extension
@@ -29,5 +30,10 @@ public class Coin : MonoExt, ICollectable
     {
         playerItemCollectedStats.AddCoinsCollected(_coinAmountGain);
         Destroy(this.gameObject);
+    }
+
+    public void MoveTowardsPlayer(Transform target)
+    {
+        transform.position = Vector3.MoveTowards(this.transform.position, target.position, 1f * Time.deltaTime);
     }
 }
