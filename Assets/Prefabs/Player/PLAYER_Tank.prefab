@@ -2561,9 +2561,9 @@ MonoBehaviour:
   _playerInput: {fileID: 11400000, guid: bccb5b502b38ed64fb694b53d16cc9c6, type: 2}
   _rigidbody: {fileID: 3432890903380724779}
   _camera: {fileID: 0}
-  _classType: {fileID: 11400000, guid: 4f0b1353370440348989aa2f84e1a3c9, type: 2}
+  _classType: {fileID: 11400000, guid: 2f4a60dc620974a4ba9eaa446c36344e, type: 2}
   _centerTransform: {fileID: 1272929602116621553}
-  _abilityList: {fileID: 11400000, guid: 3c39be05980d0074db691ba77953e950, type: 2}
+  _abilityList: {fileID: 0}
   _abilityParameterHandler: {fileID: 11400000, guid: 1067540d4eef0c14c89a4c43eac2e488, type: 2}
   _canPlayerMove: 1
   _canPlayerRotate: 1

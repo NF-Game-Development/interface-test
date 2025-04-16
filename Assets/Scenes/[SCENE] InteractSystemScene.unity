@@ -1165,7 +1165,7 @@ MonoBehaviour:
   Cam: {fileID: 2134909363}
   PlayerSpawnPoint: {fileID: 915563389}
   EnemySpawnPoint: {fileID: 666836087}
-  PlayerToSpawn: {fileID: 11400000, guid: 7ac7277ae238e5f438bd38ed0118028f, type: 2}
+  PlayerToSpawn: {fileID: 11400000, guid: 2f4a60dc620974a4ba9eaa446c36344e, type: 2}
   Player: {fileID: 0}
   Enemy: {fileID: 0}
 --- !u!4 &334256302
