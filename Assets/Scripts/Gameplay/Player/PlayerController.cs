@@ -60,7 +60,6 @@ public class PlayerController : MonoExt, IMovable, IRotatable, IAbilityCastable
     public void FixedUpdate()
     {
         HandleMovement();
-        //RayCastCheckForInteractables();
     }
 
     //Handles movement and rotation
@@ -157,6 +156,6 @@ public class PlayerController : MonoExt, IMovable, IRotatable, IAbilityCastable
     private void OnInteract()
     {
         RayCastCheckForInteractables();
-        _currentInteractable.Interact();
+        _currentInteractable?.Interact();
     }
 }

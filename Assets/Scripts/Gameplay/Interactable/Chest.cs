@@ -67,6 +67,9 @@ public class Chest : MonoExt, IInteractable
 
     public void Interact()
     {
+        if(_isInteractable == false)
+            return;
+        
         OpenDoorAnimation();
     }
 }

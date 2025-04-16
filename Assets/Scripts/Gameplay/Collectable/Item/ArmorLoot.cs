@@ -1,13 +1,9 @@
-using System;
-using System.Collections;
-using Unity.VisualScripting;
 using UnityEngine;
-using UnityEngine.Serialization;
 
-public class Coin : BaseCollectable
+public class ArmorLoot : BaseCollectable
 {
-    [SerializeField] private int _coinAmountGain;
-
+    [SerializeField] private ArmorItemEnum _armorItemEnum;
+    
     private void Awake()
     {
         //Initialize mono extension
@@ -31,7 +27,7 @@ public class Coin : BaseCollectable
 
     protected override void OnCollect(PlayerItemCollectedStats playerItemCollectedStats)
     {
-        playerItemCollectedStats.AddCoinsCollected(_coinAmountGain);
+        playerItemCollectedStats.AddArmorItem(_armorItemEnum);
         Destroy(this.gameObject);
     }
 }
