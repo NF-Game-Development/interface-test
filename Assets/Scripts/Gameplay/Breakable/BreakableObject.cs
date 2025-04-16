@@ -3,7 +3,7 @@ using UnityEngine;
 public class BreakableObject : MonoExt, IBreakable
 {
     [SerializeField] private GameObject _breakableObject;
-    [SerializeField] private GameObject _breakEffect; // if there is time
+    //[SerializeField] private GameObject _breakEffect; // if there is time
     private void Awake()
     {
         //Initialize mono extension
@@ -28,7 +28,7 @@ public class BreakableObject : MonoExt, IBreakable
     protected virtual void OnBreak()
     {
         _breakableObject?.SetActive(false);
-        _breakEffect?.SetActive(true);
+        //_breakEffect?.SetActive(true);
     }
     
     public void Break()

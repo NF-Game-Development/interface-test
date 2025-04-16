@@ -21,7 +21,7 @@ public class DealDamageConsequence : Consequence
 
         foreach (GameObject target in targetList.ToList())
         {
-            if (!target.TryGetComponent<Health>(out var targetHealth))
+            if (!target.TryGetComponent<IDamageable>(out var targetHealth))
             {
                 targetList.Remove(target);
                 continue;
