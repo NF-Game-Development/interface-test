@@ -4,7 +4,8 @@ using UnityEngine.Serialization;
 
 public class PlayerSpawnManager : MonoExt
 {
-    [SerializeField] private PlayerController _playerControllerPrefab;
+    //[SerializeField] private PlayerController _playerControllerPrefab;
+    [SerializeField] private ClassPrefabDictionary classPrefabDictionary;
     [SerializeField] Transform _playerSpawnPoint;
     
     [SerializeField] private ClassAbilityDictionary _classAbilityDictionary;
@@ -41,19 +42,19 @@ public class PlayerSpawnManager : MonoExt
     [Button]
     public void SpawnPlayer(ClassEnum classEnum)
     {
-        if (_playercontrollerRef == null)
+        if (_playercontrollerRef != null)
         {
-            _playercontrollerRef = Instantiate(_playerControllerPrefab, _playerSpawnPoint.position, Quaternion.identity);
+            Destroy(_playercontrollerRef.gameObject);
         }
-    
-        _playercontrollerRef.transform.position = _playerSpawnPoint.position;
+
+        _playercontrollerRef = Instantiate(classPrefabDictionary.PrefabDictionary[classEnum], 
+            _playerSpawnPoint.position, Quaternion.identity);
+        
         _playercontrollerRef.SetCamera(_mainCamera);
         _playercontrollerRef.InitializePlayer(baseClassDictionary.ClassDictionary[classEnum]);
-        _playercontrollerRef.ChangePlayerModel();
         _playercontrollerRef.ChangeInputReaderAbilityDictionary(_classAbilityDictionary.AbilityOrderDictionary[classEnum]);
         
         _hudManager.SetAbilityList(_playercontrollerRef.GetAbilityList());
-        
         _cameraController.SetCameraTarget(_playercontrollerRef.transform);
     }
 }

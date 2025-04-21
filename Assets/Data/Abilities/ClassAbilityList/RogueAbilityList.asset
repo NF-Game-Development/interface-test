@@ -9,32 +9,32 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ddbdf35694cad96459d1746f74f3d0fa, type: 3}
-  m_Name: ClassAbilityDictionary
+  m_Script: {fileID: 11500000, guid: 17962dbb1a88d7a4bb644fd03cc29c45, type: 3}
+  m_Name: RogueAbilityList
   m_EditorClassIdentifier: 
   serializationData:
     SerializedFormat: 2
     SerializedBytes: 
     ReferencedUnityObjects:
-    - {fileID: 11400000, guid: b57d4172cc867934eabad7166cb64edf, type: 2}
-    - {fileID: 11400000, guid: 31b4d10c9e84cab40baf4a9d58d712de, type: 2}
-    - {fileID: 11400000, guid: d087f1014fc61a044817d0c664fcf05e, type: 2}
-    - {fileID: 11400000, guid: e1d4b91b65c61824997ce27ba287aa7e, type: 2}
-    - {fileID: 11400000, guid: 6de4490d957e5924dbe6634ce7eea354, type: 2}
-    - {fileID: 11400000, guid: 874cd566e6d9ee44b9c31ad736fcfbb1, type: 2}
+    - {fileID: 11400000, guid: 980a7fc31ac06bb4cbf1ee3ab46dfafe, type: 2}
+    - {fileID: 11400000, guid: 703b09599f5ab3a419668dd69ddf1454, type: 2}
+    - {fileID: 11400000, guid: be9dd6f19e9fe4f4cb127c8dfe5135fd, type: 2}
+    - {fileID: 11400000, guid: e9204ee44cfe5da46b2d47a221590f09, type: 2}
+    - {fileID: 11400000, guid: ff288a05996991444b318cfa696c0a21, type: 2}
+    - {fileID: 11400000, guid: 8c054ddc2f89c0748a04ded79aad5c2f, type: 2}
     SerializedBytesString: 
     Prefab: {fileID: 0}
     PrefabModificationsReferencedUnityObjects: []
     PrefabModifications: []
     SerializationNodes:
-    - Name: AbilityOrderDictionary
+    - Name: AbilityDictionary
       Entry: 7
-      Data: 0|System.Collections.Generic.Dictionary`2[[ClassEnum, Assembly-CSharp],[AbilityDictionary,
+      Data: 0|System.Collections.Generic.Dictionary`2[[AbilityExtendableEnum, Assembly-CSharp],[Ability,
         Assembly-CSharp]], mscorlib
     - Name: comparer
       Entry: 7
-      Data: 1|System.Collections.Generic.ObjectEqualityComparer`1[[ClassEnum, Assembly-CSharp]],
-        mscorlib
+      Data: 1|System.Collections.Generic.ObjectEqualityComparer`1[[AbilityExtendableEnum,
+        Assembly-CSharp]], mscorlib
     - Name: 
       Entry: 8
       Data: 

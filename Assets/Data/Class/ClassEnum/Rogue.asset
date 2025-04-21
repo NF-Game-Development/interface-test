@@ -9,8 +9,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ce547c359ab18754895426940f3ce52d, type: 3}
-  m_Name: PaladinClass
+  m_Script: {fileID: 11500000, guid: a7f6084c961db794ba2b719f273d8a99, type: 3}
+  m_Name: Rogue
   m_EditorClassIdentifier: 
   serializationData:
     SerializedFormat: 2
@@ -21,5 +21,3 @@ MonoBehaviour:
     PrefabModificationsReferencedUnityObjects: []
     PrefabModifications: []
     SerializationNodes: []
-  ClassAbilityList: {fileID: 11400000, guid: 3c39be05980d0074db691ba77953e950, type: 2}
-  ClassMaxHp: {fileID: 11400000, guid: c82369e7a7f6b8948bfb011859e54c10, type: 2}

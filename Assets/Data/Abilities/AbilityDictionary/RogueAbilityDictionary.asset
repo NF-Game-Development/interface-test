@@ -9,19 +9,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ddbdf35694cad96459d1746f74f3d0fa, type: 3}
-  m_Name: ClassAbilityDictionary
+  m_Script: {fileID: 11500000, guid: d223d2ee5acfd4047aa0b288505d0ce1, type: 3}
+  m_Name: RogueAbilityDictionary
   m_EditorClassIdentifier: 
   serializationData:
     SerializedFormat: 2
     SerializedBytes: 
     ReferencedUnityObjects:
-    - {fileID: 11400000, guid: b57d4172cc867934eabad7166cb64edf, type: 2}
-    - {fileID: 11400000, guid: 31b4d10c9e84cab40baf4a9d58d712de, type: 2}
-    - {fileID: 11400000, guid: d087f1014fc61a044817d0c664fcf05e, type: 2}
-    - {fileID: 11400000, guid: e1d4b91b65c61824997ce27ba287aa7e, type: 2}
-    - {fileID: 11400000, guid: 6de4490d957e5924dbe6634ce7eea354, type: 2}
-    - {fileID: 11400000, guid: 874cd566e6d9ee44b9c31ad736fcfbb1, type: 2}
+    - {fileID: 11400000, guid: 980a7fc31ac06bb4cbf1ee3ab46dfafe, type: 2}
+    - {fileID: 11400000, guid: be9dd6f19e9fe4f4cb127c8dfe5135fd, type: 2}
+    - {fileID: 11400000, guid: ff288a05996991444b318cfa696c0a21, type: 2}
     SerializedBytesString: 
     Prefab: {fileID: 0}
     PrefabModificationsReferencedUnityObjects: []
@@ -29,12 +26,12 @@ MonoBehaviour:
     SerializationNodes:
     - Name: AbilityOrderDictionary
       Entry: 7
-      Data: 0|System.Collections.Generic.Dictionary`2[[ClassEnum, Assembly-CSharp],[AbilityDictionary,
+      Data: 0|System.Collections.Generic.Dictionary`2[[System.Int32, mscorlib],[AbilityExtendableEnum,
         Assembly-CSharp]], mscorlib
     - Name: comparer
       Entry: 7
-      Data: 1|System.Collections.Generic.ObjectEqualityComparer`1[[ClassEnum, Assembly-CSharp]],
-        mscorlib
+      Data: 1|System.Collections.Generic.GenericEqualityComparer`1[[System.Int32,
+        mscorlib]], mscorlib
     - Name: 
       Entry: 8
       Data: 
@@ -45,8 +42,20 @@ MonoBehaviour:
       Entry: 7
       Data: 
     - Name: $k
+      Entry: 3
+      Data: 1
+    - Name: $v
       Entry: 10
       Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 3
+      Data: 2
     - Name: $v
       Entry: 10
       Data: 1
@@ -57,23 +66,11 @@ MonoBehaviour:
       Entry: 7
       Data: 
     - Name: $k
+      Entry: 3
+      Data: 3
+    - Name: $v
       Entry: 10
       Data: 2
-    - Name: $v
-      Entry: 10
-      Data: 3
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 10
-      Data: 4
-    - Name: $v
-      Entry: 10
-      Data: 5
     - Name: 
       Entry: 8
       Data: 

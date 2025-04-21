@@ -22,4 +22,4 @@ MonoBehaviour:
     PrefabModifications: []
     SerializationNodes: []
   ClassAbilityList: {fileID: 11400000, guid: db13d6f2471f72a44bf5779b3ab522e2, type: 2}
-  ClassMaxHp: {fileID: 11400000, guid: 3d0b36cf3b4fcde4592b59a7220d69d7, type: 2}
+  ClassMaxHp: {fileID: 11400000, guid: 7622e8a24ba93024485e0766818fe695, type: 2}

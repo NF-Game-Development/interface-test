@@ -33,16 +33,7 @@ public class PlayerUnit : BaseUnit
     {
         AttractCollectables();
     }
-
-    public void ChnageModel()
-    {
-        foreach (var model in _playerModels)
-        {
-            model.Value.SetActive(false);
-        }
-        
-        _playerModels[_unitClass].SetActive(true);
-    }
+    
     
     public UnitClass GetUnitClass()
     {

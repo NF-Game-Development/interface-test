@@ -9,27 +9,27 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ddbdf35694cad96459d1746f74f3d0fa, type: 3}
-  m_Name: ClassAbilityDictionary
+  m_Script: {fileID: 11500000, guid: 4b369a4ff6f5b1a4f90defc20a2b6d21, type: 3}
+  m_Name: ClassPrefabDictionary
   m_EditorClassIdentifier: 
   serializationData:
     SerializedFormat: 2
     SerializedBytes: 
     ReferencedUnityObjects:
     - {fileID: 11400000, guid: b57d4172cc867934eabad7166cb64edf, type: 2}
-    - {fileID: 11400000, guid: 31b4d10c9e84cab40baf4a9d58d712de, type: 2}
-    - {fileID: 11400000, guid: d087f1014fc61a044817d0c664fcf05e, type: 2}
-    - {fileID: 11400000, guid: e1d4b91b65c61824997ce27ba287aa7e, type: 2}
+    - {fileID: 8215706814670069186, guid: de5f53abf66573e4984839a02814c22a, type: 3}
     - {fileID: 11400000, guid: 6de4490d957e5924dbe6634ce7eea354, type: 2}
-    - {fileID: 11400000, guid: 874cd566e6d9ee44b9c31ad736fcfbb1, type: 2}
+    - {fileID: 8215706814670069186, guid: e652b3fe1b3491d4487f4d700a4ec7c1, type: 3}
+    - {fileID: 11400000, guid: d087f1014fc61a044817d0c664fcf05e, type: 2}
+    - {fileID: 8215706814670069186, guid: 6b4aa6eec5281134989c21e8d53ae676, type: 3}
     SerializedBytesString: 
     Prefab: {fileID: 0}
     PrefabModificationsReferencedUnityObjects: []
     PrefabModifications: []
     SerializationNodes:
-    - Name: AbilityOrderDictionary
+    - Name: PrefabDictionary
       Entry: 7
-      Data: 0|System.Collections.Generic.Dictionary`2[[ClassEnum, Assembly-CSharp],[AbilityDictionary,
+      Data: 0|System.Collections.Generic.Dictionary`2[[ClassEnum, Assembly-CSharp],[PlayerController,
         Assembly-CSharp]], mscorlib
     - Name: comparer
       Entry: 7
