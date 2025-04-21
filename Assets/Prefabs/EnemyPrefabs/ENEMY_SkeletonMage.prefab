@@ -362,7 +362,10 @@ MonoBehaviour:
     Prefab: {fileID: 0}
     PrefabModificationsReferencedUnityObjects: []
     PrefabModifications: []
-    SerializationNodes: []
+    SerializationNodes:
+    - Name: OnDeathEvent
+      Entry: 6
+      Data: 
   MaxHealth: {fileID: 11400000, guid: 441d04f780e6c7e41b111776915d6828, type: 2}
   _healthText: {fileID: 0}
   HP: 0
@@ -388,6 +391,7 @@ MonoBehaviour:
     PrefabModifications: []
     SerializationNodes: []
   Health: {fileID: 7646275891232582957}
+  _animator: {fileID: 2471261605094357091}
 --- !u!1001 &8295976859199686130
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -440,11 +444,20 @@ PrefabInstance:
       propertyPath: m_Name
       value: Skeleton_Mage
       objectReference: {fileID: 0}
+    - target: {fileID: 5866666021909216657, guid: b61a8d7c253db9f4091449c9639ca2b1, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 2422e1daedfa48b49b601d4615e5ead3, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b61a8d7c253db9f4091449c9639ca2b1, type: 3}
+--- !u!95 &2471261605094357091 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 5866666021909216657, guid: b61a8d7c253db9f4091449c9639ca2b1, type: 3}
+  m_PrefabInstance: {fileID: 8295976859199686130}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &8406957726533952025 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: b61a8d7c253db9f4091449c9639ca2b1, type: 3}

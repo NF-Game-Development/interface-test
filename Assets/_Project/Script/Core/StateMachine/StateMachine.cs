@@ -1,5 +1,6 @@
 using System;
-using System.Collections.Generic; 
+using System.Collections.Generic;
+using UnityEngine;
 
 namespace NF.Main.Core
 {
@@ -56,6 +57,7 @@ namespace NF.Main.Core
         // Changes the current state to a new one
         private void ChangeState(IState state)
         {
+            Debug.Log(state);
             _isNewState = state != _currentState.State;
             if (!_isNewState)
             {

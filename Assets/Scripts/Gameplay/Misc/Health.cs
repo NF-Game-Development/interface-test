@@ -13,8 +13,11 @@ public class Health : MonoExt, IDamageable
     public float MaxHP => MaxHealth.Value;
     public float HP;
 
+    public Subject<Unit> OnDeathEvent;
+
     private void Awake()
     {
+        OnDeathEvent = new Subject<Unit>();
         HP = MaxHP;
     }
     
@@ -31,7 +34,7 @@ public class Health : MonoExt, IDamageable
 
     public virtual void OnDeath()
     {
-        Destroy(gameObject, 0.2f);
+        OnDeathEvent.OnNext(Unit.Default);
     }
 
     public void SetMaxHealth(Stat newMaxHealth)

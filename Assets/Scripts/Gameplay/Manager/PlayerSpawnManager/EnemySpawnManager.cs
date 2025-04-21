@@ -37,5 +37,6 @@ public class EnemySpawnManger : MonoExt
     {
         EnemyUnit newEnemyUnit = Instantiate(_enemyUnitPrefabs[classEnum], _enemySpawnPoint.position, Quaternion.identity);
         newEnemyUnit.InitializeUnitClass(baseClassDictionary.ClassDictionary[classEnum]);
+        newEnemyUnit.SetupStateMachine();
     }
 }

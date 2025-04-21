@@ -3,7 +3,7 @@ using UnityEngine;
 public class BaseUnit : MonoExt
 {
     protected UnitClass _unitClass;
-    [SerializeField] private Health Health;
+    [SerializeField] protected Health Health;
     
     private void Awake()
     {
