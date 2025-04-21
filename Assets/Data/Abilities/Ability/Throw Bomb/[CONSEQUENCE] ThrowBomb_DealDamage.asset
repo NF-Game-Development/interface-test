@@ -22,5 +22,5 @@ MonoBehaviour:
     PrefabModifications: []
     SerializationNodes: []
   NextConsequence: {fileID: 0}
-  Damage: {fileID: 11400000, guid: c53da4238c0a10b43aeab3a15d806622, type: 2}
+  Damage: {fileID: 11400000, guid: 92820e8aa4ae76b4abe029ab24666f31, type: 2}
   EnemyListParameterKey: {fileID: 11400000, guid: 88f2047015708074c8205207f50bbb9d, type: 2}

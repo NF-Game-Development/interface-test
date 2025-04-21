@@ -23,6 +23,6 @@ MonoBehaviour:
     SerializationNodes: []
   ID: Circular_Slash
   AbilityEnum: {fileID: 11400000, guid: 20c14dfe4fd23f549a05fd34f2cb1b37, type: 2}
-  Cooldown: {fileID: 11400000, guid: b7f3c44268e148549b29c25dceb40acf, type: 2}
-  Behaviour: {fileID: 11400000, guid: a5ddf4bc5a91e264ebb41ebae99796f8, type: 2}
+  Cooldown: {fileID: 11400000, guid: 0f153e79d03260141b8f67de66107511, type: 2}
+  Behaviour: {fileID: 11400000, guid: 2c729e5adfbdb7c4884dbb853b8a49bd, type: 2}
   CenterTransformParameter: {fileID: 11400000, guid: 83f84282e1a12074c904e48c25dc1ce3, type: 2}

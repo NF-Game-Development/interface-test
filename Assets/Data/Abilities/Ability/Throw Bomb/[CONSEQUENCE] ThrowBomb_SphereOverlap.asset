@@ -21,9 +21,9 @@ MonoBehaviour:
     PrefabModificationsReferencedUnityObjects: []
     PrefabModifications: []
     SerializationNodes: []
-  NextConsequence: {fileID: 11400000, guid: 5f16b03cea0df3849881062e73aa4302, type: 2}
-  Radius: {fileID: 11400000, guid: 529e3daaf73ab714288b10f5ba31a674, type: 2}
-  FrontOffset: {fileID: 11400000, guid: 6ea04bc3825949d4f8411cbdfdaf1e41, type: 2}
+  NextConsequence: {fileID: 11400000, guid: 7ff926cfbf489474d87011ccec1f4c2f, type: 2}
+  Radius: {fileID: 11400000, guid: a105b2f597b95ea4b9509155d8e27ba7, type: 2}
+  FrontOffset: {fileID: 11400000, guid: ea7d72d96322ac94e9f73e875e7d5665, type: 2}
   CenterParameterKey: {fileID: 11400000, guid: 83f84282e1a12074c904e48c25dc1ce3, type: 2}
   TargetListParameterKey: {fileID: 11400000, guid: 88f2047015708074c8205207f50bbb9d, type: 2}
   TargetTag: {fileID: 11400000, guid: cd5d9d2cadcf4c84d80147d1da6c3dec, type: 2}

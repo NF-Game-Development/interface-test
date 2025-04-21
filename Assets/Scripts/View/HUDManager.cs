@@ -9,6 +9,7 @@ using UnityEngine.UI;
 public class HUDManager : MonoExt
 {
     [TabGroup("UI")] [SerializeField][OdinSerialize] public Dictionary<AbilityExtendableEnum, Image> CooldownImageDictionary = new Dictionary<AbilityExtendableEnum, Image>();
+    [TabGroup("UI")] [SerializeField][OdinSerialize] public Dictionary<AbilityExtendableEnum, GameObject> AbilityIconDictionary = new Dictionary<AbilityExtendableEnum, GameObject>();
     [TabGroup("UI")] [SerializeField] private GameObject _errorText;
     [TabGroup("References")] [SerializeField] private AbilityList _abilityList;
     [TabGroup("References")] [SerializeField] private AbilityParameterHandler _abilityParameterHandler;
@@ -66,5 +67,14 @@ public class HUDManager : MonoExt
     public void SetAbilityList(AbilityList abilityList)
     {
         _abilityList = abilityList;
+        InitializeSkillPanel();
+    }
+
+    private void InitializeSkillPanel()
+    {
+        foreach (var keypair in AbilityIconDictionary)
+        {
+            keypair.Value.SetActive(_abilityList.AbilityDictionary.ContainsKey(keypair.Key));
+        }
     }
 }
