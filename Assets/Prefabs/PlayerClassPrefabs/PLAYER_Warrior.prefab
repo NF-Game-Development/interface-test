@@ -72,6 +72,10 @@ PrefabInstance:
       propertyPath: serializationData.Prefab
       value: 
       objectReference: {fileID: 7944864007634329975, guid: b26bbdae9cb96ba498b6f19eebe207da, type: 3}
+    - target: {fileID: 7973404383875629225, guid: b26bbdae9cb96ba498b6f19eebe207da, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: c3f2ed55a0dee444c84b0d05b86e6390, type: 2}
     - target: {fileID: 8500000254545838942, guid: b26bbdae9cb96ba498b6f19eebe207da, type: 3}
       propertyPath: serializationData.Prefab
       value: 
