@@ -10,13 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7da78d8fabff460bae8817af7bfe4459, type: 3}
-  m_Name: '[PHASE] Area Heal'
+  m_Name: '[PHASE] DualStab'
   m_EditorClassIdentifier: 
   serializationData:
     SerializedFormat: 2
     SerializedBytes: 
     ReferencedUnityObjects:
-    - {fileID: 11400000, guid: 0a77ee5c194597a47b368822f37db91e, type: 2}
+    - {fileID: 11400000, guid: 764fd2c3030e1e14a92a5a0b4cb43d9f, type: 2}
     SerializedBytesString: 
     Prefab: {fileID: 0}
     PrefabModificationsReferencedUnityObjects: []
@@ -41,7 +41,7 @@ MonoBehaviour:
       Data: 
     - Name: $k
       Entry: 4
-      Data: 0.6
+      Data: 0.7
     - Name: $v
       Entry: 7
       Data: 2|System.Collections.Generic.List`1[[Consequence, Assembly-CSharp]],
@@ -67,4 +67,4 @@ MonoBehaviour:
     - Name: 
       Entry: 8
       Data: 
-  Duration: {fileID: 11400000, guid: 09b1cfc219d5eb74fb965441bed7dcbf, type: 2}
+  Duration: {fileID: 11400000, guid: 9cb46b66b07717a4f8021ce48c64097b, type: 2}

@@ -7,7 +7,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Circular Slash
+  m_Name: Uppercut
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions: []
@@ -20,7 +20,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7331867130290663325, guid: 0af9551eb5e90284b92cade19bf74ead, type: 3}
+  m_Motion: {fileID: -7262739606813465908, guid: 0af9551eb5e90284b92cade19bf74ead, type: 3}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
@@ -167,7 +167,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Quick Slash
+  m_Name: Shield Bash
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions: []
@@ -180,7 +180,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7624655660056751624, guid: 0af9551eb5e90284b92cade19bf74ead, type: 3}
+  m_Motion: {fileID: -2841374645993759435, guid: 0af9551eb5e90284b92cade19bf74ead, type: 3}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 

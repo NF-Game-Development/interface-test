@@ -9,8 +9,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ea52a66fa7250524f895536c5291a4e5, type: 3}
-  m_Name: '[ABILITY] Area Heal'
+  m_Script: {fileID: 11500000, guid: 446733e39978472996a4fc2ed448209e, type: 3}
+  m_Name: '[DAMAGE] DualStab'
   m_EditorClassIdentifier: 
   serializationData:
     SerializedFormat: 2
@@ -21,8 +21,4 @@ MonoBehaviour:
     PrefabModificationsReferencedUnityObjects: []
     PrefabModifications: []
     SerializationNodes: []
-  ID: AreaHeal
-  AbilityEnum: {fileID: 11400000, guid: 01ce56966f9fadf42a81379e751c50a9, type: 2}
-  Cooldown: {fileID: 11400000, guid: f82b262c42cb99f4bb74f6cbed0f0d37, type: 2}
-  Behaviour: {fileID: 11400000, guid: 680f064539ba9c546bfbc7baf2b413e7, type: 2}
-  CenterTransformParameter: {fileID: 11400000, guid: 83f84282e1a12074c904e48c25dc1ce3, type: 2}
+  Value: 10
