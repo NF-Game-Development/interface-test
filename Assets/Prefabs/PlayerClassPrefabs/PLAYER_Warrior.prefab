@@ -9,6 +9,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 169248124083234135, guid: b26bbdae9cb96ba498b6f19eebe207da, type: 3}
+      propertyPath: _animator
+      value: 
+      objectReference: {fileID: 2232235786122082364}
+    - target: {fileID: 169248124083234135, guid: b26bbdae9cb96ba498b6f19eebe207da, type: 3}
       propertyPath: serializationData.Prefab
       value: 
       objectReference: {fileID: 169248124083234135, guid: b26bbdae9cb96ba498b6f19eebe207da, type: 3}
@@ -76,6 +80,10 @@ PrefabInstance:
       propertyPath: m_Controller
       value: 
       objectReference: {fileID: 9100000, guid: c3f2ed55a0dee444c84b0d05b86e6390, type: 2}
+    - target: {fileID: 7973404383875629225, guid: b26bbdae9cb96ba498b6f19eebe207da, type: 3}
+      propertyPath: m_ApplyRootMotion
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8500000254545838942, guid: b26bbdae9cb96ba498b6f19eebe207da, type: 3}
       propertyPath: serializationData.Prefab
       value: 
@@ -86,3 +94,8 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b26bbdae9cb96ba498b6f19eebe207da, type: 3}
+--- !u!95 &2232235786122082364 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 7973404383875629225, guid: b26bbdae9cb96ba498b6f19eebe207da, type: 3}
+  m_PrefabInstance: {fileID: 8096706406361315477}
+  m_PrefabAsset: {fileID: 0}

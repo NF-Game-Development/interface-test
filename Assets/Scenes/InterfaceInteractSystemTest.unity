@@ -3877,13 +3877,75 @@ MonoBehaviour:
   serializationData:
     SerializedFormat: 2
     SerializedBytes: 
-    ReferencedUnityObjects: []
+    ReferencedUnityObjects:
+    - {fileID: 11400000, guid: b57d4172cc867934eabad7166cb64edf, type: 2}
+    - {fileID: 11400000, guid: d2913713cefbc9a4d94571bacebfe588, type: 2}
+    - {fileID: 11400000, guid: 6de4490d957e5924dbe6634ce7eea354, type: 2}
+    - {fileID: 11400000, guid: 3540bafe79dc6d94d9343a6f5a6e9e80, type: 2}
+    - {fileID: 11400000, guid: d087f1014fc61a044817d0c664fcf05e, type: 2}
+    - {fileID: 11400000, guid: a6e100f736b59ec46b5c24c5047d7c8c, type: 2}
     SerializedBytesString: 
     Prefab: {fileID: 0}
     PrefabModificationsReferencedUnityObjects: []
     PrefabModifications: []
-    SerializationNodes: []
-  _playerControllerPrefab: {fileID: 169248124083234135, guid: b26bbdae9cb96ba498b6f19eebe207da, type: 3}
+    SerializationNodes:
+    - Name: _animationDictionary
+      Entry: 7
+      Data: 0|System.Collections.Generic.Dictionary`2[[ClassEnum, Assembly-CSharp],[AbilityAnimationDictionary,
+        Assembly-CSharp]], mscorlib
+    - Name: comparer
+      Entry: 7
+      Data: 1|System.Collections.Generic.ObjectEqualityComparer`1[[ClassEnum, Assembly-CSharp]],
+        mscorlib
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 12
+      Data: 3
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 10
+      Data: 0
+    - Name: $v
+      Entry: 10
+      Data: 1
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 10
+      Data: 2
+    - Name: $v
+      Entry: 10
+      Data: 3
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 10
+      Data: 4
+    - Name: $v
+      Entry: 10
+      Data: 5
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+  classPrefabDictionary: {fileID: 11400000, guid: aca8cd37f3f05c944a9bec40072db2f8, type: 2}
   _playerSpawnPoint: {fileID: 2136978068}
   _classAbilityDictionary: {fileID: 11400000, guid: 1ed06978dbc312243b043323692745ad, type: 2}
   baseClassDictionary: {fileID: 11400000, guid: 262ce1afda2725640bebf7844b805285, type: 2}

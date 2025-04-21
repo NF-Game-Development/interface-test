@@ -1,5 +1,9 @@
 using System;
+using System.Collections.Generic;
+using System.Linq;
 using Cysharp.Threading.Tasks;
+using NF.Main.Core;
+using NF.Main.Core.PlayerStateMachine;
 using Sirenix.OdinInspector;
 using UnityEngine;
 
@@ -7,6 +11,7 @@ public class PlayerController : MonoExt, IMovable, IRotatable, IAbilityCastable
 {
     [TabGroup("References")] [SerializeField] private MovementStats _movementStats;
     [TabGroup("References")] [SerializeField] private PlayerInputReader _playerInput;
+    [TabGroup("References")] [SerializeField] private Animator _animator;
     [TabGroup("References")] [SerializeField] private Rigidbody _rigidbody;
     [TabGroup("References")] [SerializeField] private Camera _camera;
     
@@ -24,14 +29,21 @@ public class PlayerController : MonoExt, IMovable, IRotatable, IAbilityCastable
     [TabGroup("b", "Interactables")] 
     [SerializeField] private IInteractable _currentInteractable;
     
+    //State
+    private StateMachine _stateMachine;
+    private Dictionary<int, PlayerState> _playerAbilityState = new Dictionary<int, PlayerState>();
+    public PlayerState PlayerState { get; set; }
     
     private Vector2 _movementInput = Vector2.zero;
-    private IAbilityCastable _abilityCastableImplementation;
+    //private IAbilityCastable _abilityCastableImplementation;
+    
+    private AbilityAnimationDictionary _abilityAnimationDictionary;
 
     private void Awake()
     {
         //Initialize mono extension
         Initialize();
+        //SetupStateMachine();
     }
     private void Start()
     {
@@ -51,6 +63,7 @@ public class PlayerController : MonoExt, IMovable, IRotatable, IAbilityCastable
         base.OnSubscriptionSet();
         //Event that handles player movement
         AddEvent(_playerInput.Movement,movementDirection => _movementInput = movementDirection);
+        AddEvent(_playerInput.Movement, TransitionToMoveState);
         AddEvent(_playerInput.Ability, OnAbilityCast);
         AddEvent(_abilityParameterHandler.AbilityCasted, DisableMovement);
         AddEvent(_abilityParameterHandler.AbilityEnded, DisableMovement);
@@ -59,11 +72,53 @@ public class PlayerController : MonoExt, IMovable, IRotatable, IAbilityCastable
 
     public void FixedUpdate()
     {
-        HandleMovement();
+        //HandleMovement();
+        _stateMachine.FixedUpdate();
     }
 
+    public void Update()
+    {
+        _stateMachine.Update();
+    }
+
+    private void SetupStateMachine()
+    {
+        // State Machine
+        _stateMachine = new StateMachine();
+            
+        // Declare Player States
+        var idleState = new PlayerIdleState(this, _animator);
+        var moveState = new PlayerMoveState(this, _animator);
+        var ability1State = new PlayerAbility1State(this, _animator);
+        var ability2State = new PlayerAbility2State(this, _animator);
+        var ability3State = new PlayerAbility3State(this, _animator);
+            
+        // Define Player State Transitions
+        Any(idleState, new FuncPredicate(ReturnToIdleState));
+        Any(moveState, new FuncPredicate(() => PlayerState == PlayerState.Moving));
+        Any(ability1State, new FuncPredicate(() => PlayerState == PlayerState.Ability1));
+        Any(ability2State, new FuncPredicate(() => PlayerState == PlayerState.Ability2));
+        Any(ability3State, new FuncPredicate(() => PlayerState == PlayerState.Ability3));
+        
+        _playerAbilityState.Add(1, PlayerState.Ability1);
+        _playerAbilityState.Add(2, PlayerState.Ability2);
+        _playerAbilityState.Add(3, PlayerState.Ability3);
+            
+        // Set Initial State
+        _stateMachine.SetState(idleState);
+    }
+
+    private bool ReturnToIdleState()
+    {
+        return PlayerState == PlayerState.Idle;
+    }
+
+    private void At(IState from, IState to, IPredicate condition) => _stateMachine.AddTransition(from, to, condition);
+    private void Any(IState to, IPredicate condition) => _stateMachine.AddAnyTransition(to, condition);
+
+
     //Handles movement and rotation
-    private void HandleMovement()
+    public void HandleMovement()
     {
         if (!_canPlayerMove)
             return;
@@ -72,6 +127,18 @@ public class PlayerController : MonoExt, IMovable, IRotatable, IAbilityCastable
         
         Rotate(normalizedDirection, _movementStats);
         Move(normalizedDirection, _movementStats);
+    }
+
+    private void TransitionToMoveState(Vector2 direction)
+    {
+        if (direction != Vector2.zero && (_canPlayerMove == true && _canPlayerRotate == true))
+        {
+            PlayerState = PlayerState.Moving;
+        }
+        else if(direction == Vector2.zero && (_canPlayerMove == true && _canPlayerRotate == true))
+        {
+            PlayerState = PlayerState.Idle;
+        }
     }
 
 
@@ -100,7 +167,17 @@ public class PlayerController : MonoExt, IMovable, IRotatable, IAbilityCastable
 
     public void OnAbilityCast(AbilityExtendableEnum abilityEnum)
     {
+        if(_player.GetUnitClass().ClassAbilityList.AbilityDictionary[abilityEnum].IsOnCooldown() == true)
+            return;
+        
         _player.GetUnitClass().ClassAbilityList.AbilityDictionary[abilityEnum].OnTriggerAbility(gameObject, _abilityParameterHandler);
+        PlayerState = _playerAbilityState[GetAbilityNumber(abilityEnum)];
+    }
+
+    private int GetAbilityNumber(AbilityExtendableEnum abilityEnum)
+    {
+        return _playerInput.GetabilityDictionary().AbilityOrderDictionary.
+            FirstOrDefault(x => x.Value == abilityEnum).Key;
     }
 
     public void DisableMovement(bool canMove)
@@ -109,10 +186,12 @@ public class PlayerController : MonoExt, IMovable, IRotatable, IAbilityCastable
         _canPlayerRotate = canMove;
     }
 
-    public void InitializePlayer(UnitClass unitClass)
+    public void InitializePlayer(UnitClass unitClass, AbilityAnimationDictionary abilityAnimationDictionary)
     {
         _player.InitializeUnitClass(unitClass);
         _player.GetUnitClass().ClassAbilityList.InitializeAbilities();
+        _abilityAnimationDictionary = abilityAnimationDictionary;
+        SetupStateMachine();
     }
 
     public void ChangeInputReaderAbilityDictionary(AbilityDictionary newDictionary)
@@ -152,5 +231,10 @@ public class PlayerController : MonoExt, IMovable, IRotatable, IAbilityCastable
     {
         RayCastCheckForInteractables();
         _currentInteractable?.Interact();
+    }
+
+    public AbilityAnimationDictionary GetAbiliyAnimationDictionary()
+    {
+        return _abilityAnimationDictionary;
     }
 }

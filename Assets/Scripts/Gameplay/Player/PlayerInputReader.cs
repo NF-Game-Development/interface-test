@@ -75,4 +75,9 @@ public class PlayerInputReader : SerializedScriptableObject, InputSystem_Actions
     {
         _abilityDictionary = newDictionary;
     }
+
+    public AbilityDictionary GetabilityDictionary()
+    {
+        return _abilityDictionary;
+    }
 }

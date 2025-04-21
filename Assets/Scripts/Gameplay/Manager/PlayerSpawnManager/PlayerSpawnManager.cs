@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using Sirenix.OdinInspector;
 using UnityEngine;
 using UnityEngine.Serialization;
@@ -10,6 +11,7 @@ public class PlayerSpawnManager : MonoExt
     
     [SerializeField] private ClassAbilityDictionary _classAbilityDictionary;
     [FormerlySerializedAs("_baseClasDictionary")] [SerializeField] private BaseClassDictionary baseClassDictionary;
+    [SerializeField] private Dictionary<ClassEnum,AbilityAnimationDictionary> _animationDictionary;
     
     [SerializeField] private Camera _mainCamera;
     
@@ -51,7 +53,7 @@ public class PlayerSpawnManager : MonoExt
             _playerSpawnPoint.position, Quaternion.identity);
         
         _playercontrollerRef.SetCamera(_mainCamera);
-        _playercontrollerRef.InitializePlayer(baseClassDictionary.ClassDictionary[classEnum]);
+        _playercontrollerRef.InitializePlayer(baseClassDictionary.ClassDictionary[classEnum], _animationDictionary[classEnum]);
         _playercontrollerRef.ChangeInputReaderAbilityDictionary(_classAbilityDictionary.AbilityOrderDictionary[classEnum]);
         
         _hudManager.SetAbilityList(_playercontrollerRef.GetAbilityList());

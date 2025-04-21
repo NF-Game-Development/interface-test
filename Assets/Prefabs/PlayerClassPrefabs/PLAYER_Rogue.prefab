@@ -56,11 +56,20 @@ PrefabInstance:
       propertyPath: m_Controller
       value: 
       objectReference: {fileID: 9100000, guid: 0460183a5f85bb7439775e7e02bcb351, type: 2}
+    - target: {fileID: 5866666021909216657, guid: db073331c0c4a3d41b8961b552132749, type: 3}
+      propertyPath: m_ApplyRootMotion
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: db073331c0c4a3d41b8961b552132749, type: 3}
+--- !u!95 &4551934121739100497 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 5866666021909216657, guid: db073331c0c4a3d41b8961b552132749, type: 3}
+  m_PrefabInstance: {fileID: 7944669007280184512}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &7623357372810984235 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: db073331c0c4a3d41b8961b552132749, type: 3}
@@ -74,6 +83,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 169248124083234135, guid: b26bbdae9cb96ba498b6f19eebe207da, type: 3}
+      propertyPath: _animator
+      value: 
+      objectReference: {fileID: 4551934121739100497}
     - target: {fileID: 169248124083234135, guid: b26bbdae9cb96ba498b6f19eebe207da, type: 3}
       propertyPath: serializationData.Prefab
       value: 

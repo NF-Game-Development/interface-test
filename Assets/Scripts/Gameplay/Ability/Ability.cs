@@ -55,5 +55,9 @@ public class Ability : BaseAbility, IActivateable, ICooldown
     {
         return _remainingTime / Cooldown.Value;
     }
-    
+
+    public bool IsOnCooldown()
+    {
+        return _isOnCooldown;
+    }
 }
