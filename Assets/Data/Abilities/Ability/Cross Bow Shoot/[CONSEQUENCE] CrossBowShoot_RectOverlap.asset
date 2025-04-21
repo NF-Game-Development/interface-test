@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d534e4b91cb24005b243f55f5cd8da8a, type: 3}
+  m_Name: '[CONSEQUENCE] CrossBowShoot_RectOverlap'
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes: []
+  NextConsequence: {fileID: 11400000, guid: 32781663258be904ca5e58888662ce2f, type: 2}
+  Width: {fileID: 11400000, guid: 4bdc5223ad28f8f48acfc66e49dc5a22, type: 2}
+  Depth: {fileID: 11400000, guid: fc7b3e48540e9cf4881bfa212bdf4ab6, type: 2}
+  Height: {fileID: 11400000, guid: 7a6f05007043a54428b5ad4ea145b1b6, type: 2}
+  FrontOffset: {fileID: 11400000, guid: aa1e013debb665446bcef9869437de34, type: 2}
+  CenterParameterKey: {fileID: 11400000, guid: 83f84282e1a12074c904e48c25dc1ce3, type: 2}
+  TargetListParameterKey: {fileID: 11400000, guid: 88f2047015708074c8205207f50bbb9d, type: 2}
+  TargetTag: {fileID: 11400000, guid: cd5d9d2cadcf4c84d80147d1da6c3dec, type: 2}
+  IsVisualized: 1
+  VisualizerPrefab: {fileID: 3258453889424858441, guid: 6021b8da3e18d8e42ac0e7373cf86006, type: 3}
