@@ -4,6 +4,7 @@ using UnityEngine;
 public class BaseHero : MonoExt, IAbilityCastable, IMovable, IRotatable, IDamageable, IAttacker, IHealable
 {
     [SerializeField] private HeroScriptableObject _heroScriptableObject;
+    [SerializeField] private PlayerController _playerController;
     
     private void Awake()
     {
@@ -17,6 +18,15 @@ public class BaseHero : MonoExt, IAbilityCastable, IMovable, IRotatable, IDamage
     public override void Initialize()
     {
         base.Initialize();
+        
+        _playerController.InjectDependencies(new PlayerControllerDependencies
+        {
+            MovementStats = _heroScriptableObject.MovementStats,
+            AbilityList = _heroScriptableObject.AbilityList,
+            ParameterHandler = _heroScriptableObject.AbilityParameterHandler
+        });
+        
+        _playerController.Initialize();
     }
     
     public override void OnSubscriptionSet()
@@ -26,17 +36,17 @@ public class BaseHero : MonoExt, IAbilityCastable, IMovable, IRotatable, IDamage
 
     public void OnAbilityCast(AbilityExtendableEnum abilityEnum)
     {
-        throw new NotImplementedException();
+        _playerController.OnAbilityCast(abilityEnum);
     }
 
     public void Move(Vector3 movementDirection, MovementStats movementStats)
     {
-        throw new NotImplementedException();
+        _playerController.Move(movementDirection, movementStats);
     }
 
     public void Rotate(Vector3 rotationDirection, MovementStats movementStats)
     {
-        throw new NotImplementedException();
+        _playerController.Rotate(rotationDirection, movementStats);
     }
 
     public void ApplyDamage(float damageValue)

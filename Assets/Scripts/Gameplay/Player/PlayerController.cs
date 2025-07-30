@@ -89,4 +89,11 @@ public class PlayerController : MonoExt, IMovable, IRotatable, IAbilityCastable
     {
         _abilityList.AbilityDictionary[abilityEnum].OnTriggerAbility(gameObject, _abilityParameterHandler);
     }
+    
+    public void InjectDependencies(PlayerControllerDependencies playerControllerDependencies)
+    {
+        _movementStats = playerControllerDependencies.MovementStats;
+        _abilityList = playerControllerDependencies.AbilityList;
+        _abilityParameterHandler = playerControllerDependencies.ParameterHandler;
+    }
 }
