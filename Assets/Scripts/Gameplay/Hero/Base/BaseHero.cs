@@ -3,6 +3,8 @@ using UnityEngine;
 
 public class BaseHero : MonoExt, IAbilityCastable, IMovable, IRotatable, IDamageable, IAttacker, IHealable
 {
+    [SerializeField] private HeroScriptableObject _heroScriptableObject;
+    
     private void Awake()
     {
         Initialize();
