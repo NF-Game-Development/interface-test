@@ -54,12 +54,12 @@ public class BaseHero : MonoExt, IAbilityCastable, IMovable, IRotatable, IDamage
         throw new NotImplementedException();
     }
 
-    public void Attack(IDamageable damageable)
+    public virtual void Attack(IDamageable damageable)
     {
         throw new NotImplementedException();
     }
 
-    public void ApplyHeal(int addHealth)
+    public virtual void ApplyHeal(int addHealth)
     {
         throw new NotImplementedException();
     }

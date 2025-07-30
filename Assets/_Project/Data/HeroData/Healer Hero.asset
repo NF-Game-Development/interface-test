@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fa8fadfa59a8fa646bda08c10d200f1e, type: 3}
-  m_Name: Tank Hero
+  m_Name: Healer Hero
   m_EditorClassIdentifier: 
   serializationData:
     SerializedFormat: 2
@@ -21,10 +21,10 @@ MonoBehaviour:
     PrefabModificationsReferencedUnityObjects: []
     PrefabModifications: []
     SerializationNodes: []
-  ClassNameEnum: {fileID: 11400000, guid: aaba69bf5a083464b97aa5736e2b19b9, type: 2}
-  BaseHealth: 100
-  BaseAttack: 5
-  MovementStats: {fileID: 11400000, guid: e57a1d80bd0210d48a05c79b9ff12b16, type: 2}
+  ClassNameEnum: {fileID: 11400000, guid: 854e9a38e1028d94dbc3827948e92106, type: 2}
+  BaseHealth: 50
+  BaseAttack: 0
+  MovementStats: {fileID: 11400000, guid: 03a14bae665dab945bc9621009da4cb0, type: 2}
   AbilityList: {fileID: 0}
   AbilityParameterHandler: {fileID: 0}
-  HeroModelPrefab: {fileID: 7965063109165755794, guid: 9d3c5ed69b9cefd4dac6e23e5d6bca53, type: 3}
+  HeroModelPrefab: {fileID: 4874092585891417298, guid: 01237225dd3d2254bb75fb74efd0e240, type: 3}
