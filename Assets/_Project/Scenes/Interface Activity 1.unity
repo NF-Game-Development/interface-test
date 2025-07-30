@@ -458,6 +458,14 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 796445580}
     - target: {fileID: 1308003575248774687, guid: 19a4525f41db48945afacbc39a951e8d, type: 3}
+      propertyPath: _abilityList
+      value: 
+      objectReference: {fileID: 11400000, guid: 3c39be05980d0074db691ba77953e950, type: 2}
+    - target: {fileID: 1308003575248774687, guid: 19a4525f41db48945afacbc39a951e8d, type: 3}
+      propertyPath: _abilityParameterHandler
+      value: 
+      objectReference: {fileID: 11400000, guid: 1067540d4eef0c14c89a4c43eac2e488, type: 2}
+    - target: {fileID: 1308003575248774687, guid: 19a4525f41db48945afacbc39a951e8d, type: 3}
       propertyPath: serializationData.Prefab
       value: 
       objectReference: {fileID: 1308003575248774687, guid: 19a4525f41db48945afacbc39a951e8d, type: 3}

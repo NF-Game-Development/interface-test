@@ -2279,7 +2279,7 @@ MonoBehaviour:
     PrefabModificationsReferencedUnityObjects: []
     PrefabModifications: []
     SerializationNodes: []
-  _transformTarget: {fileID: 0}
+  _transformTarget: {fileID: 4304123713798220238}
   _cameraSettings: {fileID: 11400000, guid: 634b28edf8725fb4c903089735949c49, type: 2}
 --- !u!1 &1948471270
 GameObject:
@@ -2590,6 +2590,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b26bbdae9cb96ba498b6f19eebe207da, type: 3}
+--- !u!4 &4304123713798220238 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2597916100047661792, guid: b26bbdae9cb96ba498b6f19eebe207da, type: 3}
+  m_PrefabInstance: {fileID: 4304123713798220237}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &8309825700371580423
 PrefabInstance:
   m_ObjectHideFlags: 0

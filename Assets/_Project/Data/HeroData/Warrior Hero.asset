@@ -25,6 +25,6 @@ MonoBehaviour:
   BaseHealth: 100
   BaseAttack: 10
   MovementStats: {fileID: 11400000, guid: d4f4b6e9264126841bbe44ae44991a20, type: 2}
-  AbilityList: {fileID: 11400000, guid: 5e90c126f9f97ce419118c00a76bf70c, type: 2}
-  AbilityParameterHandler: {fileID: 11400000, guid: 03fb4380eb02e48458c934d5062014bf, type: 2}
-  HeroModelPrefab: {fileID: 7030446454792271741, guid: a8942931b42e4034282911f312cf7080, type: 3}
+  AbilityList: {fileID: 11400000, guid: 3c39be05980d0074db691ba77953e950, type: 2}
+  AbilityParameterHandler: {fileID: 11400000, guid: 1067540d4eef0c14c89a4c43eac2e488, type: 2}
+  HeroModelPrefab: {fileID: 753168290340805301, guid: 19a4525f41db48945afacbc39a951e8d, type: 3}
