@@ -5,7 +5,37 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="980b9648-4949-4612-b266-08cbef8d6864" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/ShaderGraphSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ShaderGraphSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.interface-test/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.interface-test/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/KayKit Character Pack - Skeletons 1.0/KayKit Brand Resouces.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/KayKit Character Pack - Skeletons 1.0/KayKit Brand Resouces/KayKit_logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/KayKit Character Pack - Skeletons 1.0/KayKit Brand Resouces/KayKit_logo.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/KayKit Character Pack - Skeletons 1.0/KayKit Brand Resouces/KayKit_logoVariation_black.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/KayKit Character Pack - Skeletons 1.0/KayKit Brand Resouces/KayKit_logoVariation_black.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/KayKit Character Pack - Skeletons 1.0/KayKit Brand Resouces/KayKit_logoVariation_red.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/KayKit Character Pack - Skeletons 1.0/KayKit Brand Resouces/KayKit_logoVariation_red.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/KayKit Character Pack - Skeletons 1.0/KayKit Brand Resouces/KayKit_logoVariation_white.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/KayKit Character Pack - Skeletons 1.0/KayKit Brand Resouces/KayKit_logoVariation_white.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/KayKit Character Pack - Skeletons 1.0/KayKit Brand Resouces/KayKit_logo_black.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/KayKit Character Pack - Skeletons 1.0/KayKit Brand Resouces/KayKit_logo_black.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/KayKit Character Pack - Skeletons 1.0/KayKit Brand Resouces/KayKit_logo_red.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/KayKit Character Pack - Skeletons 1.0/KayKit Brand Resouces/KayKit_logo_red.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/KayKit Character Pack - Skeletons 1.0/KayKit Brand Resouces/KayKit_logo_white.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/KayKit Character Pack - Skeletons 1.0/KayKit Brand Resouces/KayKit_logo_white.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/KayKit Dungeon Pack 1.0/KayKit Brand Resouces.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/KayKit Dungeon Pack 1.0/KayKit Brand Resouces/KayKit_logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/KayKit Dungeon Pack 1.0/KayKit Brand Resouces/KayKit_logo.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/KayKit Dungeon Pack 1.0/KayKit Brand Resouces/KayKit_logoVariation_black.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/KayKit Dungeon Pack 1.0/KayKit Brand Resouces/KayKit_logoVariation_black.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/KayKit Dungeon Pack 1.0/KayKit Brand Resouces/KayKit_logoVariation_red.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/KayKit Dungeon Pack 1.0/KayKit Brand Resouces/KayKit_logoVariation_red.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/KayKit Dungeon Pack 1.0/KayKit Brand Resouces/KayKit_logoVariation_white.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/KayKit Dungeon Pack 1.0/KayKit Brand Resouces/KayKit_logoVariation_white.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/KayKit Dungeon Pack 1.0/KayKit Brand Resouces/KayKit_logo_black.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/KayKit Dungeon Pack 1.0/KayKit Brand Resouces/KayKit_logo_black.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/KayKit Dungeon Pack 1.0/KayKit Brand Resouces/KayKit_logo_red.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/KayKit Dungeon Pack 1.0/KayKit Brand Resouces/KayKit_logo_red.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/KayKit Dungeon Pack 1.0/KayKit Brand Resouces/KayKit_logo_white.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/KayKit Dungeon Pack 1.0/KayKit Brand Resouces/KayKit_logo_white.png.meta" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -90,7 +120,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1753835967830</updated>
-      <workItem from="1753835969556" duration="4622000" />
+      <workItem from="1753835969556" duration="8871000" />
     </task>
     <servers />
   </component>
