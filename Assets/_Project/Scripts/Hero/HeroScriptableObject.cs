@@ -1,7 +1,7 @@
 using Sirenix.OdinInspector;
 using UnityEngine;
 
-[CreateAssetMenu(fileName="NewHero", menuName = "ScriptableObjects/AddHero/Hero")]
+[CreateAssetMenu(fileName="NewHero", menuName = "ScriptableObjects/AddHero/Hero")][InlineEditor]
 public class HeroScriptableObject : ClassTypeDataScriptableObject
 {
     [TabGroup("Model")]
