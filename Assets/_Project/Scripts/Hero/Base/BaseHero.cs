@@ -1,9 +1,10 @@
 using System;
 using UnityEngine;
+using UnityEngine.Serialization;
 
 public class BaseHero : MonoExt, IAbilityCastable, IMovable, IRotatable, IDamageable, IAttacker, IHealable
 {
-    [SerializeField] private HeroScriptableObject _heroScriptableObject;
+    [FormerlySerializedAs("_heroScriptableObject")] public HeroScriptableObject HeroScriptableObject;
     [SerializeField] private PlayerController _playerController;
     
     private void Awake()
@@ -32,9 +33,9 @@ public class BaseHero : MonoExt, IAbilityCastable, IMovable, IRotatable, IDamage
     {
         _playerController.InjectDependencies(new PlayerControllerDependencies
         {
-            MovementStats = _heroScriptableObject.MovementStats,
-            AbilityList = _heroScriptableObject.AbilityList,
-            ParameterHandler = _heroScriptableObject.AbilityParameterHandler
+            MovementStats = HeroScriptableObject.MovementStats,
+            AbilityList = HeroScriptableObject.AbilityList,
+            ParameterHandler = HeroScriptableObject.AbilityParameterHandler
         });
     }
     

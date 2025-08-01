@@ -856,6 +856,37 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 1920217175691976231, guid: 07b7b902548265847bd0f4c4a4f33887, type: 3}
+--- !u!1 &721589133
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 721589134}
+  m_Layer: 0
+  m_Name: AREA_Damage
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &721589134
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 721589133}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0.5, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1548396367}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &786963837 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 07b7b902548265847bd0f4c4a4f33887, type: 3}
@@ -1358,6 +1389,11 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 1920217175691976231, guid: 07b7b902548265847bd0f4c4a4f33887, type: 3}
+--- !u!4 &1548396367 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 9105374767720911004, guid: 6577c805289583043869e1014b778555, type: 3}
+  m_PrefabInstance: {fileID: 7565954312372693060}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1784092207
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2078,9 +2114,17 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2633854509253707497, guid: 6577c805289583043869e1014b778555, type: 3}
     - target: {fileID: 3905972332092793038, guid: 6577c805289583043869e1014b778555, type: 3}
+      propertyPath: _hitLocation
+      value: 
+      objectReference: {fileID: 721589134}
+    - target: {fileID: 3905972332092793038, guid: 6577c805289583043869e1014b778555, type: 3}
+      propertyPath: _attackRadius
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3905972332092793038, guid: 6577c805289583043869e1014b778555, type: 3}
       propertyPath: serializationData.Prefab
       value: 
-      objectReference: {fileID: 3905972332092793038, guid: 6577c805289583043869e1014b778555, type: 3}
+      objectReference: {fileID: 0}
     - target: {fileID: 4258469073212503571, guid: 6577c805289583043869e1014b778555, type: 3}
       propertyPath: _playerInteractRange
       value: 
@@ -2139,7 +2183,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
-    m_AddedGameObjects: []
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: 9105374767720911004, guid: 6577c805289583043869e1014b778555, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 721589134}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6577c805289583043869e1014b778555, type: 3}
 --- !u!33 &8060586366654087990

@@ -2,15 +2,21 @@ using UnityEngine;
 
 public class WarriorHero : BaseHero
 {
-    //FOR TESTING PURPOSES
-    //TODO: Use the ClassTypeDataScriptable for the Damage amount
-    
-    [SerializeField] private float _attackRadius = 1.5f;
-    [SerializeField] private float _damage = 10;
+    [SerializeField] private Transform _hitLocation;
+    private float _attackRadius;
+    private float _damage;
     
     public override void Initialize()
     {
         base.Initialize();
+
+        InitializeDamageValues();
+    }
+
+    private void InitializeDamageValues()
+    {
+        _damage = HeroScriptableObject.BaseAttack;
+        _attackRadius = HeroScriptableObject.MeleeRadius;
     }
     
     private void Update()
@@ -23,7 +29,7 @@ public class WarriorHero : BaseHero
     
     private void PerformAttack()
     {
-        Collider[] hits = Physics.OverlapSphere(transform.position, _attackRadius);
+        Collider[] hits = Physics.OverlapSphere(_hitLocation.transform.position, _attackRadius);
 
         foreach (var hit in hits)
         {
@@ -42,7 +48,7 @@ public class WarriorHero : BaseHero
     private void OnDrawGizmosSelected()
     {
         Gizmos.color = Color.red;
-        Gizmos.DrawWireSphere(transform.position, _attackRadius);
+        Gizmos.DrawWireSphere(_hitLocation.transform.position, _attackRadius);
     }
 
 }
