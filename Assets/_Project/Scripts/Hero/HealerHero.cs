@@ -8,12 +8,6 @@ public class HealerHero : BaseHero, IHealer
         //Dont Attack
     }
 
-    public override void ApplyHeal(int addHealth)
-    {
-        base.ApplyHeal(addHealth);
-        
-    }
-
     public void Heal(BaseHero baseHero)
     {
         throw new System.NotImplementedException();

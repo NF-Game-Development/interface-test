@@ -5,10 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="980b9648-4949-4612-b266-08cbef8d6864" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.interface-test/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.interface-test/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Project/Prefab/Hero/Hero Model.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Project/Prefab/Hero/Hero Model.prefab.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/_Project/Scenes/Interface Activity 1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Scenes/Interface Activity 1.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/_Project/Scripts/Classes/ClassNameExtendableEnum.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Scripts/Classes/ClassNameExtendableEnum.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Scripts/Hero/HeroScriptableObject.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Scripts/Hero/HeroScriptableObject.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Project/Scripts/Enemy/SkeletonArcher.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Scripts/Enemy/SkeletonArcher.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Project/Scripts/Enemy/SkeletonMinion.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Scripts/Enemy/SkeletonMinion.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Project/Scripts/Hero/HealerHero.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Scripts/Hero/HealerHero.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -99,6 +102,7 @@
       <updated>1753835967830</updated>
       <workItem from="1753835969556" duration="12678000" />
       <workItem from="1753856794826" duration="311000" />
+      <workItem from="1754008475097" duration="398000" />
     </task>
     <servers />
   </component>
