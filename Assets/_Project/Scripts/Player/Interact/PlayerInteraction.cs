@@ -1,3 +1,4 @@
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class PlayerInteraction : MonoExt
@@ -24,6 +25,8 @@ public class PlayerInteraction : MonoExt
     public override void OnSubscriptionSet()
     {
         base.OnSubscriptionSet();
+        
+        //_playerInteractRange.OnRangeChanged += newRange => Debug.Log("Interact radius changed to: " + newRange);
     }
     
     private void Update()
@@ -36,7 +39,8 @@ public class PlayerInteraction : MonoExt
 
     private void Interact()
     {
-        Collider[] hitColliders = Physics.OverlapSphere(transform.position, _playerInteractRange.InteractRadiusRange);
+        float radius = _playerInteractRange.InteractRadiusRange;
+        Collider[] hitColliders = Physics.OverlapSphere(transform.position, radius);
         IInteractable nearest = null;
         float nearestDistance = Mathf.Infinity;
 
@@ -54,6 +58,7 @@ public class PlayerInteraction : MonoExt
         }
 
         nearest?.Interact();
+
     }
 
     private void OnDrawGizmosSelected()

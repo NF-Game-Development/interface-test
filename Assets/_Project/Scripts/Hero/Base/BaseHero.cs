@@ -19,14 +19,23 @@ public class BaseHero : MonoExt, IAbilityCastable, IMovable, IRotatable, IDamage
     {
         base.Initialize();
         
+        InitializePlayerController();
+        InitializeInjectDependencies();
+    }
+
+    private void InitializePlayerController()
+    {
+        _playerController.Initialize();
+    }
+
+    private void InitializeInjectDependencies()
+    {
         _playerController.InjectDependencies(new PlayerControllerDependencies
         {
             MovementStats = _heroScriptableObject.MovementStats,
             AbilityList = _heroScriptableObject.AbilityList,
             ParameterHandler = _heroScriptableObject.AbilityParameterHandler
         });
-        
-        _playerController.Initialize();
     }
     
     public override void OnSubscriptionSet()
