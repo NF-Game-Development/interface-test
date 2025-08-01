@@ -58,14 +58,14 @@ public class BaseHero : MonoExt, IAbilityCastable, IMovable, IRotatable, IDamage
         _playerController.Rotate(rotationDirection, movementStats);
     }
 
-    public void ApplyDamage(float damageValue)
+    public virtual void ApplyDamage(float damageValue)
     {
-        throw new NotImplementedException();
+        
     }
 
     public virtual void Attack(IDamageable damageable)
     {
-        throw new NotImplementedException();
+        
     }
 
     public virtual void ApplyHeal(int addHealth)

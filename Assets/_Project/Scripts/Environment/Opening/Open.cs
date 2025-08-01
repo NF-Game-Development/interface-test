@@ -1,10 +1,11 @@
 using UnityEngine;
 using DG.Tweening;
+using UnityEngine.Serialization;
 
-public class Door : MonoExt, IInteractable
+public class Open : MonoExt, IInteractable
 {
     [SerializeField] private GameObject interactableObject;
-    [SerializeField] private OpeningValuesScriptableObject _doorOpen;
+    [SerializeField] private OpeningValuesScriptableObject _openValuesScriptableObject;
 
     private Tween _currentTween;
 
@@ -31,11 +32,11 @@ public class Door : MonoExt, IInteractable
 
     private void InitializeValues()
     {
-        _openAngleX = _doorOpen.OpenAngleX;
-        _openAngleY = _doorOpen.OpenAngleY;
-        _openAngleZ = _doorOpen.OpenAngleZ;
-        _duration = _doorOpen.Duration;
-        _isOpen = _doorOpen.IsOpen;
+        _openAngleX = _openValuesScriptableObject.OpenAngleX;
+        _openAngleY = _openValuesScriptableObject.OpenAngleY;
+        _openAngleZ = _openValuesScriptableObject.OpenAngleZ;
+        _duration = _openValuesScriptableObject.Duration;
+        _isOpen = _openValuesScriptableObject.IsOpen;
         
         _closedRotation = interactableObject.transform.localRotation;
         _openedRotation = Quaternion.Euler(_openAngleX, _openAngleY, _openAngleZ) * _closedRotation;
