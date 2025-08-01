@@ -1244,6 +1244,7 @@ MonoBehaviour:
     PrefabModificationsReferencedUnityObjects: []
     PrefabModifications: []
     SerializationNodes: []
+  _collectableRange: {fileID: 11400000, guid: a8a7c0cb54746a84786aa77813b429e3, type: 2}
 --- !u!1001 &1784092207
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1577,6 +1578,10 @@ PrefabInstance:
       propertyPath: _attackRadius
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 3905972332092793038, guid: 6577c805289583043869e1014b778555, type: 3}
+      propertyPath: HeroScriptableObject
+      value: 
+      objectReference: {fileID: 11400000, guid: 77c602e1fb4155f4db1c1d9c6a3b43c7, type: 2}
     - target: {fileID: 3905972332092793038, guid: 6577c805289583043869e1014b778555, type: 3}
       propertyPath: serializationData.Prefab
       value: 

@@ -1,8 +1,9 @@
+using Sirenix.OdinInspector;
 using UnityEngine;
 
 public class WarriorHero : BaseHero
 {
-    [SerializeField] private Transform _hitLocation;
+    [TabGroup("Melee Hit Location")] [SerializeField] private Transform _hitLocation;
     private float _attackRadius;
     private float _damage;
     

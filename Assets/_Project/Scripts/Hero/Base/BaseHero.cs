@@ -1,11 +1,12 @@
 using System;
 using UnityEngine;
 using UnityEngine.Serialization;
+using Sirenix.OdinInspector;
 
 public class BaseHero : MonoExt, IAbilityCastable, IMovable, IRotatable, IDamageable, IAttacker, IHealable
 {
-    [FormerlySerializedAs("_heroScriptableObject")] public HeroScriptableObject HeroScriptableObject;
-    [SerializeField] private PlayerController _playerController;
+    [TabGroup("Scriptable Hero")] public HeroScriptableObject HeroScriptableObject;
+    [TabGroup("Player Controller")] [SerializeField] private PlayerController _playerController;
     
     private void Awake()
     {
