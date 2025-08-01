@@ -6,12 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="980b9648-4949-4612-b266-08cbef8d6864" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.interface-test/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.interface-test/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Scenes/Interface Activity 1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Scenes/Interface Activity 1.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Scripts/Hero/Base/BaseHero.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Scripts/Hero/Base/BaseHero.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Scripts/Hero/WarriorHero.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Scripts/Hero/WarriorHero.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Scripts/Player/Interact/PlayerCollectRange.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Scripts/Player/Interact/PlayerCollectRange.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Scripts/Player/Interact/PlayerInteractKeyScriptableObject.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Scripts/Player/Interact/PlayerInteractKeyScriptableObject.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Scripts/Player/Interact/PlayerInteractRangeScriptableObject.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Scripts/Player/Interact/PlayerInteractRangeScriptableObject.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Project/Scripts/Environment/Collectables/Coin/Coin.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Scripts/Environment/Collectables/Coin/Coin.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -108,7 +103,7 @@
       <updated>1753835967830</updated>
       <workItem from="1753835969556" duration="12678000" />
       <workItem from="1753856794826" duration="311000" />
-      <workItem from="1754008475097" duration="21313000" />
+      <workItem from="1754008475097" duration="22930000" />
     </task>
     <servers />
   </component>
