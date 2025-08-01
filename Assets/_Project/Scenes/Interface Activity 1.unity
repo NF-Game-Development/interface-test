@@ -1528,9 +1528,17 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 3905972332092793038, guid: 6577c805289583043869e1014b778555, type: 3}
     - target: {fileID: 4258469073212503571, guid: 6577c805289583043869e1014b778555, type: 3}
+      propertyPath: _playerInteractRange
+      value: 
+      objectReference: {fileID: 11400000, guid: 6a482d1ce5eaae341aeef4e9495cfe5e, type: 2}
+    - target: {fileID: 4258469073212503571, guid: 6577c805289583043869e1014b778555, type: 3}
       propertyPath: serializationData.Prefab
       value: 
       objectReference: {fileID: 4258469073212503571, guid: 6577c805289583043869e1014b778555, type: 3}
+    - target: {fileID: 4258469073212503571, guid: 6577c805289583043869e1014b778555, type: 3}
+      propertyPath: _playerInteractKeyScriptable
+      value: 
+      objectReference: {fileID: 11400000, guid: 9838f9ff7a4b2ab458c4a57e0ada0c98, type: 2}
     - target: {fileID: 6391600334764783985, guid: 6577c805289583043869e1014b778555, type: 3}
       propertyPath: m_Name
       value: CONTAINER_Warrior
