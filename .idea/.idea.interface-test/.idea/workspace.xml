@@ -6,22 +6,29 @@
   <component name="ChangeListManager">
     <list default="true" id="980b9648-4949-4612-b266-08cbef8d6864" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.interface-test/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.interface-test/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Scripts/Hero/Base/BaseHero.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Scripts/Hero/Base/BaseHero.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Scripts/Player/Interact/PlayerInteractRangeScriptableObject.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Scripts/Player/Interact/PlayerInteractRangeScriptableObject.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Project/Scenes/Interface Activity 1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Scenes/Interface Activity 1.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Project/Scripts/Environment/Door.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Project/Scripts/Environment/Door.cs.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/_Project/Scripts/Player/Interact/PlayerInteraction.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Scripts/Player/Interact/PlayerInteraction.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="DpaMonitoringSettings">
+    <option name="firstShow" value="false" />
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/2431722e3e3e41d78b6718bb39ab91111df400/cd/af369a59/Component.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/_Project/Scripts/Environment/Door.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/_Project/Scripts/Player/PlayerInteractKeyScriptableObject.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/5780850fc704417799e38550144b43932ac00/3b/daea351d/RaycastHit.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/5780850fc704417799e38550144b43932ac00/6a/fbccd3b2/Physics.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/_Project/Scripts/Environment/Door/OpeningValuesScriptableObject.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.render-pipelines.core@481f548ebf36/Runtime/Debugging/DebugUpdater.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 1
@@ -33,6 +40,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Attach to Unity Editor.Attach to Unity Editor.executor": "Debug",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "user/perez/interface-activity-2",
@@ -73,13 +81,15 @@
       </option>
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="5480">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" />
+      <option name="pid" value="5480" />
       <option name="projectPathOnTarget" />
       <option name="runtimes">
-        <list />
+        <list>
+          <MonoRuntime />
+        </list>
       </option>
       <option name="selectedOptions">
         <list />
@@ -97,7 +107,7 @@
       <updated>1753835967830</updated>
       <workItem from="1753835969556" duration="12678000" />
       <workItem from="1753856794826" duration="311000" />
-      <workItem from="1754008475097" duration="5823000" />
+      <workItem from="1754008475097" duration="10203000" />
     </task>
     <servers />
   </component>
@@ -113,5 +123,50 @@
   <component name="UnityUnitTestConfiguration" currentTestLauncher="Both" />
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/_Project/Scripts/Player/Interact/PlayerInteraction.cs</url>
+          <line>61</line>
+          <properties documentPath="H:\534_Perez\Unity Projects\interface-test\Assets\_Project\Scripts\Player\Interact\PlayerInteraction.cs" containingFunctionPresentation="Method 'Interact'">
+            <startOffsets>
+              <option value="1706" />
+            </startOffsets>
+            <endOffsets>
+              <option value="1767" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/_Project/Scripts/Player/Interact/PlayerInteraction.cs</url>
+          <line>65</line>
+          <properties documentPath="H:\534_Perez\Unity Projects\interface-test\Assets\_Project\Scripts\Player\Interact\PlayerInteraction.cs" containingFunctionPresentation="Method 'Interact'">
+            <startOffsets>
+              <option value="1916" />
+            </startOffsets>
+            <endOffsets>
+              <option value="1988" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/_Project/Scripts/Player/Interact/PlayerInteraction.cs</url>
+          <line>69</line>
+          <properties documentPath="H:\534_Perez\Unity Projects\interface-test\Assets\_Project\Scripts\Player\Interact\PlayerInteraction.cs" containingFunctionPresentation="Method 'Interact'">
+            <startOffsets>
+              <option value="2118" />
+            </startOffsets>
+            <endOffsets>
+              <option value="2142" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

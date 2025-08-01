@@ -39,14 +39,14 @@ public class PlayerInteraction : MonoExt
 
     private void Interact()
     {
-        float radius = _playerInteractRange.InteractRadiusRange;
+        /*float radius = _playerInteractRange.InteractRadiusRange;
         Collider[] hitColliders = Physics.OverlapSphere(transform.position, radius);
         IInteractable nearest = null;
         float nearestDistance = Mathf.Infinity;
 
         foreach (var collider in hitColliders)
         {
-            if (collider.TryGetComponent<IInteractable>(out var interactable))
+            if (collider.transform.root.TryGetComponent<IInteractable>(out var interactable))
             {
                 float distance = Vector3.Distance(transform.position, collider.transform.position);
                 if (distance < nearestDistance)
@@ -57,13 +57,29 @@ public class PlayerInteraction : MonoExt
             }
         }
 
-        nearest?.Interact();
+        nearest?.Interact();*/
+        
+        float maxDistance = _playerInteractRange.InteractRadiusRange;
+        Vector3 origin = transform.position + Vector3.up * 1f; // Offset to chest/eye level
+        Vector3 direction = transform.forward;
+
+        if (Physics.Raycast(origin, direction, out RaycastHit hit, maxDistance))
+        {
+            if (hit.transform.root.TryGetComponent<IInteractable>(out var interactable))
+            {
+                interactable.Interact();
+            }
+        }
 
     }
 
     private void OnDrawGizmosSelected()
     {
         Gizmos.color = Color.cyan;
-        Gizmos.DrawWireSphere(transform.position, _playerInteractRange.InteractRadiusRange);
+    
+        Vector3 origin = transform.position + Vector3.up * 1f;
+        Vector3 direction = transform.forward * _playerInteractRange.InteractRadiusRange;
+    
+        Gizmos.DrawRay(origin, direction);
     }
 }
