@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 965708a193f6ae14486fa310b4d79b4b, type: 3}
-  m_Name: OpeningSteelGate
+  m_Name: OpeningChest
   m_EditorClassIdentifier: 
   serializationData:
     SerializedFormat: 2
@@ -21,8 +21,8 @@ MonoBehaviour:
     PrefabModificationsReferencedUnityObjects: []
     PrefabModifications: []
     SerializationNodes: []
-  OpenAngleX: 0
-  OpenAngleY: 90
+  OpenAngleX: -60
+  OpenAngleY: 0
   OpenAngleZ: 0
   Duration: 0.5
   IsOpen: 0

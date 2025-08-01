@@ -8,7 +8,9 @@ public class Door : MonoExt, IInteractable
 
     private Tween _currentTween;
 
-    private float _openAngle;
+    private float _openAngleX;
+    private float _openAngleY;
+    private float _openAngleZ;
     private float _duration;
     private bool _isOpen;
     
@@ -29,12 +31,14 @@ public class Door : MonoExt, IInteractable
 
     private void InitializeValues()
     {
-        _openAngle = _doorOpen.OpenAngle;
+        _openAngleX = _doorOpen.OpenAngleX;
+        _openAngleY = _doorOpen.OpenAngleY;
+        _openAngleZ = _doorOpen.OpenAngleZ;
         _duration = _doorOpen.Duration;
         _isOpen = _doorOpen.IsOpen;
         
         _closedRotation = interactableObject.transform.localRotation;
-        _openedRotation = Quaternion.Euler(0f, _openAngle, 0f) * _closedRotation;
+        _openedRotation = Quaternion.Euler(_openAngleX, _openAngleY, _openAngleZ) * _closedRotation;
     }
 
     public void Interact()

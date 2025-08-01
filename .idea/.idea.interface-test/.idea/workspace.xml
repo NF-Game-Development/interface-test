@@ -6,11 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="980b9648-4949-4612-b266-08cbef8d6864" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.interface-test/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.interface-test/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Scenes/Interface Activity 1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Scenes/Interface Activity 1.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Scripts/Environment/Door.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Scripts/Environment/Door.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Project/Scripts/Environment/Door/Door.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Scripts/Environment/Door/Door.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Project/Scripts/Environment/Door/OpeningValuesScriptableObject.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Scripts/Environment/Door/OpeningValuesScriptableObject.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/_Project/Scripts/Player/Interact/PlayerInteraction.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Scripts/Player/Interact/PlayerInteraction.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -107,7 +105,7 @@
       <updated>1753835967830</updated>
       <workItem from="1753835969556" duration="12678000" />
       <workItem from="1753856794826" duration="311000" />
-      <workItem from="1754008475097" duration="10203000" />
+      <workItem from="1754008475097" duration="10926000" />
     </task>
     <servers />
   </component>
@@ -129,42 +127,42 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/Assets/_Project/Scripts/Player/Interact/PlayerInteraction.cs</url>
-          <line>61</line>
+          <line>45</line>
           <properties documentPath="H:\534_Perez\Unity Projects\interface-test\Assets\_Project\Scripts\Player\Interact\PlayerInteraction.cs" containingFunctionPresentation="Method 'Interact'">
             <startOffsets>
-              <option value="1706" />
+              <option value="1144" />
             </startOffsets>
             <endOffsets>
-              <option value="1767" />
+              <option value="1216" />
             </endOffsets>
           </properties>
-          <option name="timeStamp" value="6" />
+          <option name="timeStamp" value="10" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/Assets/_Project/Scripts/Player/Interact/PlayerInteraction.cs</url>
-          <line>65</line>
+          <line>49</line>
           <properties documentPath="H:\534_Perez\Unity Projects\interface-test\Assets\_Project\Scripts\Player\Interact\PlayerInteraction.cs" containingFunctionPresentation="Method 'Interact'">
             <startOffsets>
-              <option value="1916" />
+              <option value="1346" />
             </startOffsets>
             <endOffsets>
-              <option value="1988" />
+              <option value="1370" />
             </endOffsets>
           </properties>
-          <option name="timeStamp" value="7" />
+          <option name="timeStamp" value="11" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/Assets/_Project/Scripts/Player/Interact/PlayerInteraction.cs</url>
-          <line>69</line>
+          <line>41</line>
           <properties documentPath="H:\534_Perez\Unity Projects\interface-test\Assets\_Project\Scripts\Player\Interact\PlayerInteraction.cs" containingFunctionPresentation="Method 'Interact'">
             <startOffsets>
-              <option value="2118" />
+              <option value="961" />
             </startOffsets>
             <endOffsets>
-              <option value="2142" />
+              <option value="1022" />
             </endOffsets>
           </properties>
-          <option name="timeStamp" value="8" />
+          <option name="timeStamp" value="12" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
