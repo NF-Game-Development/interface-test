@@ -24,6 +24,7 @@ MonoBehaviour:
   ClassNameEnum: {fileID: 11400000, guid: 69dae17144d556d43b2c17e5121a117f, type: 2}
   BaseHealth: 100
   BaseAttack: 10
+  MeleeRadius: 0.75
   MovementStats: {fileID: 11400000, guid: d4f4b6e9264126841bbe44ae44991a20, type: 2}
   AbilityList: {fileID: 11400000, guid: 3c39be05980d0074db691ba77953e950, type: 2}
   AbilityParameterHandler: {fileID: 11400000, guid: 1067540d4eef0c14c89a4c43eac2e488, type: 2}
