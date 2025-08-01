@@ -9,8 +9,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e98e86230fdd54e4084c98df78ad0fb0, type: 3}
-  m_Name: '[ENUM] Healer Hero'
+  m_Script: {fileID: 11500000, guid: 55241b70a8c271f47b5c07f728127806, type: 3}
+  m_Name: SkeletonMinion
   m_EditorClassIdentifier: 
   serializationData:
     SerializedFormat: 2
@@ -21,3 +21,10 @@ MonoBehaviour:
     PrefabModificationsReferencedUnityObjects: []
     PrefabModifications: []
     SerializationNodes: []
+  ClassNameEnum: {fileID: 11400000, guid: 857b408f0a3555d4aaef5d563303c403, type: 2}
+  BaseHealth: 50
+  BaseAttack: 5
+  MovementStats: {fileID: 0}
+  AbilityList: {fileID: 0}
+  AbilityParameterHandler: {fileID: 0}
+  EnemyModelPrefab: {fileID: 334505025707867733, guid: 576c690ec5580704da94f08b2762dce2, type: 3}

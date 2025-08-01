@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fa8fadfa59a8fa646bda08c10d200f1e, type: 3}
-  m_Name: Healer Hero
+  m_Name: HealerHero
   m_EditorClassIdentifier: 
   serializationData:
     SerializedFormat: 2
@@ -27,4 +27,4 @@ MonoBehaviour:
   MovementStats: {fileID: 11400000, guid: 03a14bae665dab945bc9621009da4cb0, type: 2}
   AbilityList: {fileID: 0}
   AbilityParameterHandler: {fileID: 0}
-  HeroModelPrefab: {fileID: 4874092585891417298, guid: 01237225dd3d2254bb75fb74efd0e240, type: 3}
+  HeroModelPrefab: {fileID: 6164433612195868908, guid: 9913ace97389e3548a523e95038631c2, type: 3}

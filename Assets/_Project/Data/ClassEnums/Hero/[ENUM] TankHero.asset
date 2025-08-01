@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e98e86230fdd54e4084c98df78ad0fb0, type: 3}
-  m_Name: '[ENUM] Tank Hero'
+  m_Name: '[ENUM] TankHero'
   m_EditorClassIdentifier: 
   serializationData:
     SerializedFormat: 2

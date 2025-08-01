@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fa8fadfa59a8fa646bda08c10d200f1e, type: 3}
-  m_Name: Tank Hero
+  m_Name: TankHero
   m_EditorClassIdentifier: 
   serializationData:
     SerializedFormat: 2
@@ -27,4 +27,4 @@ MonoBehaviour:
   MovementStats: {fileID: 11400000, guid: e57a1d80bd0210d48a05c79b9ff12b16, type: 2}
   AbilityList: {fileID: 0}
   AbilityParameterHandler: {fileID: 0}
-  HeroModelPrefab: {fileID: 7965063109165755794, guid: 9d3c5ed69b9cefd4dac6e23e5d6bca53, type: 3}
+  HeroModelPrefab: {fileID: 8965404519273304551, guid: 9c2e2c1b2ab71ba4ebde1646450cec2d, type: 3}
