@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d534e4b91cb24005b243f55f5cd8da8a, type: 3}
+  m_Name: '[CONSEQUENCE] PunchAndStomp_Phase1_RectOverlap'
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes: []
+  NextConsequence: {fileID: 11400000, guid: 837b76df9b43304479ed915d4387dd6f, type: 2}
+  Width: {fileID: 11400000, guid: 85a4470608fdb4d4282adcfc093f538e, type: 2}
+  Depth: {fileID: 11400000, guid: dff23c00d0586ee459c7efc3e7457670, type: 2}
+  Height: {fileID: 11400000, guid: bafcd944ba1d34742852a54dccf983af, type: 2}
+  FrontOffset: {fileID: 11400000, guid: 5a67c6165f3358c48919c107c539794a, type: 2}
+  CenterParameterKey: {fileID: 11400000, guid: 83f84282e1a12074c904e48c25dc1ce3, type: 2}
+  TargetListParameterKey: {fileID: 11400000, guid: 88f2047015708074c8205207f50bbb9d, type: 2}
+  TargetListScriptable: {fileID: 11400000, guid: 7ce980bd43dcd024a82481dcbd82d868, type: 2}
+  IsVisualized: 1
+  VisualizerPrefab: {fileID: 3258453889424858441, guid: 86d5fae2e07f3a34db2605ce17ddbd75, type: 3}

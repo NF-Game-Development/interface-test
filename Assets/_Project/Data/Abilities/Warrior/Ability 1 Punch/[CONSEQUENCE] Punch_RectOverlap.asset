@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d534e4b91cb24005b243f55f5cd8da8a, type: 3}
+  m_Name: '[CONSEQUENCE] Punch_RectOverlap'
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes: []
+  NextConsequence: {fileID: 11400000, guid: 6cb756ebde1968849a2218f8d033243d, type: 2}
+  Width: {fileID: 11400000, guid: f3c88fad155a24b4a9e9a31aaf31e6d3, type: 2}
+  Depth: {fileID: 11400000, guid: f77987e8c2bfe0d4ebf39d0806a25fb0, type: 2}
+  Height: {fileID: 11400000, guid: 3c2d316ff03cd5b489603b1785d3f48c, type: 2}
+  FrontOffset: {fileID: 11400000, guid: 710f5eb71a277f34a9203ddf6cd8609b, type: 2}
+  CenterParameterKey: {fileID: 11400000, guid: 83f84282e1a12074c904e48c25dc1ce3, type: 2}
+  TargetListParameterKey: {fileID: 11400000, guid: 88f2047015708074c8205207f50bbb9d, type: 2}
+  TargetListScriptable: {fileID: 11400000, guid: 7ce980bd43dcd024a82481dcbd82d868, type: 2}
+  IsVisualized: 1
+  VisualizerPrefab: {fileID: 3258453889424858441, guid: 86d5fae2e07f3a34db2605ce17ddbd75, type: 3}

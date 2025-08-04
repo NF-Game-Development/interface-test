@@ -16,7 +16,6 @@ public class RectOverlapConsequence : Consequence
 
     public AbilityParameterExtendableEnum CenterParameterKey;
     public AbilityParameterExtendableEnum TargetListParameterKey;
-    //public AbilityParameterExtendableEnum TargetTag;
     public TargetTagEnumListScriptableObject TargetListScriptable;
     
     public bool IsVisualized = false;

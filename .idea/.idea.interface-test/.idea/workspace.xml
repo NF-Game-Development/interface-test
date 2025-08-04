@@ -6,13 +6,19 @@
   <component name="ChangeListManager">
     <list default="true" id="980b9648-4949-4612-b266-08cbef8d6864" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.interface-test/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.interface-test/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Data/Abilities/Quick Slash/[CONSEQUENCE] QuickSlash_RectOverlap.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Data/Abilities/Quick Slash/[CONSEQUENCE] QuickSlash_RectOverlap.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Data/Abilities/Quick Slash/[DAMAGE] Quick Slash.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Data/Abilities/Quick Slash/[DAMAGE] Quick Slash.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Data/Abilities/Slash And Stomp/[CONSEQUENCE] SlashAndStomp_Phase1_RectOverlap.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Data/Abilities/Slash And Stomp/[CONSEQUENCE] SlashAndStomp_Phase1_RectOverlap.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Data/Abilities/Slash And Stomp/[DAMAGE] Slash And Stomp Phase 2.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Data/Abilities/Slash And Stomp/[DAMAGE] Slash And Stomp Phase 2.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Data/AbilityEnums.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Data/AbilityEnums/[ENUM] CircularSlash.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Data/AbilityEnums/[ENUM] CircularSlash.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Data/AbilityEnums/[ENUM] QuickSlash.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Data/AbilityEnums/[ENUM] QuickSlash.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Data/AbilityEnums/[ENUM] SlashAndStomp.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Data/AbilityEnums/[ENUM] SlashAndStomp.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Data/PlayerData/PlayerInputReader.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Data/PlayerData/PlayerInputReader.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Gameplay/Ability/RectOverlapConsequence.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Gameplay/Ability/RectOverlapConsequence.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Gameplay/Ability/SphereOverlapConsequence.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Gameplay/Ability/SphereOverlapConsequence.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Scripts/TargetTagList/TargetTagEnumListScriptableObject.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Scripts/TargetTagList/TargetTagEnumListScriptableObject.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Gameplay/Misc/Stat.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Gameplay/Misc/Stat.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Project/Data/HeroData/WarriorHero.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Data/HeroData/WarriorHero.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Project/Scenes/Interface Activity.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Scenes/Interface Activity.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/URPProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/URPProjectSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -115,7 +121,7 @@
       <workItem from="1754269348650" duration="1003000" />
       <workItem from="1754271318639" duration="714000" />
       <workItem from="1754272782663" duration="4000" />
-      <workItem from="1754272793626" duration="6403000" />
+      <workItem from="1754272793626" duration="10955000" />
     </task>
     <servers />
   </component>

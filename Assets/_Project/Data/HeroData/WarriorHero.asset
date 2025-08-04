@@ -26,6 +26,6 @@ MonoBehaviour:
   BaseAttack: 10
   MeleeRadius: 0.75
   MovementStats: {fileID: 11400000, guid: d4f4b6e9264126841bbe44ae44991a20, type: 2}
-  AbilityList: {fileID: 11400000, guid: 3c39be05980d0074db691ba77953e950, type: 2}
-  AbilityParameterHandler: {fileID: 11400000, guid: 1067540d4eef0c14c89a4c43eac2e488, type: 2}
+  AbilityList: {fileID: 11400000, guid: 54efc90030860f24f90d1f9e7b4cc685, type: 2}
+  AbilityParameterHandler: {fileID: 11400000, guid: 265c42230de757a47a77308c0ae19d96, type: 2}
   HeroModelPrefab: {fileID: 6391600334764783985, guid: 6577c805289583043869e1014b778555, type: 3}

@@ -981,7 +981,7 @@ GameObject:
   - component: {fileID: 631294519}
   - component: {fileID: 631294518}
   m_Layer: 5
-  m_Name: IMG_SlashAndStomp
+  m_Name: IMG_ThirdSkill
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1916,11 +1916,11 @@ MonoBehaviour:
     SerializedFormat: 2
     SerializedBytes: 
     ReferencedUnityObjects:
-    - {fileID: 11400000, guid: 980a7fc31ac06bb4cbf1ee3ab46dfafe, type: 2}
-    - {fileID: 1338589414}
-    - {fileID: 11400000, guid: be9dd6f19e9fe4f4cb127c8dfe5135fd, type: 2}
+    - {fileID: 11400000, guid: 3900d6f489ea8f64e9481e5263a889ce, type: 2}
     - {fileID: 130413730}
-    - {fileID: 11400000, guid: ff288a05996991444b318cfa696c0a21, type: 2}
+    - {fileID: 11400000, guid: 8698563374aae2d48af9e14d4160a9c8, type: 2}
+    - {fileID: 1338589414}
+    - {fileID: 11400000, guid: 13ca81de5d2ef544488103401e738059, type: 2}
     - {fileID: 190727615}
     SerializedBytesString: 
     Prefab: {fileID: 0}
@@ -1984,8 +1984,8 @@ MonoBehaviour:
       Entry: 8
       Data: 
   _errorText: {fileID: 1828994797}
-  _abilityList: {fileID: 11400000, guid: 3c39be05980d0074db691ba77953e950, type: 2}
-  _abilityParameterHandler: {fileID: 11400000, guid: 1067540d4eef0c14c89a4c43eac2e488, type: 2}
+  _abilityList: {fileID: 11400000, guid: 54efc90030860f24f90d1f9e7b4cc685, type: 2}
+  _abilityParameterHandler: {fileID: 11400000, guid: 265c42230de757a47a77308c0ae19d96, type: 2}
 --- !u!222 &1354798868
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2376,7 +2376,7 @@ GameObject:
   - component: {fileID: 1736559948}
   - component: {fileID: 1736559947}
   m_Layer: 5
-  m_Name: IMG_CircularSlash
+  m_Name: IMG_FirstSkill
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2757,7 +2757,7 @@ GameObject:
   - component: {fileID: 2119117387}
   - component: {fileID: 2119117386}
   m_Layer: 5
-  m_Name: IMG_QuickSlash
+  m_Name: IMG_SecondSkill
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3060,6 +3060,14 @@ PrefabInstance:
       propertyPath: _camera
       value: 
       objectReference: {fileID: 796445580}
+    - target: {fileID: 2633854509253707497, guid: 6577c805289583043869e1014b778555, type: 3}
+      propertyPath: _abilityList
+      value: 
+      objectReference: {fileID: 11400000, guid: 54efc90030860f24f90d1f9e7b4cc685, type: 2}
+    - target: {fileID: 2633854509253707497, guid: 6577c805289583043869e1014b778555, type: 3}
+      propertyPath: _abilityParameterHandler
+      value: 
+      objectReference: {fileID: 11400000, guid: 265c42230de757a47a77308c0ae19d96, type: 2}
     - target: {fileID: 2633854509253707497, guid: 6577c805289583043869e1014b778555, type: 3}
       propertyPath: serializationData.Prefab
       value: 
