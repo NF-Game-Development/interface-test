@@ -16,12 +16,12 @@ public class RectOverlapConsequence : Consequence
 
     public AbilityParameterExtendableEnum CenterParameterKey;
     public AbilityParameterExtendableEnum TargetListParameterKey;
-    public AbilityParameterExtendableEnum TargetTag;
+    //public AbilityParameterExtendableEnum TargetTag;
+    public TargetTagEnumListScriptableObject TargetListScriptable;
     
     public bool IsVisualized = false;
     [ShowIf("IsVisualized")]
     public RectOverlapConsequenceVisualizer VisualizerPrefab;
-    
     
     public override async UniTask ExecuteConsequence(AbilityParameterHandler abilityParameters)
     {
@@ -40,10 +40,8 @@ public class RectOverlapConsequence : Consequence
         
         foreach (Collider collider in colliders)
         {
-            if (!collider.CompareTag(TargetTag.name))
-                continue;
-            
-            targets.Add(collider.gameObject);
+            if (TargetListScriptable.IsMatchEnum(collider))
+                targets.Add(collider.gameObject);
         }
         
         abilityParameters.SetParameter(TargetListParameterKey, targets.ToList());

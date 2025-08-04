@@ -13,7 +13,6 @@ public class SphereOverlapConsequence : Consequence
     
     public AbilityParameterExtendableEnum CenterParameterKey;
     public AbilityParameterExtendableEnum TargetListParameterKey;
-    //public AbilityParameterExtendableEnum TargetTag;
     public TargetTagEnumListScriptableObject TargetListScriptable;
     
     public bool IsVisualized = false;
@@ -35,25 +34,12 @@ public class SphereOverlapConsequence : Consequence
         
         foreach (Collider collider in colliders)
         {
-            /*if (!collider.CompareTag(TargetTag.name))
-                continue;*/
-            
-            if (ListOfTargets(collider))
+            if (TargetListScriptable.IsMatchEnum(collider))
                 targets.Add(collider.gameObject);
         }
         
         abilityParameters.SetParameter(TargetListParameterKey, targets.ToList());
         await ExecuteNextConsequence(abilityParameters);
-    }
-    
-    private bool ListOfTargets(Collider collider)
-    {
-        foreach (var targetEnumList in TargetListScriptable.TargetTagEnumList)
-        {
-            if (collider.CompareTag(targetEnumList.name))
-                return true;
-        }
-        return false;
     }
     
     public void SpawnVisualizer( Vector3 center, float radius, Quaternion boxRotation)

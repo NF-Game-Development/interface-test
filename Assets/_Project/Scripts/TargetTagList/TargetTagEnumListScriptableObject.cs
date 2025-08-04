@@ -6,4 +6,14 @@ using UnityEngine.Serialization;
 public class TargetTagEnumListScriptableObject : SerializedScriptableObject
 { 
     public AbilityParameterExtendableEnum[] TargetTagEnumList;
+    
+    public bool IsMatchEnum(Collider collider)
+    {
+        foreach (var tagEnum in TargetTagEnumList)
+        {
+            if (collider.CompareTag(tagEnum.name))
+                return true;
+        }
+        return false;
+    }
 }
