@@ -9,8 +9,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ea52a66fa7250524f895536c5291a4e5, type: 3}
-  m_Name: '[ABILITY] Punch'
+  m_Script: {fileID: 11500000, guid: 06960da5d46fe1046854a3169d40a577, type: 3}
+  m_Name: '[ENUM] 1Shield Taunt'
   m_EditorClassIdentifier: 
   serializationData:
     SerializedFormat: 2
@@ -21,9 +21,3 @@ MonoBehaviour:
     PrefabModificationsReferencedUnityObjects: []
     PrefabModifications: []
     SerializationNodes: []
-  ID: Punch
-  AbilityEnum: {fileID: 11400000, guid: 13ca81de5d2ef544488103401e738059, type: 2}
-  Cooldown: {fileID: 11400000, guid: 7ff99215d2badb74faece27aaf55dbb9, type: 2}
-  AbilityImage: {fileID: 21300000, guid: aeb31def086466745b570d082197ee1f, type: 3}
-  Behaviour: {fileID: 11400000, guid: 543978515d19faf49b2507c8a3295915, type: 2}
-  CenterTransformParameter: {fileID: 11400000, guid: 83f84282e1a12074c904e48c25dc1ce3, type: 2}

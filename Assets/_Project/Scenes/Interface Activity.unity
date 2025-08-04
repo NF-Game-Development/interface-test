@@ -171,7 +171,7 @@ GameObject:
   - component: {fileID: 130413731}
   - component: {fileID: 130413730}
   m_Layer: 5
-  m_Name: IMG_QuickSlashCooldown
+  m_Name: IMG_2ndSkillCooldown
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -216,7 +216,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 824a48daf7b55394e80e1df5048db839, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 3598ab06907ab254a91a04b4e37c7ae2, type: 3}
   m_Type: 3
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -338,7 +338,7 @@ GameObject:
   - component: {fileID: 190727616}
   - component: {fileID: 190727615}
   m_Layer: 5
-  m_Name: IMG_SlashAndStompCooldown
+  m_Name: IMG_3rdSkillCooldown
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -383,7 +383,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 2bbebcc9ca74c2c47bc5238486432710, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 3598ab06907ab254a91a04b4e37c7ae2, type: 3}
   m_Type: 3
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1028,7 +1028,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 2bbebcc9ca74c2c47bc5238486432710, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 14a0f66a7be165c4ba476e3d7c40e390, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1570,7 +1570,7 @@ GameObject:
   - component: {fileID: 1275348513}
   - component: {fileID: 1275348512}
   m_Layer: 5
-  m_Name: TMP_SlashAndStompLabel
+  m_Name: TMP_3rdSkillName
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1615,7 +1615,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Slash and Stomp
+  m_text: Combo
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1798,7 +1798,7 @@ GameObject:
   - component: {fileID: 1338589415}
   - component: {fileID: 1338589414}
   m_Layer: 5
-  m_Name: ' IMG_CircularSlashCooldown'
+  m_Name: IMG_1stSkillCooldown
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1843,7 +1843,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 4029a9cfeb86f134c9c5af05993eaac8, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 3598ab06907ab254a91a04b4e37c7ae2, type: 3}
   m_Type: 3
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1917,11 +1917,11 @@ MonoBehaviour:
     SerializedBytes: 
     ReferencedUnityObjects:
     - {fileID: 11400000, guid: 13ca81de5d2ef544488103401e738059, type: 2}
-    - {fileID: 190727615}
-    - {fileID: 11400000, guid: 3900d6f489ea8f64e9481e5263a889ce, type: 2}
-    - {fileID: 130413730}
-    - {fileID: 11400000, guid: 8698563374aae2d48af9e14d4160a9c8, type: 2}
     - {fileID: 1338589414}
+    - {fileID: 11400000, guid: 3900d6f489ea8f64e9481e5263a889ce, type: 2}
+    - {fileID: 190727615}
+    - {fileID: 11400000, guid: 8698563374aae2d48af9e14d4160a9c8, type: 2}
+    - {fileID: 130413730}
     SerializedBytesString: 
     Prefab: {fileID: 0}
     PrefabModificationsReferencedUnityObjects: []
@@ -1983,13 +1983,20 @@ MonoBehaviour:
     - Name: 
       Entry: 8
       Data: 
-  _abilityImages:
-  - {fileID: 1736559947}
-  - {fileID: 2119117386}
-  - {fileID: 631294518}
+  _abilityImageAndName:
+  - AbilityImage: {fileID: 1736559947}
+    AbilityName: {fileID: 1562226401}
+  - AbilityImage: {fileID: 2119117386}
+    AbilityName: {fileID: 1772059453}
+  - AbilityImage: {fileID: 631294518}
+    AbilityName: {fileID: 1275348512}
   _errorText: {fileID: 1828994797}
   _abilityList: {fileID: 11400000, guid: 54efc90030860f24f90d1f9e7b4cc685, type: 2}
   _abilityParameterHandler: {fileID: 11400000, guid: 265c42230de757a47a77308c0ae19d96, type: 2}
+  AbilityExtendableEnumList:
+  - {fileID: 11400000, guid: 13ca81de5d2ef544488103401e738059, type: 2}
+  - {fileID: 11400000, guid: 8698563374aae2d48af9e14d4160a9c8, type: 2}
+  - {fileID: 11400000, guid: 3900d6f489ea8f64e9481e5263a889ce, type: 2}
 --- !u!222 &1354798868
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2037,7 +2044,7 @@ GameObject:
   - component: {fileID: 1562226402}
   - component: {fileID: 1562226401}
   m_Layer: 5
-  m_Name: TMP_CirculasSlashLabel
+  m_Name: TMP_1stSkillName
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2082,7 +2089,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Circular Slash
+  m_text: Punch
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -2427,7 +2434,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 4029a9cfeb86f134c9c5af05993eaac8, type: 3}
+  m_Sprite: {fileID: 21300000, guid: aeb31def086466745b570d082197ee1f, type: 3}
   m_Type: 3
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2457,7 +2464,7 @@ GameObject:
   - component: {fileID: 1772059454}
   - component: {fileID: 1772059453}
   m_Layer: 5
-  m_Name: TMP_QuickSlashLabel
+  m_Name: TMP_2ndSkillName
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2502,7 +2509,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Quick Slash
+  m_text: Stomp
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -2808,7 +2815,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 824a48daf7b55394e80e1df5048db839, type: 3}
+  m_Sprite: {fileID: 21300000, guid: c890dd06d4a350946ab11e4778bf47d8, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1

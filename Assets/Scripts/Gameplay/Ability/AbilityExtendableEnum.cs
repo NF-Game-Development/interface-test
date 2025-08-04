@@ -6,4 +6,5 @@ using UnityEngine;
 [Serializable]
 public class AbilityExtendableEnum : SerializedScriptableObject
 {
+    public int SkillNumber;
 }

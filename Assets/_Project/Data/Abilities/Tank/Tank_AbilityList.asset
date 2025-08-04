@@ -10,18 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 17962dbb1a88d7a4bb644fd03cc29c45, type: 3}
-  m_Name: Warrior_AbilityList
+  m_Name: Tank_AbilityList
   m_EditorClassIdentifier: 
   serializationData:
     SerializedFormat: 2
     SerializedBytes: 
-    ReferencedUnityObjects:
-    - {fileID: 11400000, guid: 8698563374aae2d48af9e14d4160a9c8, type: 2}
-    - {fileID: 11400000, guid: 0e73b3d333d6d974bbdf8a3a91ff11f2, type: 2}
-    - {fileID: 11400000, guid: 13ca81de5d2ef544488103401e738059, type: 2}
-    - {fileID: 11400000, guid: c5905c38196b2be44b3a77cde155a50e, type: 2}
-    - {fileID: 11400000, guid: 3900d6f489ea8f64e9481e5263a889ce, type: 2}
-    - {fileID: 11400000, guid: 61673cc28f038b3478a15d833f963107, type: 2}
+    ReferencedUnityObjects: []
     SerializedBytesString: 
     Prefab: {fileID: 0}
     PrefabModificationsReferencedUnityObjects: []
@@ -40,43 +34,7 @@ MonoBehaviour:
       Data: 
     - Name: 
       Entry: 12
-      Data: 3
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 10
       Data: 0
-    - Name: $v
-      Entry: 10
-      Data: 1
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 10
-      Data: 2
-    - Name: $v
-      Entry: 10
-      Data: 3
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 10
-      Data: 4
-    - Name: $v
-      Entry: 10
-      Data: 5
-    - Name: 
-      Entry: 8
-      Data: 
     - Name: 
       Entry: 13
       Data: 

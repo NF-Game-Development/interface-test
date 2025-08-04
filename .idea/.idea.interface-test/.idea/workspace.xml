@@ -6,8 +6,21 @@
   <component name="ChangeListManager">
     <list default="true" id="980b9648-4949-4612-b266-08cbef8d6864" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.interface-test/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.interface-test/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Gameplay/Ability/Ability.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Gameplay/Ability/Ability.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Data/PlayerData/PlayerInputReader.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Data/PlayerData/PlayerInputReader.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Gameplay/Ability/AbilityExtendableEnum.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Gameplay/Ability/AbilityExtendableEnum.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Utilities/Utility.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Utilities/Utility.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/View/HUDManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/View/HUDManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Project/Data/Abilities/Ability ENUMS/[ENUM] 1Punch.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Project/Data/Abilities/Ability ENUMS/[ENUM] 1Punch.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Project/Data/Abilities/Ability ENUMS/[ENUM] 2Stomp.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Project/Data/Abilities/Ability ENUMS/[ENUM] 2Stomp.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Project/Data/Abilities/Ability ENUMS/[ENUM] 3PunchAndStomp.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Project/Data/Abilities/Ability ENUMS/[ENUM] 3PunchAndStomp.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Project/Data/Abilities/Warrior/Ability 1 Punch/[ABILITY] Punch.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Data/Abilities/Warrior/Ability 1 Punch/[ABILITY] Punch.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Project/Data/Abilities/Warrior/Ability 2 Stomp/[ABILITY] Stomp.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Data/Abilities/Warrior/Ability 2 Stomp/[ABILITY] Stomp.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Project/Data/Abilities/Warrior/Ability 3 Punch and Stomp/[ABILITY] Punch And Stomp.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Data/Abilities/Warrior/Ability 3 Punch and Stomp/[ABILITY] Punch And Stomp.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Project/Data/Abilities/Warrior/Warrior_AbilityList.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Data/Abilities/Warrior/Warrior_AbilityList.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Project/Scenes/Interface Activity.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Scenes/Interface Activity.unity" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,6 +37,7 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/2431722e3e3e41d78b6718bb39ab91111df400/cd/af369a59/Component.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/5780850fc704417799e38550144b43932ac00/3b/daea351d/RaycastHit.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/5780850fc704417799e38550144b43932ac00/6a/fbccd3b2/Physics.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/d44b17e136d09081da1e8fd0e8c83fde60e11818b9f2442d7ed8cb733fae895e/System.Collections.Generic.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/_Project/Scripts/Environment/Breakables/BreakableValuesScriptableObject.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/_Project/Scripts/TargetTagList/TargetTagEnumListScriptableObject.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.render-pipelines.core@481f548ebf36/Runtime/Debugging/DebugUpdater.cs" root0="SKIP_HIGHLIGHTING" />
@@ -110,7 +124,7 @@
       <workItem from="1754269348650" duration="1003000" />
       <workItem from="1754271318639" duration="714000" />
       <workItem from="1754272782663" duration="4000" />
-      <workItem from="1754272793626" duration="14012000" />
+      <workItem from="1754272793626" duration="20758000" />
     </task>
     <servers />
   </component>
@@ -126,5 +140,24 @@
   <component name="UnityUnitTestConfiguration" currentTestLauncher="Both" />
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/Scripts/View/HUDManager.cs</url>
+          <line>45</line>
+          <properties documentPath="H:\534_Perez\Unity Projects\interface-test\Assets\Scripts\View\HUDManager.cs" containingFunctionPresentation="Method 'InitializeAbilityDictionary'">
+            <startOffsets>
+              <option value="1542" />
+            </startOffsets>
+            <endOffsets>
+              <option value="1640" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

@@ -9,68 +9,43 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f26818538f80cba4395f5bf6ffc7227c, type: 3}
-  m_Name: PlayerInputReader
+  m_Script: {fileID: 11500000, guid: 057f76f7add90f145a833ea165ff0611, type: 3}
+  m_Name: Tank_AbilityParameter
   m_EditorClassIdentifier: 
   serializationData:
     SerializedFormat: 2
     SerializedBytes: 
     ReferencedUnityObjects:
-    - {fileID: 11400000, guid: 13ca81de5d2ef544488103401e738059, type: 2}
-    - {fileID: 11400000, guid: 8698563374aae2d48af9e14d4160a9c8, type: 2}
-    - {fileID: 11400000, guid: 3900d6f489ea8f64e9481e5263a889ce, type: 2}
+    - {fileID: 11400000, guid: 83f84282e1a12074c904e48c25dc1ce3, type: 2}
+    - {fileID: 0}
     SerializedBytesString: 
     Prefab: {fileID: 0}
     PrefabModificationsReferencedUnityObjects: []
     PrefabModifications: []
     SerializationNodes:
-    - Name: AbilityDictionary
+    - Name: AbilityParameters
       Entry: 7
-      Data: 0|System.Collections.Generic.Dictionary`2[[System.Int32, mscorlib],[AbilityExtendableEnum,
-        Assembly-CSharp]], mscorlib
+      Data: 0|System.Collections.Generic.Dictionary`2[[AbilityParameterExtendableEnum,
+        Assembly-CSharp],[System.Object, mscorlib]], mscorlib
     - Name: comparer
       Entry: 7
-      Data: 1|System.Collections.Generic.GenericEqualityComparer`1[[System.Int32,
-        mscorlib]], mscorlib
+      Data: 1|System.Collections.Generic.ObjectEqualityComparer`1[[AbilityParameterExtendableEnum,
+        Assembly-CSharp]], mscorlib
     - Name: 
       Entry: 8
       Data: 
     - Name: 
       Entry: 12
-      Data: 3
+      Data: 1
     - Name: 
       Entry: 7
       Data: 
     - Name: $k
-      Entry: 3
-      Data: 1
-    - Name: $v
       Entry: 10
       Data: 0
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 3
-      Data: 2
     - Name: $v
       Entry: 10
       Data: 1
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 3
-      Data: 3
-    - Name: $v
-      Entry: 10
-      Data: 2
     - Name: 
       Entry: 8
       Data: 
@@ -80,3 +55,16 @@ MonoBehaviour:
     - Name: 
       Entry: 8
       Data: 
+    - Name: AbilityStarted
+      Entry: 7
+      Data: 2|UniRx.Subject`1[[AbilityExtendableEnum, Assembly-CSharp]], UniRx
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: AbilityStillExecuting
+      Entry: 7
+      Data: 3|UniRx.Subject`1[[System.Boolean, mscorlib]], UniRx
+    - Name: 
+      Entry: 8
+      Data: 
+  IsAnAbilityExecuting: 0

@@ -9,8 +9,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ea52a66fa7250524f895536c5291a4e5, type: 3}
-  m_Name: '[ABILITY] Punch'
+  m_Script: {fileID: 11500000, guid: 44b35ba2c7b345478de52cec5cdb708c, type: 3}
+  m_Name: '[CONSEQUENCE] Shield Taunt_DealDamage'
   m_EditorClassIdentifier: 
   serializationData:
     SerializedFormat: 2
@@ -21,9 +21,6 @@ MonoBehaviour:
     PrefabModificationsReferencedUnityObjects: []
     PrefabModifications: []
     SerializationNodes: []
-  ID: Punch
-  AbilityEnum: {fileID: 11400000, guid: 13ca81de5d2ef544488103401e738059, type: 2}
-  Cooldown: {fileID: 11400000, guid: 7ff99215d2badb74faece27aaf55dbb9, type: 2}
-  AbilityImage: {fileID: 21300000, guid: aeb31def086466745b570d082197ee1f, type: 3}
-  Behaviour: {fileID: 11400000, guid: 543978515d19faf49b2507c8a3295915, type: 2}
-  CenterTransformParameter: {fileID: 11400000, guid: 83f84282e1a12074c904e48c25dc1ce3, type: 2}
+  NextConsequence: {fileID: 0}
+  Damage: {fileID: 11400000, guid: adb0ddb8cecad124faa9b3fe7b140df3, type: 2}
+  EnemyListParameterKey: {fileID: 11400000, guid: 88f2047015708074c8205207f50bbb9d, type: 2}
