@@ -6,21 +6,13 @@
   <component name="ChangeListManager">
     <list default="true" id="980b9648-4949-4612-b266-08cbef8d6864" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.interface-test/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.interface-test/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Data/PlayerData/PlayerInputReader.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Data/PlayerData/PlayerInputReader.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Gameplay/Ability/AbilityExtendableEnum.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Gameplay/Ability/AbilityExtendableEnum.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Utilities/Utility.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Utilities/Utility.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/View/HUDManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/View/HUDManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Data/Abilities/Ability ENUMS/[ENUM] 1Punch.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Data/Abilities/Ability ENUMS/[ENUM] 1Punch.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Data/Abilities/Ability ENUMS/[ENUM] 2Stomp.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Data/Abilities/Ability ENUMS/[ENUM] 2Stomp.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Data/Abilities/Ability ENUMS/[ENUM] 3PunchAndStomp.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Data/Abilities/Ability ENUMS/[ENUM] 3PunchAndStomp.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Data/Abilities/Warrior/Ability 1 Punch/[ABILITY] Punch.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Data/Abilities/Warrior/Ability 1 Punch/[ABILITY] Punch.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Data/Abilities/Warrior/Ability 2 Stomp/[ABILITY] Stomp.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Data/Abilities/Warrior/Ability 2 Stomp/[ABILITY] Stomp.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Data/Abilities/Warrior/Ability 3 Punch and Stomp/[ABILITY] Punch And Stomp.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Data/Abilities/Warrior/Ability 3 Punch and Stomp/[ABILITY] Punch And Stomp.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Data/Abilities/Warrior/Warrior_AbilityList.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Data/Abilities/Warrior/Warrior_AbilityList.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Scenes/Interface Activity.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Scenes/Interface Activity.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Project/Data/Abilities/Ability ENUMS/Tank/[ENUM] 1Shield Taunt.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Project/Data/Abilities/Ability ENUMS/Tank/[ENUM] 1Shield Taunt.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Project/Data/Abilities/Ability ENUMS/Tank/[ENUM] 2Shockwave.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Project/Data/Abilities/Ability ENUMS/Tank/[ENUM] 2Shockwave.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Project/Data/Abilities/Ability ENUMS/Tank/[ENUM] 3Brawl.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Project/Data/Abilities/Ability ENUMS/Tank/[ENUM] 3Brawl.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Project/Data/Abilities/Tank/Tank_AbilityList.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Data/Abilities/Tank/Tank_AbilityList.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -124,7 +116,7 @@
       <workItem from="1754269348650" duration="1003000" />
       <workItem from="1754271318639" duration="714000" />
       <workItem from="1754272782663" duration="4000" />
-      <workItem from="1754272793626" duration="20758000" />
+      <workItem from="1754272793626" duration="21713000" />
     </task>
     <servers />
   </component>
@@ -140,24 +132,5 @@
   <component name="UnityUnitTestConfiguration" currentTestLauncher="Both" />
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Assets/Scripts/View/HUDManager.cs</url>
-          <line>45</line>
-          <properties documentPath="H:\534_Perez\Unity Projects\interface-test\Assets\Scripts\View\HUDManager.cs" containingFunctionPresentation="Method 'InitializeAbilityDictionary'">
-            <startOffsets>
-              <option value="1542" />
-            </startOffsets>
-            <endOffsets>
-              <option value="1640" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="12" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

@@ -9,57 +9,55 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 17962dbb1a88d7a4bb644fd03cc29c45, type: 3}
-  m_Name: Tank_AbilityList
+  m_Script: {fileID: 11500000, guid: 7da78d8fabff460bae8817af7bfe4459, type: 3}
+  m_Name: '[PHASE] Shockwave'
   m_EditorClassIdentifier: 
   serializationData:
     SerializedFormat: 2
     SerializedBytes: 
     ReferencedUnityObjects:
-    - {fileID: 11400000, guid: 050d26f18b1828a4fafb096e03c4f78b, type: 2}
-    - {fileID: 11400000, guid: a11fcdd8da46ed443bb532dbe990255a, type: 2}
-    - {fileID: 11400000, guid: 9b0711202f2af234ea3c7fcad08e65c9, type: 2}
-    - {fileID: 11400000, guid: 59ae5821a23213247bc62370fdcb39f2, type: 2}
+    - {fileID: 11400000, guid: 06079f643ce5d0b4f93e88eb3964e926, type: 2}
     SerializedBytesString: 
     Prefab: {fileID: 0}
     PrefabModificationsReferencedUnityObjects: []
     PrefabModifications: []
     SerializationNodes:
-    - Name: AbilityDictionary
+    - Name: ConsequenceTimingDictionary
       Entry: 7
-      Data: 0|System.Collections.Generic.Dictionary`2[[AbilityExtendableEnum, Assembly-CSharp],[Ability,
-        Assembly-CSharp]], mscorlib
+      Data: 0|System.Collections.Generic.Dictionary`2[[System.Single, mscorlib],[System.Collections.Generic.List`1[[Consequence,
+        Assembly-CSharp]], mscorlib]], mscorlib
     - Name: comparer
       Entry: 7
-      Data: 1|System.Collections.Generic.ObjectEqualityComparer`1[[AbilityExtendableEnum,
-        Assembly-CSharp]], mscorlib
+      Data: 1|System.Collections.Generic.GenericEqualityComparer`1[[System.Single,
+        mscorlib]], mscorlib
     - Name: 
       Entry: 8
       Data: 
     - Name: 
       Entry: 12
-      Data: 2
+      Data: 1
     - Name: 
       Entry: 7
       Data: 
     - Name: $k
+      Entry: 4
+      Data: 0.6
+    - Name: $v
+      Entry: 7
+      Data: 2|System.Collections.Generic.List`1[[Consequence, Assembly-CSharp]],
+        mscorlib
+    - Name: 
+      Entry: 12
+      Data: 1
+    - Name: 
       Entry: 10
       Data: 0
-    - Name: $v
-      Entry: 10
-      Data: 1
+    - Name: 
+      Entry: 13
+      Data: 
     - Name: 
       Entry: 8
       Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 10
-      Data: 2
-    - Name: $v
-      Entry: 10
-      Data: 3
     - Name: 
       Entry: 8
       Data: 
@@ -69,3 +67,4 @@ MonoBehaviour:
     - Name: 
       Entry: 8
       Data: 
+  Duration: {fileID: 11400000, guid: 11142cabb4bd63a409253fb504a6fcf8, type: 2}
