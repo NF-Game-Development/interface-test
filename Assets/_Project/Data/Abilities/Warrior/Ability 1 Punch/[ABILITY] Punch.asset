@@ -24,5 +24,6 @@ MonoBehaviour:
   ID: Punch
   AbilityEnum: {fileID: 11400000, guid: 8698563374aae2d48af9e14d4160a9c8, type: 2}
   Cooldown: {fileID: 11400000, guid: 7ff99215d2badb74faece27aaf55dbb9, type: 2}
+  AbilityImage: {fileID: 21300000, guid: 4029a9cfeb86f134c9c5af05993eaac8, type: 3}
   Behaviour: {fileID: 11400000, guid: 543978515d19faf49b2507c8a3295915, type: 2}
   CenterTransformParameter: {fileID: 11400000, guid: 83f84282e1a12074c904e48c25dc1ce3, type: 2}

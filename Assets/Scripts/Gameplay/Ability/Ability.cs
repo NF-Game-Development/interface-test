@@ -2,6 +2,7 @@ using System;
 using Cysharp.Threading.Tasks;
 using UnityEngine;
 using UnityEngine.Serialization;
+using UnityEngine.UI;
 
 
 [CreateAssetMenu(fileName = "New Ability", menuName = "ScriptableObjects/Ability/New Ability")]
@@ -9,6 +10,7 @@ using UnityEngine.Serialization;
 public class Ability : BaseAbility, IActivateable, ICooldown
 {
     public Stat Cooldown;
+    public Sprite AbilityImage;
     public AbilityBehaviour Behaviour;
     public AbilityParameterExtendableEnum CenterTransformParameter;
     

@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using System.Linq;
 using Cysharp.Threading.Tasks;
 using Sirenix.OdinInspector;
 using Sirenix.Serialization;
@@ -9,6 +10,7 @@ using UnityEngine.UI;
 public class HUDManager : MonoExt
 {
     [TabGroup("UI")] [SerializeField][OdinSerialize] public Dictionary<AbilityExtendableEnum, Image> CooldownImageDictionary = new Dictionary<AbilityExtendableEnum, Image>();
+    [TabGroup("UI")] [SerializeField] private Image[] _abilityImages;
     [TabGroup("UI")] [SerializeField] private GameObject _errorText;
     [TabGroup("References")] [SerializeField] private AbilityList _abilityList;
     [TabGroup("References")] [SerializeField] private AbilityParameterHandler _abilityParameterHandler;
@@ -28,6 +30,24 @@ public class HUDManager : MonoExt
         base.Initialize();
         _abilityParameterHandler.AbilityStarted = new Subject<AbilityExtendableEnum>();
         _abilityParameterHandler.AbilityStillExecuting = new Subject<bool>();
+    }
+
+    [Button]
+    private void InitializeAbilityDictionary()
+    {
+        List<AbilityExtendableEnum> abilityExtendableEnums = _abilityList.AbilityDictionary.Keys.ToList();
+        
+        CooldownImageDictionary = new Dictionary<AbilityExtendableEnum, Image>();
+
+        for (int i = 0; i < abilityExtendableEnums.Count; i++)
+        {
+            AbilityExtendableEnum abilityExtendableEnum = abilityExtendableEnums[i];
+            Image image = _abilityImages[i];
+            
+            CooldownImageDictionary.Add(abilityExtendableEnum, image);
+            
+            image.sprite = _abilityList.AbilityDictionary[abilityExtendableEnum].AbilityImage;
+        }
     }
     
     public override void OnSubscriptionSet()
@@ -53,7 +73,8 @@ public class HUDManager : MonoExt
         image.gameObject.SetActive(true);
 
         Ability ability = _abilityList.AbilityDictionary[abilityEnum];
-
+        image.sprite = ability.AbilityImage;
+            
         image.fillAmount = 1f;
         while (ability.GetNormalizedRemainingTime() >= 0)
         {
