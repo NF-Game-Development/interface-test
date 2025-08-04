@@ -4,12 +4,12 @@ using DG.Tweening;
 
 public class Coin : Collectables
 {
-    [SerializeField] private CoinScriptableObject coinScriptableObject;
-    [SerializeField] private float upwardHeight = 1.5f;
-    [SerializeField] private float upwardDuration = 0.3f;
-    [SerializeField] private AnimationCurve moveCurve;
-    [SerializeField] private AnimationCurve scaleCurve;
-    [SerializeField] private float _duration = 1f;
+    [SerializeField] private CoinScriptableObject _coinScriptableObject;
+    [SerializeField] private CollectAnimationCurve _coinAnimationCurve;
+
+    private AnimationCurve _moveCurve;
+    private AnimationCurve _scaleCurve;
+    private float _duration;
     
     private float _coinValue;
     private Tween _currentTween;
@@ -27,13 +27,21 @@ public class Coin : Collectables
         base.Initialize();
         
         InitializeSettings();
+        InitializeCollectAnimationCurve();
         InitializePlayerTag();
     }
 
     private void InitializeSettings()
     {
-        _coinValue = coinScriptableObject.CoinValue;
+        _coinValue = _coinScriptableObject.CoinValue;
         _startScale = transform.localScale;
+    }
+
+    private void InitializeCollectAnimationCurve()
+    {
+        _moveCurve = _coinAnimationCurve.MoveCurve;
+        _scaleCurve = _coinAnimationCurve.ScaleCurve;
+        _duration = _coinAnimationCurve.Duration;
     }
 
     private void InitializePlayerTag()
@@ -55,8 +63,8 @@ public class Coin : Collectables
             {
                 float normalizedTime = elapsed / _duration;
 
-                float moveValue = moveCurve.Evaluate(normalizedTime);
-                float scaleValue = scaleCurve.Evaluate(normalizedTime);
+                float moveValue = _moveCurve.Evaluate(normalizedTime);
+                float scaleValue = _scaleCurve.Evaluate(normalizedTime);
 
                 transform.position = Vector3.Lerp(startPosition, playerPosition, moveValue);
                 transform.localScale = Vector3.Lerp(_startScale, Vector3.zero, scaleValue);
