@@ -8,6 +8,7 @@ namespace NF.Main.Core.PlayerStateMachine
     {
         public PlayerIdleState(PlayerController playerController, Animator animator) : base(playerController, animator)
         {
+            
         }
         
         public override void OnEnter()
@@ -15,7 +16,7 @@ namespace NF.Main.Core.PlayerStateMachine
             base.OnEnter();
             
             //Use this for transitioning between different animator hashes
-            //_animator.CrossFade(IdleHash, 0.5f);
+            _animator.CrossFade(IdleHash, 0.5f);
             
             Debug.Log("Entering Player Idle State");
         }

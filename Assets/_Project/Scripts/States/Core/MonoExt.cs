@@ -34,11 +34,6 @@ namespace NF.Main.Core
             subject.Subscribe(action).AddTo(_disposables);
         }
 
-        private void OnDisable()
-        {
-            Dispose();
-        }
-
         private void OnDestroy()
         {
             Dispose();

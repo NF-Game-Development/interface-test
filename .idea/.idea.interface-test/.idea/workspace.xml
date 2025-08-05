@@ -6,13 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="980b9648-4949-4612-b266-08cbef8d6864" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.interface-test/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.interface-test/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Data/Abilities/Ability ENUMS/Tank/[ENUM] 1Shield Taunt.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Data/Abilities/Ability ENUMS/Tank/[ENUM] 1Shield Taunt.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Data/Abilities/Ability ENUMS/Tank/[ENUM] 2Shockwave.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Data/Abilities/Ability ENUMS/Tank/[ENUM] 2Shockwave.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Data/Abilities/Ability ENUMS/Tank/[ENUM] 3Brawl.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Data/Abilities/Ability ENUMS/Tank/[ENUM] 3Brawl.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Data/Abilities/Tank/Tank_AbilityList.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Data/Abilities/Tank/Tank_AbilityList.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Project/Scenes/Interface Activity.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Scenes/Interface Activity.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Project/Scripts/States/Core/MonoExt.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Scripts/States/Core/MonoExt.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Project/Scripts/States/Core/PlayerStateMachine/PlayerIdleState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Scripts/States/Core/PlayerStateMachine/PlayerIdleState.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,15 +82,13 @@
       </option>
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="41716">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" value="41716" />
+      <option name="pid" />
       <option name="projectPathOnTarget" />
       <option name="runtimes">
-        <list>
-          <MonoRuntime />
-        </list>
+        <list />
       </option>
       <option name="selectedOptions">
         <list />
@@ -117,6 +111,7 @@
       <workItem from="1754271318639" duration="714000" />
       <workItem from="1754272782663" duration="4000" />
       <workItem from="1754272793626" duration="21713000" />
+      <workItem from="1754355096542" duration="1684000" />
     </task>
     <servers />
   </component>
