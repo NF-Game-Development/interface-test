@@ -5,7 +5,8 @@ using UnityEngine;
 public class PlayerController : MonoExt, IMovable, IRotatable, IAbilityCastable
 {
     [TabGroup("References")] [SerializeField] private MovementStats _movementStats;
-    [TabGroup("References")] [SerializeField] private PlayerInputReader _playerInput;
+    [TabGroup("References")] public PlayerInputReader _playerInput;
+    [TabGroup("References")] [SerializeField] private PlayerAnimation _playerAnimation;
     [TabGroup("References")] [SerializeField] private Rigidbody _rigidbody;
     [TabGroup("References")] [SerializeField] private Camera _camera;
 

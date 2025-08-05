@@ -10,6 +10,7 @@ namespace NF.Main.Core.PlayerStateMachine
 
         protected static readonly int IdleHash = Animator.StringToHash("Idle");
         protected static readonly int AttackHash = Animator.StringToHash("Attack");
+        protected static readonly int MoveHash = Animator.StringToHash("Move");
         protected static readonly int HitHash = Animator.StringToHash("Hit");
         protected static readonly int DeathHash = Animator.StringToHash("Death");
         
@@ -24,6 +25,9 @@ namespace NF.Main.Core.PlayerStateMachine
     {
         Idle,
         Attacking,
+        Ability1,
+        Ability2,
+        Ability3,
         Hit,
         Death
     }
