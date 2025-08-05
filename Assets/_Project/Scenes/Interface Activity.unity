@@ -3132,6 +3132,7 @@ MonoBehaviour:
     SerializationNodes: []
   _animator: {fileID: 5866666020593442518}
   _playerController: {fileID: 5508746652333108909}
+  _abilityAnimationDictionary: {fileID: 11400000, guid: 27db4b0558ab8be42a6c385e63a8c739, type: 2}
 --- !u!1001 &7818982804555325941
 PrefabInstance:
   m_ObjectHideFlags: 0

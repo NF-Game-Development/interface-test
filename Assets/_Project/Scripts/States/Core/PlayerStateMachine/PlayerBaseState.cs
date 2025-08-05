@@ -14,10 +14,23 @@ namespace NF.Main.Core.PlayerStateMachine
         protected static readonly int HitHash = Animator.StringToHash("Hit");
         protected static readonly int DeathHash = Animator.StringToHash("Death");
         
+        protected static  int Ability1Hash;
+        
         protected PlayerBaseState(PlayerController playerController, Animator animator)
         {
             _playerController = playerController;
             _animator = animator;
+        }
+
+        public void SetAbility1Hash(AbilityAnimationDictionary abilityAnimationDictionary)
+        {
+            if (!abilityAnimationDictionary.TryGetAbilityEnumBySkillNumber(1, out AbilityExtendableEnum abilityEnum))
+                return;
+            
+            if (abilityAnimationDictionary.TryGetAnimationClipFromAbility(abilityEnum, out AnimationClip animationClip))
+            {
+                Ability1Hash = Animator.StringToHash(animationClip.name);
+            }
         }
     }
     

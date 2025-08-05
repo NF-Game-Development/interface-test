@@ -19,8 +19,6 @@ namespace NF.Main.Core.PlayerStateMachine
             
             _playerController.HandleBasicAttack();
             
-            Debug.LogWarning("Basic Attack");
-            
         }
 
         public override void Update()
@@ -39,7 +37,6 @@ namespace NF.Main.Core.PlayerStateMachine
         public override void OnExit()
         {
             base.OnExit();
-            Debug.Log("Player Exiting Basic Attack State");
         }
     }
 }

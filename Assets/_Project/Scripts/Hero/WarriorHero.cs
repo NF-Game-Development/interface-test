@@ -23,8 +23,6 @@ public class WarriorHero : BaseHero
     
     public override void PerformAttack()
     {
-        Debug.LogWarning("PerformAttack");
-        
         Collider[] hits = Physics.OverlapSphere(_hitLocation.transform.position, _attackRadius);
 
         foreach (var hit in hits)

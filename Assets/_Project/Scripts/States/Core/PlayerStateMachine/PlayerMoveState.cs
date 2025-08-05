@@ -9,7 +9,6 @@ namespace NF.Main.Core.PlayerStateMachine
         public PlayerMoveState(PlayerController playerController, Animator animator) : base(playerController, animator)
         {
             _playerController = playerController;
-            Debug.Log("PlayerMoveState::HandleMovement");
         }
 
         public override void OnEnter()
@@ -17,8 +16,6 @@ namespace NF.Main.Core.PlayerStateMachine
             base.OnEnter();
             
             _animator.CrossFade(MoveHash, 0.2f);
-            
-            Debug.Log("Player Move State");
         }
 
         public override void Update()
@@ -31,14 +28,11 @@ namespace NF.Main.Core.PlayerStateMachine
             base.FixedUpdate();
             
             _playerController.HandleMovement();
-            
-            Debug.Log("Player is Moving");
         }
 
         public override void OnExit()
         {
             base.OnExit();
-            Debug.Log("Player Exiting MoveState");
         }
     }
 }

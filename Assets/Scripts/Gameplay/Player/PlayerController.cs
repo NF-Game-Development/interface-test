@@ -55,8 +55,6 @@ public class PlayerController : MonoExt, IMovable, IRotatable, IAbilityCastable
     public void SetAttackPerformer(IAttackPerformer attackPerformer)
     {
         _iAttackPerformer = attackPerformer;
-        
-        Debug.LogWarning(attackPerformer);
     }
 
     public void HandleBasicAttack()
@@ -122,6 +120,8 @@ public class PlayerController : MonoExt, IMovable, IRotatable, IAbilityCastable
     public void OnAbilityCast(AbilityExtendableEnum abilityEnum)
     {
         _abilityList.AbilityDictionary[abilityEnum].OnTriggerAbility(gameObject, _abilityParameterHandler);
+        
+        _playerAnimation.PlayAbilityAnimation(abilityEnum);
     }
     
     public void InjectDependencies(PlayerControllerDependencies playerControllerDependencies)
@@ -129,5 +129,11 @@ public class PlayerController : MonoExt, IMovable, IRotatable, IAbilityCastable
         _movementStats = playerControllerDependencies.MovementStats;
         _abilityList = playerControllerDependencies.AbilityList;
         _abilityParameterHandler = playerControllerDependencies.ParameterHandler;
+    }
+
+    public AbilityAnimationDictionary GetAbilityAnimationDictionary()
+    {
+        Debug.Log("GetAbilityAnimationDictionary");
+        return _playerAnimation._abilityAnimationDictionary;
     }
 }
