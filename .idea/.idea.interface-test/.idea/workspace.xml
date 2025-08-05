@@ -7,15 +7,6 @@
     <list default="true" id="980b9648-4949-4612-b266-08cbef8d6864" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.interface-test/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.interface-test/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Gameplay/Player/PlayerController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Gameplay/Player/PlayerController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Gameplay/Player/PlayerInputReader.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Gameplay/Player/PlayerInputReader.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Utilities/InputSystem_Actions.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Utilities/InputSystem_Actions.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Utilities/InputSystem_Actions.inputactions" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Utilities/InputSystem_Actions.inputactions" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Animation/Warrior.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Animation/Warrior.controller" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Scripts/Hero/Base/BaseHero.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Scripts/Hero/Base/BaseHero.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Scripts/Hero/WarriorHero.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Scripts/Hero/WarriorHero.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Scripts/Player/PlayerAnimation.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Scripts/Player/PlayerAnimation.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Scripts/States/Core/PlayerStateMachine/PlayerBaseState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Scripts/States/Core/PlayerStateMachine/PlayerBaseState.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Scripts/States/Core/PlayerStateMachine/PlayerIdleState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Scripts/States/Core/PlayerStateMachine/PlayerIdleState.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -123,7 +114,7 @@
       <workItem from="1754272793626" duration="21713000" />
       <workItem from="1754355096542" duration="4338000" />
       <workItem from="1754361892487" duration="10256000" />
-      <workItem from="1754373639108" duration="3250000" />
+      <workItem from="1754373639108" duration="6482000" />
     </task>
     <servers />
   </component>

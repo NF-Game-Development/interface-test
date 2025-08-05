@@ -3017,9 +3017,13 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 7264058673297099920}
     - target: {fileID: 8841586628277321905, guid: 6577c805289583043869e1014b778555, type: 3}
+      propertyPath: BasicAttackCoolDown
+      value: 0.75
+      objectReference: {fileID: 0}
+    - target: {fileID: 8841586628277321905, guid: 6577c805289583043869e1014b778555, type: 3}
       propertyPath: serializationData.Prefab
       value: 
-      objectReference: {fileID: 8841586628277321905, guid: 6577c805289583043869e1014b778555, type: 3}
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

@@ -17,6 +17,8 @@ public class PlayerController : MonoExt, IMovable, IRotatable, IAbilityCastable
     
     [TabGroup("Debug")] public bool CanPlayerMove = true;
     [TabGroup("Debug")] public bool CanPlayerRotate = true;
+    [TabGroup("Debug")] public bool CanAttack = true;
+    [TabGroup("Debug")] public float BasicAttackCoolDown = 0.5f;
     
     private IAttackPerformer _iAttackPerformer;
     
@@ -59,8 +61,21 @@ public class PlayerController : MonoExt, IMovable, IRotatable, IAbilityCastable
 
     public void HandleBasicAttack()
     {
+        //Prevents Button Spamming
+        if (!CanAttack || _playerAnimation.PlayerState == PlayerState.BasicAttack)
+            return;
+        
+        CanAttack = false;
+        
         _iAttackPerformer?.PerformAttack();
         AssignNewState(PlayerState.BasicAttack);
+        
+        Invoke(nameof(ResetAttack), BasicAttackCoolDown);
+    }
+    
+    private void ResetAttack()
+    {
+        CanAttack = true;
     }
 
     public void AssignNewState(PlayerState newState)
