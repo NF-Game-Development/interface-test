@@ -24,7 +24,6 @@ namespace NF.Main.Core.PlayerStateMachine
         public override void Update()
         {
             base.Update();
-            Debug.Log("Player is Idling");
         }
 
         public override void OnExit()

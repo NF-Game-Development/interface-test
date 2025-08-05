@@ -4,6 +4,7 @@ using UnityEngine;
 public class WarriorHero : BaseHero
 {
     [TabGroup("Melee Hit Location")] [SerializeField] private Transform _hitLocation;
+    
     private float _attackRadius;
     private float _damage;
     
@@ -20,16 +21,10 @@ public class WarriorHero : BaseHero
         _attackRadius = HeroScriptableObject.MeleeRadius;
     }
     
-    private void Update()
+    public override void PerformAttack()
     {
-        if (Input.GetKeyDown(KeyCode.Mouse0))
-        {
-            PerformAttack();
-        }
-    }
-    
-    private void PerformAttack()
-    {
+        Debug.LogWarning("PerformAttack");
+        
         Collider[] hits = Physics.OverlapSphere(_hitLocation.transform.position, _attackRadius);
 
         foreach (var hit in hits)

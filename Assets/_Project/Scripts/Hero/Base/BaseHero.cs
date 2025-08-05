@@ -3,10 +3,10 @@ using UnityEngine;
 using UnityEngine.Serialization;
 using Sirenix.OdinInspector;
 
-public class BaseHero : MonoExt, IAbilityCastable, IMovable, IRotatable, IDamageable, IAttacker, IHealable
+public class BaseHero : MonoExt, IAbilityCastable, IMovable, IRotatable, IDamageable, IAttacker,IAttackPerformer, IHealable
 {
     [TabGroup("Scriptable Hero")] public HeroScriptableObject HeroScriptableObject;
-    [TabGroup("Player Controller")] [SerializeField] private PlayerController _playerController;
+    [TabGroup("Player Controller")] public PlayerController _playerController;
     
     private void Awake()
     {
@@ -38,6 +38,8 @@ public class BaseHero : MonoExt, IAbilityCastable, IMovable, IRotatable, IDamage
             AbilityList = HeroScriptableObject.AbilityList,
             ParameterHandler = HeroScriptableObject.AbilityParameterHandler
         });
+        
+        _playerController.SetAttackPerformer(this);
     }
     
     public override void OnSubscriptionSet()
@@ -59,19 +61,13 @@ public class BaseHero : MonoExt, IAbilityCastable, IMovable, IRotatable, IDamage
     {
         _playerController.Rotate(rotationDirection, movementStats);
     }
-
-    public virtual void ApplyDamage(float damageValue)
+    
+    public virtual void PerformAttack()
     {
-        
+        Debug.LogWarning("PerformAttack not implemented in this hero class.");
     }
 
-    public virtual void Attack(IDamageable damageable)
-    {
-        
-    }
-
-    public virtual void ApplyHeal(int addHealth)
-    {
-        throw new NotImplementedException();
-    }
+    public virtual void ApplyDamage(float damageValue) { }
+    public virtual void Attack(IDamageable damageable) { }
+    public virtual void ApplyHeal(int addHealth) { }
 }

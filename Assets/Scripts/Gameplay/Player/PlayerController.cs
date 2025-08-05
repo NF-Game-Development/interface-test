@@ -1,4 +1,5 @@
 using System;
+using NF.Main.Core.PlayerStateMachine;
 using Sirenix.OdinInspector;
 using UnityEngine;
 using UnityEngine.Serialization;
@@ -17,8 +18,10 @@ public class PlayerController : MonoExt, IMovable, IRotatable, IAbilityCastable
     [TabGroup("Debug")] public bool CanPlayerMove = true;
     [TabGroup("Debug")] public bool CanPlayerRotate = true;
     
+    private IAttackPerformer _iAttackPerformer;
     
     private Vector2 _movementInput = Vector2.zero;
+    
     private void Awake()
     {
         //Initialize mono extension
@@ -44,13 +47,27 @@ public class PlayerController : MonoExt, IMovable, IRotatable, IAbilityCastable
         //Event that handles player movement
         AddEvent(PlayerInput.Movement,movementDirection => _movementInput = movementDirection);
         AddEvent(PlayerInput.Ability, OnAbilityCast);
+        AddEvent(PlayerInput.BasicAttack, _ => HandleBasicAttack());
     }
-
-    public void FixedUpdate()
+    
+    public void SetAttackPerformer(IAttackPerformer attackPerformer)
     {
+        _iAttackPerformer = attackPerformer;
         
+        Debug.LogWarning(attackPerformer);
     }
 
+    public void HandleBasicAttack()
+    {
+        _iAttackPerformer?.PerformAttack();
+        AssignNewState(PlayerState.BasicAttack);
+    }
+
+    public void AssignNewState(PlayerState newState)
+    {
+        _playerAnimation.SetState(newState);
+    }
+    
     //Handles movement and rotation
     public void HandleMovement()
     {
@@ -62,8 +79,8 @@ public class PlayerController : MonoExt, IMovable, IRotatable, IAbilityCastable
         Rotate(normalizedDirection, _movementStats);
         Move(normalizedDirection, _movementStats);
     }
-
-
+    
+    
     //Assigns care of players movement
     public void Move(Vector3 movementDirection, MovementStats movementStats)
     {

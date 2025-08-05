@@ -6,14 +6,13 @@ public class PlayerAnimation : MonoExt
 {
     [SerializeField] private Animator _animator;
     [SerializeField] private PlayerController _playerController;
-
-
+    
     private PlayerInputReader _playerInputReader;
     private bool _canPlayerMove;
     private bool _canPlayerRotate;
     private StateMachine _stateMachine;
     
-    public PlayerState PlayerState { get; set; }
+    public PlayerState PlayerState { get; private set; }
     
     private void Awake()
     {
@@ -65,11 +64,18 @@ public class PlayerAnimation : MonoExt
 
         var idleState = new PlayerIdleState(_playerController, _animator);
         var moveState = new PlayerMoveState(_playerController, _animator);
+        var basicAttackState = new PlayerBasicAttackState(_playerController, _animator);
         
         Any(idleState, new FuncPredicate(ReturnToIdleState));
         Any(moveState, new FuncPredicate(() => PlayerState == PlayerState.Moving));
+        Any(basicAttackState, new FuncPredicate(() => PlayerState == PlayerState.BasicAttack));
         
         _stateMachine.SetState(idleState);
+    }
+
+    public void SetState(PlayerState newState)
+    {
+        PlayerState = newState;
     }
     
     private bool ReturnToIdleState()

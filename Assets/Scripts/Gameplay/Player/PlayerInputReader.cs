@@ -13,6 +13,8 @@ public class PlayerInputReader : SerializedScriptableObject, InputSystem_Actions
     
     public Subject<Vector2> Movement {get; private set;}
     public Subject<AbilityExtendableEnum> Ability {get; private set;}
+    
+    public Subject<Unit> BasicAttack { get; private set; }
 
     private InputSystem_Actions _inputActions;
 
@@ -31,6 +33,8 @@ public class PlayerInputReader : SerializedScriptableObject, InputSystem_Actions
         
         Movement = new Subject<Vector2>();
         Ability = new Subject<AbilityExtendableEnum>();
+        BasicAttack = new Subject<Unit>();
+        
     }
 
     public void EnablePlayerActions()
@@ -63,5 +67,10 @@ public class PlayerInputReader : SerializedScriptableObject, InputSystem_Actions
             Ability.OnNext(AbilityDictionary[3]);
     }
 
+    public void OnBasicAttack(InputAction.CallbackContext context)
+    {
+        if (context.performed)
+            BasicAttack.OnNext(Unit.Default);
+    }
 }
 
