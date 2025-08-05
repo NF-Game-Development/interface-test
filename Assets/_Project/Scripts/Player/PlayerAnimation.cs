@@ -9,6 +9,8 @@ public class PlayerAnimation : MonoExt
 
 
     private PlayerInputReader _playerInputReader;
+    private bool _canPlayerMove;
+    private bool _canPlayerRotate;
     private StateMachine _stateMachine;
     
     public PlayerState PlayerState { get; set; }
@@ -45,14 +47,16 @@ public class PlayerAnimation : MonoExt
 
     private void InitializePlayerController()
     {
-        _playerInputReader = _playerController._playerInput;
+        _playerInputReader = _playerController.PlayerInput;
+        _canPlayerMove = _playerController.CanPlayerMove;
+        _canPlayerRotate = _playerController.CanPlayerRotate;
     }
     
     public override void OnSubscriptionSet()
     {
         base.OnSubscriptionSet();
         
-        //AddEvent(_playerInputReader.Movement, );
+        AddEvent(_playerInputReader.Movement, TransitionToMoveState);
     }
 
     private void SetupStateMachine()
@@ -60,8 +64,10 @@ public class PlayerAnimation : MonoExt
         _stateMachine = new StateMachine();
 
         var idleState = new PlayerIdleState(_playerController, _animator);
+        var moveState = new PlayerMoveState(_playerController, _animator);
         
         Any(idleState, new FuncPredicate(ReturnToIdleState));
+        Any(moveState, new FuncPredicate(() => PlayerState == PlayerState.Moving));
         
         _stateMachine.SetState(idleState);
     }
@@ -73,4 +79,16 @@ public class PlayerAnimation : MonoExt
     
     private void At(IState from, IState to, IPredicate condition) => _stateMachine.AddTransition(from, to, condition);
     private void Any(IState to, IPredicate condition) => _stateMachine.AddAnyTransition(to, condition);
+
+    private void TransitionToMoveState(Vector2 direction)
+    {
+        if (direction != Vector2.zero && (_canPlayerMove == true && _canPlayerRotate == true))
+        {
+            PlayerState = PlayerState.Moving;
+        }
+        else if(direction == Vector2.zero && (_canPlayerMove == true && _canPlayerRotate == true))
+        {
+            PlayerState = PlayerState.Idle;
+        }
+    }
 }

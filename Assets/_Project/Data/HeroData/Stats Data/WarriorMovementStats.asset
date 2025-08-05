@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a5aea2fdcc4e42989093189e5ee2d3ed, type: 3}
   m_Name: WarriorMovementStats
   m_EditorClassIdentifier: 
-  MovementSpeed: 10
+  MovementSpeed: 5
   RotationSmoothTime: 10

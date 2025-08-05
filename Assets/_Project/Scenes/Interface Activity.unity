@@ -3009,6 +3009,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 796445580}
     - target: {fileID: 8841586628277321905, guid: 6577c805289583043869e1014b778555, type: 3}
+      propertyPath: PlayerInput
+      value: 
+      objectReference: {fileID: 11400000, guid: bccb5b502b38ed64fb694b53d16cc9c6, type: 2}
+    - target: {fileID: 8841586628277321905, guid: 6577c805289583043869e1014b778555, type: 3}
       propertyPath: _playerAnimation
       value: 
       objectReference: {fileID: 7264058673297099920}

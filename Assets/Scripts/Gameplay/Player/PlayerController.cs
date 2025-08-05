@@ -1,11 +1,12 @@
 using System;
 using Sirenix.OdinInspector;
 using UnityEngine;
+using UnityEngine.Serialization;
 
 public class PlayerController : MonoExt, IMovable, IRotatable, IAbilityCastable
 {
     [TabGroup("References")] [SerializeField] private MovementStats _movementStats;
-    [TabGroup("References")] public PlayerInputReader _playerInput;
+    [TabGroup("References")] public PlayerInputReader PlayerInput;
     [TabGroup("References")] [SerializeField] private PlayerAnimation _playerAnimation;
     [TabGroup("References")] [SerializeField] private Rigidbody _rigidbody;
     [TabGroup("References")] [SerializeField] private Camera _camera;
@@ -13,8 +14,8 @@ public class PlayerController : MonoExt, IMovable, IRotatable, IAbilityCastable
     [TabGroup("Ability")] [SerializeField] private AbilityList _abilityList;
     [TabGroup("Ability")] [SerializeField] private AbilityParameterHandler _abilityParameterHandler;
     
-    [TabGroup("Debug")] [SerializeField] private bool _canPlayerMove = true;
-    [TabGroup("Debug")] [SerializeField] private bool _canPlayerRotate = true;
+    [TabGroup("Debug")] public bool CanPlayerMove = true;
+    [TabGroup("Debug")] public bool CanPlayerRotate = true;
     
     
     private Vector2 _movementInput = Vector2.zero;
@@ -32,7 +33,7 @@ public class PlayerController : MonoExt, IMovable, IRotatable, IAbilityCastable
     public override void Initialize()
     {
         base.Initialize();
-        _playerInput.EnablePlayerActions();
+        PlayerInput.EnablePlayerActions();
         _abilityList.InitializeAbilities();
         _abilityParameterHandler.Initialize();
     }
@@ -41,8 +42,8 @@ public class PlayerController : MonoExt, IMovable, IRotatable, IAbilityCastable
     {
         base.OnSubscriptionSet();
         //Event that handles player movement
-        AddEvent(_playerInput.Movement,movementDirection => _movementInput = movementDirection);
-        AddEvent(_playerInput.Ability, OnAbilityCast);
+        AddEvent(PlayerInput.Movement,movementDirection => _movementInput = movementDirection);
+        AddEvent(PlayerInput.Ability, OnAbilityCast);
     }
 
     public void FixedUpdate()
@@ -53,7 +54,7 @@ public class PlayerController : MonoExt, IMovable, IRotatable, IAbilityCastable
     //Handles movement and rotation
     private void HandleMovement()
     {
-        if (!_canPlayerMove)
+        if (!CanPlayerMove)
             return;
         
         Vector3 normalizedDirection = Utility.CalculateCameraDirection(_camera, _movementInput);
@@ -76,7 +77,7 @@ public class PlayerController : MonoExt, IMovable, IRotatable, IAbilityCastable
     //Assigns player rotations
     public void Rotate(Vector3 rotationDirection, MovementStats movementStats)
     {
-        if (!_canPlayerRotate)
+        if (!CanPlayerRotate)
             return;
         
         if (rotationDirection.sqrMagnitude < 0.01f)
