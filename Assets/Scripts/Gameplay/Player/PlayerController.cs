@@ -48,11 +48,11 @@ public class PlayerController : MonoExt, IMovable, IRotatable, IAbilityCastable
 
     public void FixedUpdate()
     {
-        HandleMovement();
+        
     }
 
     //Handles movement and rotation
-    private void HandleMovement()
+    public void HandleMovement()
     {
         if (!CanPlayerMove)
             return;
