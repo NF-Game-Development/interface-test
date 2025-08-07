@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4c5bd67c73c5be54eaab63be6cc6a68c, type: 3}
-  m_Name: '[BEHAVIOUR] SpeedUp'
+  m_Name: '[BEHAVIOUR] DefenceUp'
   m_EditorClassIdentifier: 
   serializationData:
     SerializedFormat: 2
@@ -22,4 +22,4 @@ MonoBehaviour:
     PrefabModifications: []
     SerializationNodes: []
   Phases:
-  - {fileID: 11400000, guid: a3d4330ad5cd6f54da5f32cc264e27f6, type: 2}
+  - {fileID: 11400000, guid: 2eb615c40ea14c646b9e3914e6a70cea, type: 2}

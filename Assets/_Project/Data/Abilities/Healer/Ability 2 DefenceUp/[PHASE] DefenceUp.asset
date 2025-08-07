@@ -10,13 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7da78d8fabff460bae8817af7bfe4459, type: 3}
-  m_Name: '[PHASE] SpeedUp'
+  m_Name: '[PHASE] DefenceUp'
   m_EditorClassIdentifier: 
   serializationData:
     SerializedFormat: 2
     SerializedBytes: 
     ReferencedUnityObjects:
-    - {fileID: 11400000, guid: 84551f98a74038d4e8d43cbed78317ac, type: 2}
+    - {fileID: 11400000, guid: 49d18d210ec40af4d8ae0ad6df9aa5cf, type: 2}
     SerializedBytesString: 
     Prefab: {fileID: 0}
     PrefabModificationsReferencedUnityObjects: []
@@ -67,4 +67,4 @@ MonoBehaviour:
     - Name: 
       Entry: 8
       Data: 
-  Duration: {fileID: 11400000, guid: 89c70989b701e9d4cabb2099f89b455d, type: 2}
+  Duration: {fileID: 11400000, guid: d611d306cb6535741ab2da755aaf7283, type: 2}
