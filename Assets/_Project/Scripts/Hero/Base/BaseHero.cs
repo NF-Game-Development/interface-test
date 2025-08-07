@@ -69,5 +69,5 @@ public class BaseHero : MonoExt, IAbilityCastable, IMovable, IRotatable, IDamage
 
     public virtual void ApplyDamage(float damageValue) { }
     public virtual void Attack(IDamageable damageable) { }
-    public virtual void ApplyHeal(int addHealth) { }
+    public virtual void ApplyHeal(float addHealth) { }
 }

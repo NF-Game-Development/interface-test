@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class BaseEnemy : MonoExt, IAbilityCastable, IMovable, IRotatable, IDamageable, IAttacker, IHealable
+public class BaseEnemy : MonoExt, IAbilityCastable, IMovable, IRotatable, IDamageable, IAttacker
 {
     private void Awake()
     {
@@ -42,11 +42,6 @@ public class BaseEnemy : MonoExt, IAbilityCastable, IMovable, IRotatable, IDamag
     }
 
     public void Attack(IDamageable damageable)
-    {
-        throw new System.NotImplementedException();
-    }
-
-    public void ApplyHeal(int addHealth)
     {
         throw new System.NotImplementedException();
     }
