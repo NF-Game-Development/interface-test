@@ -24,7 +24,8 @@ MonoBehaviour:
   ClassNameEnum: {fileID: 11400000, guid: aaba69bf5a083464b97aa5736e2b19b9, type: 2}
   BaseHealth: 100
   BaseAttack: 5
+  MeleeRadius: 1
   MovementStats: {fileID: 11400000, guid: e57a1d80bd0210d48a05c79b9ff12b16, type: 2}
-  AbilityList: {fileID: 0}
-  AbilityParameterHandler: {fileID: 0}
-  HeroModelPrefab: {fileID: 8965404519273304551, guid: 9c2e2c1b2ab71ba4ebde1646450cec2d, type: 3}
+  AbilityList: {fileID: 11400000, guid: ac10dc279e9f8d54faba097512aff0f8, type: 2}
+  AbilityParameterHandler: {fileID: 11400000, guid: bf7e73ced2e6d394bb516e2db153b9a6, type: 2}
+  HeroModelPrefab: {fileID: 2247626842222065510, guid: 9c2e2c1b2ab71ba4ebde1646450cec2d, type: 3}
