@@ -1018,7 +1018,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 14a0f66a7be165c4ba476e3d7c40e390, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 3925691c2a021aa429c1dc89712a1253, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1579,7 +1579,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Combo
+  m_text: Brawl
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1880,11 +1880,11 @@ MonoBehaviour:
     SerializedFormat: 2
     SerializedBytes: 
     ReferencedUnityObjects:
-    - {fileID: 11400000, guid: 13ca81de5d2ef544488103401e738059, type: 2}
+    - {fileID: 11400000, guid: 050d26f18b1828a4fafb096e03c4f78b, type: 2}
     - {fileID: 1338589414}
-    - {fileID: 11400000, guid: 3900d6f489ea8f64e9481e5263a889ce, type: 2}
+    - {fileID: 11400000, guid: 78006c2e619d1ac47b66b6596387a4fe, type: 2}
     - {fileID: 190727615}
-    - {fileID: 11400000, guid: 8698563374aae2d48af9e14d4160a9c8, type: 2}
+    - {fileID: 11400000, guid: 9b0711202f2af234ea3c7fcad08e65c9, type: 2}
     - {fileID: 130413730}
     SerializedBytesString: 
     Prefab: {fileID: 0}
@@ -1955,12 +1955,12 @@ MonoBehaviour:
   - AbilityImage: {fileID: 631294518}
     AbilityName: {fileID: 1275348512}
   _errorText: {fileID: 1828994797}
-  _abilityList: {fileID: 11400000, guid: 54efc90030860f24f90d1f9e7b4cc685, type: 2}
-  _abilityParameterHandler: {fileID: 11400000, guid: 265c42230de757a47a77308c0ae19d96, type: 2}
+  _abilityList: {fileID: 11400000, guid: ac10dc279e9f8d54faba097512aff0f8, type: 2}
+  _abilityParameterHandler: {fileID: 11400000, guid: bf7e73ced2e6d394bb516e2db153b9a6, type: 2}
   AbilityExtendableEnumList:
-  - {fileID: 11400000, guid: 13ca81de5d2ef544488103401e738059, type: 2}
-  - {fileID: 11400000, guid: 8698563374aae2d48af9e14d4160a9c8, type: 2}
-  - {fileID: 11400000, guid: 3900d6f489ea8f64e9481e5263a889ce, type: 2}
+  - {fileID: 11400000, guid: 050d26f18b1828a4fafb096e03c4f78b, type: 2}
+  - {fileID: 11400000, guid: 9b0711202f2af234ea3c7fcad08e65c9, type: 2}
+  - {fileID: 11400000, guid: 78006c2e619d1ac47b66b6596387a4fe, type: 2}
 --- !u!222 &1354798868
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2026,7 +2026,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Punch
+  m_text: Shield Taunt
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -2371,7 +2371,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: aeb31def086466745b570d082197ee1f, type: 3}
+  m_Sprite: {fileID: 21300000, guid: c46d83f2b73aaa141bd5015819342d81, type: 3}
   m_Type: 3
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2446,7 +2446,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Stomp
+  m_text: Shockwave
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -2752,7 +2752,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: c890dd06d4a350946ab11e4778bf47d8, type: 3}
+  m_Sprite: {fileID: 21300000, guid: b11f9c52da2945740b5078d84177a9ab, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -3433,10 +3433,10 @@ SceneRoots:
   - {fileID: 796445581}
   - {fileID: 401032032}
   - {fileID: 5081796357601713784}
+  - {fileID: 4505961910484221187}
   - {fileID: 116256595}
   - {fileID: 7255151247671362441}
   - {fileID: 7818982804555325941}
   - {fileID: 1084812969860184716}
   - {fileID: 575629657}
   - {fileID: 692003655763897044}
-  - {fileID: 4505961910484221187}
