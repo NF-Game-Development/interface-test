@@ -3242,33 +3242,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1864995536184189637}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!54 &2407209540967884920
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3521530390187788003}
-  serializedVersion: 4
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_CenterOfMass: {x: 0, y: 0, z: 0}
-  m_InertiaTensor: {x: 1, y: 1, z: 1}
-  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ImplicitCom: 1
-  m_ImplicitTensor: 1
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 112
-  m_CollisionDetection: 0
 --- !u!4 &2752391060488297131
 Transform:
   m_ObjectHideFlags: 0
@@ -3315,6 +3288,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8267695913961825420}
+  - component: {fileID: 8267695913961825422}
+  - component: {fileID: 8267695913961825421}
   m_Layer: 0
   m_Name: CONTAINER_Tank
   m_TagString: Player
@@ -3434,8 +3409,6 @@ GameObject:
   - component: {fileID: 6695884999198728735}
   - component: {fileID: 6431223537882364298}
   - component: {fileID: 6529007460014201155}
-  - component: {fileID: 2407209540967884920}
-  - component: {fileID: 9144665300348801944}
   m_Layer: 0
   m_Name: character_knightBody
   m_TagString: Untagged
@@ -3999,6 +3972,65 @@ Transform:
   - {fileID: 731585844}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!54 &8267695913961825421
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2950774852715390473}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!114 &8267695913961825422
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2950774852715390473}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5016fc6164a322644bc098f516a0e9f7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes: []
+  _movementStats: {fileID: 0}
+  PlayerInput: {fileID: 11400000, guid: bccb5b502b38ed64fb694b53d16cc9c6, type: 2}
+  _playerAnimation: {fileID: 0}
+  _rigidbody: {fileID: 8267695913961825421}
+  _camera: {fileID: 0}
+  _abilityList: {fileID: 11400000, guid: ac10dc279e9f8d54faba097512aff0f8, type: 2}
+  _abilityParameterHandler: {fileID: 11400000, guid: bf7e73ced2e6d394bb516e2db153b9a6, type: 2}
+  CanPlayerMove: 1
+  CanPlayerRotate: 1
+  CanAttack: 1
+  BasicAttackCoolDown: 0.5
 --- !u!1 &8272753585246353607
 GameObject:
   m_ObjectHideFlags: 0
@@ -4089,6 +4121,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8177170699881861296}
   - component: {fileID: 2853885482655091402}
+  - component: {fileID: 8804807484150680075}
   m_Layer: 0
   m_Name: MODEL_Container
   m_TagString: Untagged
@@ -4096,13 +4129,13 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!136 &9144665300348801944
+--- !u!136 &8804807484150680075
 CapsuleCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3521530390187788003}
+  m_GameObject: {fileID: 8804807484150680074}
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -4115,10 +4148,10 @@ CapsuleCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.38983843
-  m_Height: 0.7641531
+  m_Radius: 0.5
+  m_Height: 1.65
   m_Direction: 1
-  m_Center: {x: -0.00000016391277, y: 0.3820765, z: -0.0034090579}
+  m_Center: {x: 0, y: 0.77, z: 0}
 --- !u!33 &9163790897710324419
 MeshFilter:
   m_ObjectHideFlags: 0
